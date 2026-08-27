@@ -148,15 +148,35 @@ Fill the copy, put their material in `<slug>/assets/`, push. Live at
 
 ## Finding the next one
 
+Two scorers, because a site fails in two independent ways.
+
 ```bash
-./bin/audit-site.py https://theirsite.com
+./bin/audit-site.py https://theirsite.com       # plumbing
+node bin/design-probe.js https://theirsite.com  # how it actually looks
 ```
 
-Scores how badly a site needs rebuilding. Higher is worse, which means better
-prospect. **Viper scored 67.** Treat that as the bar. Below roughly 35 there is
-not enough wrong to be worth the swing.
+`audit-site.py` reads the markup: mobile viewport, TLS, click-to-call, schema,
+page weight, stale footers, builder lock-in.
 
-The score measures the website, not the buyer. Check by hand for a real crew, a
-real address, and money visibly going out the door: a paid builder subscription,
-BBB accreditation, chamber dues, review software. Then open the site and look at
-what there is to work with, because that is what decides the treatment.
+`design-probe.js` renders the page in headless Chrome at 1440x900 and measures
+what a visitor reacts to: how much of the first screen is used up before the
+headline, whether the headline carries any weight, how many things are pinned to
+the screen at once, third-party sprawl, and whether the palette holds together.
+
+**Add them. The bar is roughly 68.** The two builds that exist prove the axes are
+independent:
+
+| | Plumbing | Design | Total |
+|---|---|---|---|
+| Viper's real site | 67 | 18 | **85** |
+| Goblin's real site | 15 | 53 | **68** |
+| Either of our demos | — | 4 | — |
+
+Viper was technically broken and visually acceptable. Goblin was technically
+sound and visually a mess. Both were worth building for, and either scorer alone
+would have missed one of them.
+
+Neither score measures the buyer. Check by hand for a real crew, a real address,
+and money visibly going out the door: a paid builder subscription, BBB
+accreditation, chamber dues, review software. Then open the site and look at what
+there is to work with, because that is what decides the treatment.
