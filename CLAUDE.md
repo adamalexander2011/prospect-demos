@@ -68,9 +68,10 @@ End with: nothing in the placeholder column goes live until they confirm it.
 
 **Make it unmistakably not their real site.**
 It has to be obvious to somebody who lands with no context. Say it in the title,
-say it near the top, say it in the disclosure, and link to their real site. The
-wording is yours to choose. Viper used "Concept Site", Goblin used "design study".
-Either works. Ambiguity does not.
+say it near the top, say it in the disclosure, and link to their real site. Both
+builds settle on "concept site", in the title and again in the ribbon at the top.
+Keep that wording unless a business gives you a reason not to. Ambiguity is
+the only thing that is actually forbidden.
 
 **noindex, always.**
 `<meta name="robots" content="noindex,nofollow">` plus the site-wide `robots.txt`.

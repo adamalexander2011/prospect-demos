@@ -144,7 +144,10 @@ def audit(url):
         flag(8, "no form on the homepage")
 
     # --- chat / after-hours capture ---
-    if not re.search(r"tawk|intercom|drift|podium|livechat|tidio|crisp|chatbot|messenger", low):
+    CHAT = (r"tawk\.to|widget\.intercom|intercom\.io|js\.driftt|drift\.com|podium\.com|"
+            r"livechatinc|tidio\.co|crisp\.chat|chatbot|"
+            r"facebook\.com/[^\"']*/messages|fb-customerchat|chat-widget|live-?chat")
+    if not re.search(CHAT, low):
         flag(10, "nothing answers after hours, no chat of any kind")
 
     # --- social-only tell ---
