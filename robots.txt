@@ -1,0 +1,4 @@
+# Prospect demos are private, link-only pages built for one business at a time.
+# They are not meant to be discovered, indexed, or crawled.
+User-agent: *
+Disallow: /
