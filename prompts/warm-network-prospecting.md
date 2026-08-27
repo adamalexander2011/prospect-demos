@@ -57,19 +57,67 @@ One more consequence: with a warm prospect the **relationship is the risk**, not
 sale. A build that gets the business wrong costs Adam a friend, not just a lead. So
 be more conservative about assumed facts here than you would be cold, not less.
 
+## Where to look, and why the friend list is not it
+
+**Work Pages first. The friend list is close to the worst place to start.**
+
+A friend list answers "who does Adam know", which is not the question. It is
+thousands of profiles, most of whom are not business owners, and the only way to
+find out is to open each one. That is a grind with a terrible hit rate.
+
+A business owner serious enough to be worth building for **has a Facebook Page for
+the business.** That inverts the whole search: instead of thousands of people you
+check one at a time, you get a short list where every single entry is already
+confirmed to be a business.
+
+And the Page is not only a discovery channel, it is a **qualification signal**. If
+a friend runs something with no Page and no website at all, that is not a reason to
+dig harder. It is an answer. There is nothing to rebuild and nothing to rebuild it
+from, and they are not a prospect for this play.
+
+### The ladder, in order. Do not skip down it.
+
+1. **Pages Adam follows or likes.** Shortest list, highest signal, and heavily
+   weighted toward people he actually knows. This is the first pass and it may be
+   the only one you need.
+2. **Group member overlap.** Facebook shows "N of your friends are members" on a
+   group. Adam's existing research already records this, for example 4 friends in
+   Decorative Concrete Contractors USA and 6 in Advanced Metallic Floors. Local
+   community, buy-sell and trade groups will surface friends who run businesses
+   without you opening a single profile.
+3. **Pages that follow or interact with Adam's own Page.** Local businesses that
+   have already engaged with Local LVRG are warm twice over.
+4. **Recommendation threads.** Posts in local groups asking "who does X around
+   here" and the friends tagged in the replies. Those are businesses their own
+   neighbours vouch for.
+5. **Only then, and only if the above runs dry:** friend profiles, filtered to the
+   "Works at" or "Owner at" field, and only where the employer reads as a local
+   business. Do not open profiles at random.
+
+### Existing research to read before you start
+
+Adam has already done Facebook groundwork. Do not repeat it:
+
+- `~/local-lvrg-agency/05-Prospecting/FB_GROUPS_2026-08-25.md` — groups already
+  joined, with rules read and friend-overlap counts recorded
+- `~/local-lvrg-agency/03-Facebook-Playbook/FB_PLAYBOOK.md` and
+  `FB_PROFILE_FUNNEL.md` — how the profile and groups are already being used
+
+That work is coatings-focused because coatings is the vertical. **This pass is
+not.** Any local trade with a real crew and a bad website qualifies: roofing, HVAC,
+landscape and hardscape, remodel, pole barns, windows and siding, paving, fencing,
+tree work, auto body.
+
 ## Method
 
 You have Chrome extension tools against Adam's logged-in browser. Work in his real
 browser session.
 
-1. **Start with Facebook Pages, not the friend list.** The friend list tells you who
-   he knows; it does not tell you who owns a business. The higher-signal surfaces
-   are: local business Pages he follows or has interacted with, Pages where a friend
-   is publicly listed as the owner, and the "Works at" / "Owner at" field on
-   profiles. Ask Adam which of these he wants you to work through first if it is not
-   obvious.
+1. **Work the ladder above, top down.**
 2. **Get the business name and its website.** That is all you need from Facebook.
-   The moment you have a domain, leave Facebook and work the public website.
+   The moment you have a domain, leave Facebook and work the public website. If a
+   business has a Page but no website at all, record it separately: that is a
+   different and possibly better conversation, but it is not this build.
 3. **Qualify against the real bar:**
    ```bash
    cd ~/Projects/prospect-demos && ./bin/qualify.sh https://theirsite.com
