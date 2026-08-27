@@ -61,8 +61,18 @@ const PROBE = `(() => {
   const SYSTEM = /^(arial|helvetica|times|times new roman|georgia|verdana|tahoma|courier|-apple-system|system-ui|sans-serif|serif|inherit|ui-|blinkmac)/i;
   const realFonts = [...fonts].filter(f => !SYSTEM.test(f));
 
+  // Furniture means things competing for attention: bars, rails, floating buttons.
+  // A fixed hero background and its overlay are scenery, not clutter, so a pinned
+  // element only counts if it carries content and is not covering the viewport.
   const stuck = vis.filter(e => ['fixed','sticky'].includes(getComputedStyle(e).position))
-                   .filter(e => { const r = e.getBoundingClientRect(); return r.width*r.height > 1600; });
+    .filter(e => { const r = e.getBoundingClientRect(); return r.width*r.height > 1600; })
+    .filter(e => e.tagName !== 'IMG')
+    .filter(e => {
+      const r = e.getBoundingClientRect();
+      const coversScreen = r.width >= vw * 0.9 && r.height >= vh * 0.7;
+      const hasContent = e.innerText.trim().length > 0 || e.querySelector('a,button,svg,img,input');
+      return hasContent && !coversScreen;
+    });
   const furniture = stuck.filter(e => !stuck.some(o => o !== e && o.contains(e)));
 
   // the headline a visitor actually sees: visible, real size, near the top.

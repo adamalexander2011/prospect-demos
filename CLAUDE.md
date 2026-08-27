@@ -163,18 +163,32 @@ what a visitor reacts to: how much of the first screen is used up before the
 headline, whether the headline carries any weight, how many things are pinned to
 the screen at once, third-party sprawl, and whether the palette holds together.
 
-**Add them. The bar is roughly 68.** The two builds that exist prove the axes are
+**Add them. The bar is roughly 58.** The two builds that exist prove the axes are
 independent:
 
 | | Plumbing | Design | Total |
 |---|---|---|---|
 | Viper's real site | 67 | 18 | **85** |
-| Goblin's real site | 15 | 53 | **68** |
+| Goblin's real site | 15 | 43 | **58** |
 | Either of our demos | — | 4 | — |
 
 Viper was technically broken and visually acceptable. Goblin was technically
 sound and visually a mess. Both were worth building for, and either scorer alone
 would have missed one of them.
+
+### When a site is behind a bot check
+
+Some sites serve a Cloudflare challenge to headless Chrome and load normally in a
+real one. **Do not try to defeat the check.** Run the probe through the browser
+extension instead, in a real window at 1440x1000, and paste the same measurement
+block into the console. It is the same numbers by a legitimate route, and it is
+the route that keeps working.
+
+Worth knowing in both directions: if you put a client behind Cloudflare after
+they hire you, aggressive bot settings can also block the crawlers you want,
+including the AI crawlers that decide whether a business gets cited in ChatGPT
+and Perplexity answers. Check the bot-management and AI-crawler settings on any
+account you set up rather than leaving the defaults.
 
 Neither score measures the buyer. Check by hand for a real crew, a real address,
 and money visibly going out the door: a paid builder subscription, BBB
