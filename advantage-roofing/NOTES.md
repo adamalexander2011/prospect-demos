@@ -51,7 +51,7 @@ verbatim, spaced periods and all:
 
 > *"Advantage did our roof, gutters and siding. . . . The installers were extremely
 > professional . . . The price was fair . . . ."* **Highly recommend!**
-> — Jeremy via Google
+> Jeremy via Google
 
 And elsewhere on the same page, in a different block, the same review, whole:
 

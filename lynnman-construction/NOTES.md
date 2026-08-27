@@ -9,13 +9,13 @@
 
 The first text on the homepage, above the phone number, is **"AUTHORIZED WICK
 BUILDER."** The nav has "WICK AUTHORIZED BUILDER" and "WHY WICK BUILDINGS." A
-homepage section runs **"THE WICK ADVANTAGE — Create STRENGTH. Create VALUE. Create
+homepage section runs **"THE WICK ADVANTAGE. Create STRENGTH. Create VALUE. Create
 with WICK"** over six illustrations, one of whose alt text is *"Illustration of
 Superman revealing a Wick T-shirt."* The footer links to the **Wick blog**.
 
 Then open the About Us page. Its main content block is:
 
-> **"THE WICK ADVANTAGE — Screw Fasteners: Small but Strong.** The new Wick Premium
+> **"THE WICK ADVANTAGE"**, then **"Screw Fasteners: Small but Strong."** The new Wick Premium
 > Fastener™ is a next-generation fastener for post-frame construction... 46% more
 > shear strength, 57% more pull-out strength than standard post-frame screws...
 > neoprene seal that's 2.3 times thicker."
@@ -72,7 +72,7 @@ No lazy loading. `alt=""` on all of them. A farmer on a rural Michigan phone
 connection is never going to see that page.
 
 Two more findings on the homepage. The **Commercial** and **Residential** category
-tiles are served from `sites/layout7.hitsinabox.us/assets/images/` — the template
+tiles are served from `sites/layout7.hitsinabox.us/assets/images/`, the template
 vendor's own demo-site asset directory, not the `sites/lynnmanconstruction.com/`
 folder where all 291 of their real photographs live. Both are 2400x1132 and over a
 megabyte. And the header logo `<img>` is requested over plain **`http://`** on an
@@ -111,8 +111,8 @@ The rest of what they own, all real, all published:
 | Structure | The owners and the degrees go at the top, where "AUTHORIZED WICK BUILDER" currently sits. Then the buildings by type. Then the winery, as proof they do more than barns. The Wick relationship becomes a credential line, the way Buck & Bossman's Walters dealership should. |
 
 **Handle Wick exactly the way Buck & Bossman's Walters branding is handled in that
-read.** They are almost certainly running a Wick dealer template — the giveaway is
-the template vendor's demo folder still sitting on their server — and they may be
+read.** They are almost certainly running a Wick dealer template. The giveaway is
+the template vendor's demo folder still sitting on their server, and they may be
 contractually required to carry the badge. **Do not open by telling them their
 marketing belongs to somebody else.** Show them what "Tom Flynn and Keith
 Pinkelman, MSU Building Construction Management, since 1997" looks like at the top
@@ -122,5 +122,5 @@ of a page, and let them raise the constraint.
 negotiates **TLS 1.3 only**. TLS 1.0, 1.1 and 1.2 all fail. The certificate itself
 is fine (SSL.com, valid to 1 October 2026). Browsers are fine. But `audit-site.py`
 could not complete a handshake, which is why the plumbing score dropped from 31 to
-25, and anything else that cannot do 1.3 — old Android, some corporate proxies,
-some crawlers — is in the same position. Mention it once, factually, near the end.
+25, and anything else that cannot do 1.3, including old Android, some corporate proxies and
+some crawlers, is in the same position. Mention it once, factually, near the end.

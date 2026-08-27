@@ -22,7 +22,7 @@ tear-off."*
 
 Now the photography, which is the harder finding. Wix serves an owner's uploads
 under an account prefix and its shared stock library under a bare hex ID. Larsen's
-account is **`2e4c8e_`** — that is the logo, `2e4c8e_0bf066a7...~mv2.png`, filename
+account is **`2e4c8e_`**. That is the logo, `2e4c8e_0bf066a7...~mv2.png`, filename
 `larsenlogo_PNG.png`.
 
 Almost nothing else on the site carries that prefix.

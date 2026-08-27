@@ -36,8 +36,8 @@ Now open the About Us page, which is where the actual business is:
 > 1920's.**"*
 
 A named great-grandfather. Four generations. A hundred years. Two brothers who have
-**"been working together for 20 plus years."** And a slogan with an attribution on
-it, **"The Smartest Way to do Your Homework" — David Randall.**
+**"been working together for 20 plus years."** And a slogan their own page signs:
+**"The Smartest Way to do Your Homework," David Randall.**
 
 None of that is on the homepage. The homepage says "carried on the traditions that
 our grandfather began in the early 1920's" and stops.

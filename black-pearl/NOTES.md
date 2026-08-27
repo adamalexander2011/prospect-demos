@@ -19,11 +19,11 @@ never uses about itself.
 
 **The patterns and colors:**
 
-- *"a **cobblestone pattern with a rustic brown release**"* — Krista, Brighton
-- *"a **Roman slate pattern with a charcoal onyx color blend**"* — Kelly, Brighton
-- *"a **rustic slate stamp in canyon brown**"* — Evan, Milford
-- *"this **Great Lakes Stone** patio... The **Slate Smoke release** adds just enough depth"* — Harley, Howell
-- *"stamped patio with a **flagstone pattern**"* — Jaxon Gatza
+- *"a **cobblestone pattern with a rustic brown release**"* (Krista, Brighton)
+- *"a **Roman slate pattern with a charcoal onyx color blend**"* (Kelly, Brighton)
+- *"a **rustic slate stamp in canyon brown**"* (Evan, Milford)
+- *"this **Great Lakes Stone** patio... The **Slate Smoke release** adds just enough depth"* (Harley, Howell)
+- *"stamped patio with a **flagstone pattern**"* (Jaxon Gatza)
 
 **The sizes:** 3,300 sq ft driveway. 3,500 sq ft stamped patio. 2,800 sq ft driveway
 plus a 1,900 stamped patio. 3,000 sq ft driveway plus 2,000 more to the road. 3,800
@@ -32,11 +32,11 @@ driveway. 3,000 sq ft stamped patio. 2,500 sq ft patio. **800 feet of drainage.*
 
 **The turnarounds:**
 
-- *"4000 sf stamped driveway and patio for us. **72 hours from start to finish.**"* — Elli
+- *"4000 sf stamped driveway and patio for us. **72 hours from start to finish.**"* (Elli)
 - *"3800 sq ft driveway removed and replaced, along with extensive drainage work...
-  **completed and cleaned up in less than 72 hours.**"* — Jason Laponsie
-- *"They did the tear out and pour **in the same day**."* — Robert Hamilton
-- *"Job was supposed to take two weeks. **Was done in nine days.**"* — Aaron
+  **completed and cleaned up in less than 72 hours.**"* (Jason Laponsie)
+- *"They did the tear out and pour **in the same day**."* (Robert Hamilton)
+- *"Job was supposed to take two weeks. **Was done in nine days.**"* (Aaron)
 
 **The people:** **Todd** (an owner, spelled "Tod" in one), **Josh**, **Nacho**. Rusty
 Adkins recommends *"Todd, Josh, Nacho, and crew"* and identifies himself as *"a

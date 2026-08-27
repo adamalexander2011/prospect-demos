@@ -31,11 +31,11 @@ TESTIMONIAL, GIVE ME A CALL."* One is signed **"JUDGE M., FLINT, MI."**
 Read them in a row and the same names keep coming back:
 
 - **"RICK, GARY AND MATT ARE A FABULOUS BUNCH OF PEOPLE TO DO BUSINESS WITH... OUR
-  YARD WAS CLEANED UP EVERY NIGHT."** — Mr. and Mrs. M, Grand Blanc
-- **"MIKE WAS VERY PROFESSIONAL... GARY AND SCOTT DID A FANTASTIC JOB."** — R.F., Flint
-- **"DAVE, GARY AND GLEN DID A GREAT JOB."** — R.D., Clio
+  YARD WAS CLEANED UP EVERY NIGHT."** (Mr. and Mrs. M, Grand Blanc)
+- **"MIKE WAS VERY PROFESSIONAL... GARY AND SCOTT DID A FANTASTIC JOB."** (R.F., Flint)
+- **"DAVE, GARY AND GLEN DID A GREAT JOB."** (R.D., Clio)
 - **"YOUR INSTALLERS, GARY, SCOTT, GLEN AND TODD WORKED ON OUR HOME AS IF IT WAS
-  THEIR OWN."** — J.B., Grand Blanc
+  THEIR OWN."** (J.B., Grand Blanc)
 
 **Gary is named in four separate letters.** Scott and Glen in two each. And on the
 Remodeling page, in capitals, is the claim those letters accidentally prove:

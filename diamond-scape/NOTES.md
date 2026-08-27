@@ -14,10 +14,10 @@ Eight `<img>` tags on the page. Wix keeps the original upload filename in the
 media metadata, so the whole inventory is legible:
 
 - `Blu-60-Smooth--patio-paver-slabs-Blu-60-Smooth-dalle-de-patio-V2_2020-US077_A7R6243-1.webp`
-  — **Techo-Bloc**. Blu 60 Smooth is their patio slab, "dalle de patio" is the
+  is **Techo-Bloc**. Blu 60 Smooth is their patio slab, "dalle de patio" is the
   French half of a bilingual Quebec product shoot, and `A7R6243` is a camera file
   number. This is the largest image on the page, at 437x532.
-- `Richcliff_Driveway_Pebble-Taupe-Dawn-Mist_6169.jpg` — **Unilock**. Richcliff
+- `Richcliff_Driveway_Pebble-Taupe-Dawn-Mist_6169.jpg` is **Unilock**. Richcliff
   is a Unilock paver, Pebble Taupe and Dawn Mist are Unilock colors.
 - `Allied.1.jpeg`, `Vakkas-paver-patio-pergola-fire-pit-ligh.avif`,
   `s788803928908410492_p259_i6_w1062.webp` (a site-builder image ID from some
@@ -31,7 +31,7 @@ the same row as the catalog shots, indistinguishable from them.
 
 The service pages are worse. The Hardscape page lives at **`/landscape`** and
 carries two images, one of which is
-`thumb_internal_beacon-hill-flagstone_entrances_birch_3668.jpg` — Unilock's
+`thumb_internal_beacon-hill-flagstone_entrances_birch_3668.jpg`. That is Unilock's
 Beacon Hill Flagstone, and the filename still says `thumb_internal_`, so it was
 taken off a page rather than supplied. The Landscape page lives at
 **`/landscape-1`** and contains **zero images**. Five pages in the whole sitemap.
@@ -49,8 +49,8 @@ process diagram and three service blocks.
 
 Two more found artifacts: the hero reads **"Genesee County's Premier Landscape
 Provider"** while the page title says the business is in Holly, and the service
-area list is *"Holly, Fenton, Grand Blanc, Linden, and Fenton"* — Fenton twice.
-Footer says **"Since 2017"** and **copyright 2024**. Site credited to Venture
+area list is *"Holly, Fenton, Grand Blanc, Linden, and Fenton"*, which lists
+Fenton twice. Footer says **"Since 2017"** and **copyright 2024**. Site credited to Venture
 Branding Solutions, so there is already an agency invoice going out the door.
 
 **Angle:** the pavers on your homepage are Techo-Bloc's and Unilock's photos. The one job that is actually yours is your biggest file and you show it at 355 pixels.
