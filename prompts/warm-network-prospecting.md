@@ -81,10 +81,9 @@ from, and they are not a prospect for this play.
    weighted toward people he actually knows. This is the first pass and it may be
    the only one you need.
 2. **Group member overlap.** Facebook shows "N of your friends are members" on a
-   group. Adam's existing research already records this, for example 4 friends in
-   Decorative Concrete Contractors USA and 6 in Advanced Metallic Floors. Local
-   community, buy-sell and trade groups will surface friends who run businesses
-   without you opening a single profile.
+   group page. Local community, buy-sell, neighbourhood and trade groups will
+   surface friends who run businesses without you opening a single profile. Start
+   with groups for the towns rather than groups for a trade.
 3. **Pages that follow or interact with Adam's own Page.** Local businesses that
    have already engaged with Local LVRG are warm twice over.
 4. **Recommendation threads.** Posts in local groups asking "who does X around
@@ -94,19 +93,25 @@ from, and they are not a prospect for this play.
    "Works at" or "Owner at" field, and only where the employer reads as a local
    business. Do not open profiles at random.
 
-### Existing research to read before you start
+### You are starting from zero on this
 
-Adam has already done Facebook groundwork. Do not repeat it:
+**There is no prior research on Adam's warm network. Assume nothing is known.**
 
-- `~/local-lvrg-agency/05-Prospecting/FB_GROUPS_2026-08-25.md` — groups already
-  joined, with rules read and friend-overlap counts recorded
-- `~/local-lvrg-agency/03-Facebook-Playbook/FB_PLAYBOOK.md` and
-  `FB_PROFILE_FUNNEL.md` — how the profile and groups are already being used
+Two things in `~/local-lvrg-agency/` mention Facebook and are **not** what you
+need, so do not mistake them for a head start:
+`05-Prospecting/FB_GROUPS_2026-08-25.md` is a survey of coating-contractor groups
+for cold marketing to strangers, and `03-Facebook-Playbook/` is the posting cadence
+for that same campaign. Different task, different audience. Skim them only to avoid
+tripping over a group he is already posting in.
 
-That work is coatings-focused because coatings is the vertical. **This pass is
-not.** Any local trade with a real crew and a bad website qualifies: roofing, HVAC,
-landscape and hardscape, remodel, pole barns, windows and siding, paving, fencing,
-tree work, auto body.
+Also: that campaign is coatings-focused because coatings is a vertical. **This pass
+is not.** Any local trade with a real crew and a bad website qualifies: roofing,
+HVAC, landscape and hardscape, remodel, pole barns, windows and siding, paving,
+fencing, tree work, auto body.
+
+Because nothing is on record, **the list you produce is the asset**, not just the
+demos that come out of it. Write down everyone you check and what you concluded,
+including the skips, so this never has to be done twice.
 
 ## Method
 
