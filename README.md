@@ -40,6 +40,8 @@ CNAME               demos.locallvrg.co
 assets/lvrg.css     shared design system, matches locallvrg.co
 _template/          the demo shell, copy it, do not edit in place
 bin/new-demo.sh     the copier
+bin/audit-site.py   scores a prospect site on how badly it needs rebuilding
+CLAUDE.md           the build standard, read it before building anything
 <slug>/index.html   one prospect demo
 ```
 
