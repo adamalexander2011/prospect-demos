@@ -145,13 +145,18 @@ def audit(url):
 
     # --- chat / after-hours capture ---
     CHAT = (r"tawk\.to|widget\.intercom|intercom\.io|js\.driftt|drift\.com|podium\.com|"
-            r"livechatinc|tidio\.co|crisp\.chat|chatbot|"
+            r"livechatinc|tidio\.co|crisp\.chat|chatbot|closebot|leadconnectorhq|"
             r"facebook\.com/[^\"']*/messages|fb-customerchat|chat-widget|live-?chat")
     if not re.search(CHAT, low):
         flag(10, "nothing answers after hours, no chat of any kind")
 
     # --- social-only tell ---
-    if re.search(r"facebook\.com/[a-z0-9.]+", low) and len(imgs) < 6 and out["html_kb"] < 60:
+    # A lean page with few <img> tags is usually a modern build using <picture>,
+    # CSS backgrounds or hydration, not a Facebook brochure. Only call it that
+    # when there is also almost no text to read.
+    text_chars = len(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", re.sub(r"(?s)<(script|style).*?</\1>", "", html))))
+    if (re.search(r"facebook\.com/[a-z0-9.]+", low) and len(imgs) < 6
+            and out["html_kb"] < 60 and text_chars < 1500):
         flag(10, "looks like a thin brochure pointing at a Facebook page")
 
     return out

@@ -10,9 +10,11 @@
 # score low enough that the page is not embarrassing. Both existing demos score
 # 4. Anything over 12 has something visibly wrong with it.
 #
-# The CEILING is not automatable and never will be. It is printed at the end as
-# three questions, because a page can pass every check below and still be a
-# generic template with someone's logo on it.
+# The CEILING is not automatable. It is not a quiz for whoever runs this script
+# either: working out what a business is sitting on is research, and research is
+# the builder's job, done before the page exists. So the gate checks that the
+# diagnosis was actually written down in NOTES.md, and prints it back for a
+# final read.
 
 set -uo pipefail
 cd "$(dirname "$0")/.."
@@ -84,7 +86,15 @@ fi
 SIZE=$(wc -c < "$FILE" | tr -d ' ')
 if [ "$SIZE" -lt 250000 ]; then pass "page is $((SIZE/1024))KB"; else warn "page is $((SIZE/1024))KB, getting heavy for one file"; fi
 
-[ -f "$SLUG/NOTES.md" ] && pass "NOTES.md records the read and the angle" || warn "no NOTES.md, the next person will not know why this was built"
+if [ -f "$SLUG/NOTES.md" ]; then
+  if grep -qiE '^\*\*Angle:|^## The read' "$SLUG/NOTES.md"; then
+    pass "NOTES.md records the read and the angle"
+  else
+    fail "NOTES.md has no '## The read' or '**Angle:**' — the diagnosis was never written down"
+  fi
+else
+  fail "no NOTES.md, so nothing records why this page exists"
+fi
 
 echo
 echo "How it looks"
@@ -115,17 +125,16 @@ else
   printf "\033[31m%s check(s) failed.\033[0m Fix those first, then:\n" "$FAIL"
 fi
 
-cat <<'QUESTIONS'
-
-  1. What is this business sitting on that nobody can see right now?
-     If you cannot answer in one sentence, the page has no reason to exist.
-
-  2. Could this page belong to any other company in their trade?
-     If yes, it is a template with their logo on it, and they will feel that.
-
-  3. Is every claim on the page either theirs or listed in the placeholder
-     column? Read the disclosure back against the body copy, line by line.
-
-QUESTIONS
+if [ -f "$SLUG/NOTES.md" ]; then
+  echo
+  echo "  The diagnosis on record for $SLUG:"
+  echo
+  sed -n '/^## The read/,/^## /p' "$SLUG/NOTES.md" | sed '1d;/^## /d;/^$/d' | sed 's/^/    /'
+  echo
+  echo "  Read that against the page. If it does not describe something only"
+  echo "  this business could be sitting on, the page is a template with their"
+  echo "  logo on it, and no score above will catch that."
+  echo
+fi
 
 exit $FAIL
