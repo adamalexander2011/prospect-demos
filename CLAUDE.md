@@ -143,8 +143,21 @@ already wired to their calendar. Label the demo as a demo, the way Goblin does:
 ./bin/new-demo.sh <slug> "Business Name" "Owner"
 ```
 
-Fill the copy, put their material in `<slug>/assets/`, push. Live at
-`demos.locallvrg.co/<slug>/`.
+Fill the copy, put their material in `<slug>/assets/`, then run the gate before
+the link goes anywhere:
+
+```bash
+./bin/preflight.sh <slug> --live
+```
+
+It checks the honesty contract, the technical floor, and renders the page to
+score it. **Nothing goes out above a design score of 12.** Both existing demos
+score 4, so that is a floor with real headroom, not a stretch.
+
+Then it prints three questions no script can answer: what is this business
+sitting on that nobody can see, could this page belong to any other company in
+their trade, and is every claim either theirs or in the placeholder column. The
+gate stops a bad page. Only those three stop a *generic* one.
 
 ## Finding the next one
 

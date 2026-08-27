@@ -42,6 +42,7 @@ _template/          the demo shell, copy it, do not edit in place
 bin/new-demo.sh     the copier
 bin/audit-site.py   scores a prospect site's plumbing
 bin/design-probe.js renders it in headless Chrome and scores how it looks
+bin/preflight.sh    run before a demo link goes out
 CLAUDE.md           the build standard, read it before building anything
 <slug>/index.html   one prospect demo
 ```
