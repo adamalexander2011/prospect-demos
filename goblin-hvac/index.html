@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Goblin Heating &amp; Cooling — Clio, MI | 24/7 HVAC | Concept Site</title>
+<meta name="description" content="Concept website built for Goblin Heating &amp; Cooling of Clio, Michigan. 24/7 HVAC repair, installation and maintenance across Genesee and Saginaw counties.">
+<meta property="og:title" content="Goblin Heating &amp; Cooling — Open 24 Hours, Clio MI">
+<meta property="og:description" content="No heat at 2am? Someone answers. Licensed, EPA certified, 5.00 stars across 60+ reviews.">
+<meta property="og:image" content="assets/hero-bg.jpg">
+<link rel="icon" href="assets/logo.png">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/cinzel.woff2" crossorigin>
+<style>
+/* self-hosted — zero third-party requests */
+@font-face{font-family:'Archivo';font-weight:400 900;font-stretch:100%;font-display:swap;src:url(assets/fonts/archivo.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Barlow Condensed';font-weight:600;font-display:swap;src:url(assets/fonts/barlow-condensed.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Cinzel';font-weight:400 900;font-display:swap;src:url(assets/fonts/cinzel.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root{
+  --ink:#100F0D; --ink2:#15140F; --panel:#1A1813; --panel2:#221F17; --panel3:#2A2619;
+  --line:#312C1F; --line-soft:#241F17;
+  --gold:#E0A915; --gold-lt:#F7CE4C; --gold-dk:#9A7208; --gold-glow:rgba(224,169,21,.16);
+  --bone:#D1CDB9; --body:#A9A492; --dim:#807B6B;
+  --green:#718D15; --green-dk:#497B3D; --green-lt:#96B32B;
+  --purple:#56377B; --purple-lt:#8A5FBF; --ember:#DE9404;
+  --hot:#E0553A; --ok:#5FBF6A;
+  --disp:'Cinzel',Georgia,'Times New Roman',serif;
+  --sans:'Archivo',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --cond:'Barlow Condensed','Archivo',-apple-system,sans-serif;
+  --mono:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;
+  --maxw:1220px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{max-width:100%;background:var(--ink);color:var(--body);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--gold-lt);text-decoration:none}
+h1,h2,h3{color:var(--bone);text-wrap:balance;line-height:1.05}
+h1{font:800 clamp(38px,6.4vw,74px)/1.02 var(--disp);letter-spacing:-.01em}
+h2{font:700 clamp(29px,4.3vw,50px)/1.05 var(--disp);letter-spacing:0}
+h3{font:700 20px/1.25 var(--sans);letter-spacing:-.02em;color:var(--bone)}
+p{text-wrap:pretty}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.narrow{max-width:880px}
+section{padding:clamp(62px,8.6vw,112px) 0;position:relative}
+section[id],div[id="top"]{scroll-margin-top:98px}
+@media(max-width:680px){section[id]{scroll-margin-top:82px}}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+::selection{background:var(--gold);color:#100F0D}
+.grid-min>*{min-width:0}
+
+.eyebrow{font:600 12.5px/1 var(--cond);letter-spacing:.26em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--gold);opacity:.75;flex:none}
+.lede{font-size:clamp(16.5px,1.85vw,19.5px);color:var(--body);max-width:62ch;margin-top:19px}
+.sec-head{margin-bottom:clamp(36px,5vw,56px)}
+.sec-head h2{margin-top:17px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 15px/1 var(--sans);padding:18px 30px;border-radius:3px;border:1.5px solid transparent;cursor:pointer;transition:background .18s,color .18s,border-color .18s,transform .15s;text-align:center}
+.btn-gold{background:var(--gold);color:#100F0D;border-color:var(--gold)}
+.btn-gold:hover{background:var(--gold-lt);border-color:var(--gold-lt)}
+.btn-line{border-color:rgba(209,205,185,.3);color:var(--bone)}
+.btn-line:hover{border-color:var(--bone);background:rgba(209,205,185,.07)}
+.btn-sm{padding:12px 19px;font-size:14px}
+.btn:active{transform:translateY(1px)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ribbon */
+.ribbon{background:#181320;border-bottom:1px solid var(--line);font-size:13.5px;line-height:1.45;padding:11px 0;position:relative;z-index:70}
+.ribbon .wrap{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
+.ribbon b{color:var(--purple-lt);font:700 12px/1 var(--cond);letter-spacing:.15em;text-transform:uppercase;white-space:nowrap}
+.ribbon a{text-decoration:underline;text-underline-offset:3px}
+.rib-short{display:none}
+@media(max-width:780px){.ribbon{padding:9px 0;font-size:12.5px}.rib-long{display:none}.rib-short{display:block}}
+
+/* header */
+header{position:sticky;top:0;z-index:60;background:rgba(16,15,13,.84);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .25s,background .25s}
+header.stuck{border-bottom-color:var(--line);background:rgba(16,15,13,.96)}
+.nav{display:flex;align-items:center;gap:28px;height:78px}
+.brand{display:flex;align-items:center;gap:11px;flex:none}
+.brand img{width:46px;height:46px;object-fit:contain}
+.brand>span{min-width:0}
+.brand .bt{display:block;font:800 18px/1 var(--disp);color:var(--bone);letter-spacing:.04em}
+.brand .bs{display:block;font:600 10px/1 var(--cond);letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin-top:6px}
+.nav-links{display:flex;gap:26px;margin-left:auto}
+.nav-links a{color:var(--body);font-size:14.5px;font-weight:600;transition:color .18s}
+.nav-links a:hover{color:var(--bone)}
+.nav-tel{display:flex;flex-direction:column;gap:3px;white-space:nowrap}
+.nav-tel .nl{font:600 9.5px/1 var(--cond);letter-spacing:.18em;text-transform:uppercase;color:var(--ok);display:flex;align-items:center;gap:6px}
+.nav-tel .nl::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(95,191,106,.16);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.42}}
+.nav-tel .nn{font:700 16px/1 var(--sans);color:var(--bone)}
+.nav-cta .sm{display:none}
+@media(max-width:1140px){.nav-links{display:none}}
+@media(max-width:680px){
+  .nav{height:66px;gap:12px}.brand img{width:38px;height:38px}.brand .bt{font-size:15px}.brand .bs{display:none}
+  .nav-tel{margin-left:auto}.nav-tel .nl{display:none}.nav-tel .nn{font-size:15px}
+  .nav .btn{padding:11px 14px;font-size:13px}.nav-cta .lg{display:none}.nav-cta .sm{display:inline}
+}
+
+/* hero */
+.hero{min-height:min(92vh,900px);display:flex;align-items:flex-end;padding:0;position:relative;isolation:isolate;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero-bg::after{content:"";position:absolute;inset:0;background:
+  radial-gradient(120% 80% at 20% 30%,rgba(86,55,123,.34),transparent 62%),
+  linear-gradient(180deg,rgba(16,15,13,.86) 0%,rgba(16,15,13,.5) 26%,rgba(16,15,13,.85) 68%,var(--ink) 100%)}
+.hero-inner{width:100%;padding:clamp(96px,14vw,152px) 24px clamp(42px,6vw,62px)}
+.hero h1{margin-top:22px;max-width:16ch;color:var(--bone);text-shadow:0 3px 40px rgba(0,0,0,.7)}
+.hero h1 em{font-style:normal;color:var(--gold);display:block}
+.hero .lede{margin-top:24px;font-size:clamp(17px,2vw,21px);color:#E2DECC;max-width:50ch}
+.hero-cta{display:flex;gap:13px;flex-wrap:wrap;margin-top:34px}
+.hero-cta .btn{padding:20px 32px;font-size:16px}
+.trust{display:flex;flex-wrap:wrap;gap:9px 0;margin-top:42px;border-top:1px solid rgba(209,205,185,.15);padding-top:21px}
+.trust div{font:600 12px/1.4 var(--cond);letter-spacing:.17em;text-transform:uppercase;color:#C3BFAE;padding-right:22px;margin-right:22px;border-right:1px solid rgba(209,205,185,.17)}
+.trust div:last-child{border-right:0;margin-right:0;padding-right:0}
+.trust b{color:var(--gold);font-weight:600}
+@media(max-width:700px){.trust div{border-right:0;padding-right:0;margin-right:0;flex:0 0 100%;display:flex;gap:9px;align-items:center}.trust div::before{content:"";width:5px;height:5px;background:var(--gold);flex:none;transform:rotate(45deg)}}
+
+/* concierge */
+.conc{background:linear-gradient(180deg,var(--ink) 0%,#141209 100%);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+.conc-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,5.6vw,76px);align-items:center}
+@media(max-width:1000px){.conc-grid{grid-template-columns:1fr;gap:42px}}
+.conc-copy h2{margin-top:17px}
+.conc-pts{margin-top:30px;display:grid}
+.conc-pt{display:flex;gap:15px;padding:16px 0;border-top:1px solid var(--line-soft)}
+.conc-pt:last-child{border-bottom:1px solid var(--line-soft)}
+.conc-pt i{font:700 12px/1 var(--mono);color:var(--gold);flex:none;padding-top:5px;font-style:normal}
+.conc-pt b{display:block;color:var(--bone);font-size:16px;font-weight:700}
+.conc-pt p{font-size:14.6px;line-height:1.55;margin-top:3px;color:var(--dim)}
+
+.phone-card{background:#0C0B08;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 40px 90px -30px rgba(0,0,0,.92),0 0 0 1px rgba(224,169,21,.07);max-width:452px;margin:0 auto;width:100%}
+.pc-top{display:flex;align-items:center;gap:12px;padding:15px 17px;background:var(--panel2);border-bottom:1px solid var(--line)}
+.pc-top img{width:36px;height:36px;object-fit:contain;flex:none}
+.pc-n{font:700 14.5px/1.2 var(--sans);color:var(--bone)}
+.pc-s{font:400 12px/1.2 var(--sans);color:var(--ok);margin-top:3px;display:flex;align-items:center;gap:6px}
+.pc-s::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ok);flex:none;box-shadow:0 0 0 3px rgba(95,191,106,.18)}
+.pc-tag{margin-left:auto;font:600 9.5px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line);padding:6px 8px;border-radius:3px}
+.thread{height:min(438px,52vh);overflow-y:auto;padding:20px 15px 8px;display:flex;flex-direction:column;gap:9px;scroll-behavior:smooth;overscroll-behavior:contain}
+@media(max-width:1000px){.thread{height:min(438px,46vh)}}
+.thread::-webkit-scrollbar{width:5px}
+.thread::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+.msg{max-width:84%;padding:11px 15px;border-radius:16px;font-size:15px;line-height:1.48;animation:pop .3s cubic-bezier(.2,.8,.3,1)}
+.msg.bot{background:var(--panel3);color:#DBD7C5;align-self:flex-start;border-bottom-left-radius:5px}
+.msg.me{background:var(--gold);color:#100F0D;align-self:flex-end;border-bottom-right-radius:5px;font-weight:600}
+.msg b{color:var(--gold-lt);font-weight:700}.msg.me b{color:#100F0D}
+.msg.card{background:linear-gradient(160deg,#211B0C,#15140F);border:1px solid var(--gold-dk);align-self:stretch;max-width:100%;border-radius:7px;padding:16px 17px}
+.msg.card .qh{font:600 10.5px/1 var(--cond);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.msg.card .qp{font:700 22px/1.15 var(--disp);color:var(--bone)}
+.msg.card .qn{font-size:13.5px;color:var(--dim);margin-top:9px;line-height:1.5}
+.msg.urgent{border-color:var(--hot);background:linear-gradient(160deg,#25120E,#15140F)}
+.msg.urgent .qh{color:var(--hot)}
+@keyframes pop{from{opacity:0;transform:translateY(9px) scale(.97)}to{opacity:1;transform:none}}
+.typing{display:flex;gap:4px;padding:15px 16px;background:var(--panel3);align-self:flex-start;border-radius:16px;border-bottom-left-radius:5px}
+.typing i{width:6px;height:6px;background:var(--dim);border-radius:50%;animation:blink 1.3s infinite}
+.typing i:nth-child(2){animation-delay:.18s}.typing i:nth-child(3){animation-delay:.36s}
+@keyframes blink{0%,60%,100%{opacity:.28;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+.chips{display:flex;flex-wrap:wrap;gap:7px;padding:12px 15px 15px;border-top:1px solid var(--line);background:var(--panel)}
+.chip{font:600 13.5px/1 var(--sans);color:var(--gold-lt);background:rgba(224,169,21,.09);border:1px solid rgba(224,169,21,.32);border-radius:99px;padding:11px 15px;cursor:pointer;transition:background .16s,color .16s}
+.chip:hover{background:var(--gold);color:#100F0D;border-color:var(--gold)}
+.chip.ghost{color:var(--dim);background:transparent;border-color:var(--line)}
+.chip.ghost:hover{color:var(--bone);background:rgba(255,255,255,.05);border-color:var(--dim)}
+.chip.hot{color:#F3A08C;background:rgba(224,85,58,.12);border-color:rgba(224,85,58,.45)}
+.chip.hot:hover{background:var(--hot);color:#fff;border-color:var(--hot)}
+.chip-form{display:flex;gap:8px;width:100%}
+.chip-form input{flex:1;min-width:0;font:400 15px/1 var(--sans);color:var(--bone);background:var(--panel3);border:1px solid var(--line);border-radius:99px;padding:13px 17px}
+.chip-form input::placeholder{color:var(--dim)}
+.chip-form button{flex:none;background:var(--gold);color:#100F0D;border:0;border-radius:99px;padding:0 20px;font:700 14px/1 var(--sans);cursor:pointer}
+.replay{padding:13px 15px;border-top:1px solid var(--line);background:var(--panel);display:flex;align-items:center;gap:12px}
+.replay button{background:none;border:0;color:var(--dim);font:600 13px/1 var(--sans);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.replay button:hover{color:var(--bone)}
+.replay .rn{font:400 12px/1.4 var(--sans);color:var(--dim);margin-left:auto;text-align:right}
+.push{margin:26px auto 0;background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--ok);border-radius:7px;padding:17px 19px;max-width:452px;opacity:0;transform:translateY(14px);transition:opacity .55s,transform .55s}
+.push.on{opacity:1;transform:none}
+@media(max-width:1000px){.push:not(.on){display:none}}
+.push .pt{font:600 10.5px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--ok)}
+.push .pw{font:700 20px/1.2 var(--disp);color:var(--bone);margin-top:9px}
+.push .pd{font:400 13.5px/1.55 var(--mono);color:var(--dim);margin-top:7px}
+.push .pf{font-size:12px;color:var(--dim);margin-top:11px;padding-top:11px;border-top:1px solid var(--line-soft)}
+
+/* services */
+.svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+@media(max-width:960px){.svcs{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.svcs{grid-template-columns:1fr}}
+.svc{background:var(--ink);padding:clamp(26px,3.2vw,36px);transition:background .3s}
+.svc:hover{background:var(--panel)}
+.svc .ic{width:62px;height:62px;border-radius:6px;overflow:hidden;border:1px solid var(--line);background:#000}
+.svc .ic img{width:100%;height:100%;object-fit:cover}
+.svc h3{margin-top:20px}
+.svc>p{font-size:15.2px;line-height:1.6;margin-top:11px;color:var(--dim)}
+.svc ul{list-style:none;margin-top:19px;padding-top:17px;border-top:1px solid var(--line-soft);display:grid;gap:8px}
+.svc li{font-size:14.2px;color:var(--body);display:flex;gap:10px;line-height:1.5}
+.svc li::before{content:"";width:5px;height:5px;background:var(--green);flex:none;margin-top:8px;transform:rotate(45deg)}
+
+/* goblin guard */
+.guard{background:
+  radial-gradient(90% 60% at 50% 0%,rgba(86,55,123,.32),transparent 60%),
+  linear-gradient(180deg,#130F19 0%,var(--ink) 100%);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.guard-head{text-align:center;margin-bottom:clamp(34px,4.6vw,54px)}
+.guard-head img{width:min(620px,92%);height:auto;margin:0 auto;filter:drop-shadow(0 6px 30px rgba(0,0,0,.6))}
+.guard-head p{margin:20px auto 0;max-width:56ch;font-size:16.5px;color:var(--body)}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:940px){.tiers{grid-template-columns:1fr;max-width:460px;margin:0 auto}}
+.tier{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s cubic-bezier(.2,.7,.3,1),border-color .3s,box-shadow .3s;position:relative}
+.tier:hover{transform:translateY(-6px);border-color:var(--gold-dk);box-shadow:0 30px 60px -24px rgba(0,0,0,.85)}
+.tier .art{background:#0C0B08;border-bottom:1px solid var(--line)}
+.tier .art img{width:100%;height:auto;display:block}
+.tier .body{padding:24px 22px 26px;display:flex;flex-direction:column;flex:1}
+.tier .price{font:700 34px/1 var(--disp);color:var(--gold)}
+.tier .price span{font:600 12px/1 var(--cond);letter-spacing:.18em;text-transform:uppercase;color:var(--dim);display:block;margin-top:9px}
+.tier ul{list-style:none;margin-top:20px;padding-top:18px;border-top:1px solid var(--line-soft);display:grid;gap:10px;flex:1}
+.tier li{font-size:14.6px;line-height:1.5;color:var(--body);display:flex;gap:10px}
+.tier li::before{content:"";width:14px;height:8px;border-left:2px solid var(--green-lt);border-bottom:2px solid var(--green-lt);transform:rotate(-45deg);flex:none;margin-top:4px}
+.tier .btn{margin-top:22px;width:100%}
+.tier.feat{border-color:var(--gold-dk)}
+.tier .flag{position:absolute;top:14px;right:14px;z-index:2;font:600 10px/1 var(--cond);letter-spacing:.17em;text-transform:uppercase;background:var(--gold);color:#100F0D;padding:7px 11px;border-radius:3px}
+.guard-note{text-align:center;margin-top:30px;font-size:14.5px;color:var(--dim)}
+
+/* brands */
+.brands{border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);padding:38px 0;background:var(--ink2)}
+.brands .wrap{display:flex;align-items:center;justify-content:center;gap:14px 42px;flex-wrap:wrap}
+.brands .bl{font:600 11px/1 var(--cond);letter-spacing:.22em;text-transform:uppercase;color:var(--dim);flex:0 0 100%;text-align:center;margin-bottom:6px}
+.brands img{height:34px;width:auto;object-fit:contain;background:#fff;padding:5px 9px;border-radius:3px;opacity:.9;transition:opacity .2s}
+.brands img:hover{opacity:1}
+
+/* band */
+.band{position:relative;padding:0;isolation:isolate;border-bottom:1px solid var(--line-soft)}
+.band>img{width:100%;height:clamp(230px,32vw,380px);object-fit:cover;object-position:20% 50%}
+.band .bo{position:absolute;inset:0;display:flex;align-items:center;background:linear-gradient(90deg,rgba(16,15,13,.35) 0%,rgba(16,15,13,.9) 46%,rgba(16,15,13,.96) 100%)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;max-width:var(--maxw);margin:0 auto;padding:0 24px;width:100%}
+@media(max-width:860px){.stats{grid-template-columns:repeat(2,1fr);gap:26px 18px}}
+.stat .v{font:700 clamp(28px,4.2vw,46px)/1 var(--disp);color:var(--gold)}
+.stat .k{font:600 11px/1.4 var(--cond);letter-spacing:.19em;text-transform:uppercase;color:#C3BFAE;margin-top:10px}
+
+/* process */
+.proc{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+@media(max-width:1000px){.proc{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.proc{grid-template-columns:1fr}}
+.step{background:var(--ink);padding:clamp(22px,2.6vw,30px)}
+.step .sn{font:700 40px/1 var(--disp);color:var(--line)}
+.step h3{margin-top:14px;font-size:17.5px}
+.step p{font-size:14.2px;line-height:1.58;margin-top:10px;color:var(--dim)}
+
+/* proof */
+.proof{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,64px);align-items:center}
+@media(max-width:900px){.proof{grid-template-columns:1fr;gap:36px}}
+.rating{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:clamp(26px,3.4vw,38px);text-align:center}
+.rating .sc{font:700 62px/1 var(--disp);color:var(--gold)}
+.rating .st{display:flex;gap:5px;justify-content:center;margin-top:14px}
+.rating .st svg{width:22px;height:22px;fill:var(--gold)}
+.rating .cnt{margin-top:16px;font-size:15.5px;color:var(--bone)}
+.rating .src{margin-top:7px;font:600 11px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.creds{display:grid;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);margin-top:26px}
+.cred{background:var(--ink);padding:17px 20px;display:flex;gap:14px;align-items:baseline}
+.cred .ck{font:600 10.5px/1.3 var(--cond);letter-spacing:.18em;text-transform:uppercase;color:var(--dim);flex:none;width:96px}
+.cred .cv{font-size:15.5px;color:var(--bone);min-width:0;overflow-wrap:anywhere}
+
+/* areas */
+.areas-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4.6vw,56px);align-items:center}
+@media(max-width:900px){.areas-grid{grid-template-columns:1fr}}
+.areas-grid .mapimg{border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.areas{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px}
+.areas a{font:600 13.6px/1 var(--sans);color:var(--body);border:1px solid var(--line);padding:11px 14px;border-radius:3px;transition:border-color .2s,color .2s,background .2s}
+.areas a:hover{border-color:var(--gold);color:var(--gold-lt);background:rgba(224,169,21,.06)}
+
+/* faq */
+.faq{border-top:1px solid var(--line-soft)}
+.faq details{border-bottom:1px solid var(--line-soft)}
+.faq summary{list-style:none;cursor:pointer;padding:25px 44px 25px 0;font:700 18px/1.35 var(--sans);color:var(--bone);letter-spacing:-.02em;position:relative;transition:color .2s}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--gold-lt)}
+.faq summary::after{content:"";position:absolute;right:6px;top:32px;width:11px;height:11px;border-right:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);transform:rotate(45deg);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(-135deg);top:35px}
+.faq .a{padding:0 58px 27px 0;font-size:15.8px;line-height:1.68;color:var(--dim)}
+.faq .a p+p{margin-top:12px}
+
+/* final */
+.final{position:relative;isolation:isolate;border-top:1px solid var(--gold-dk);overflow:hidden}
+.final .fbg{position:absolute;inset:0;z-index:-2}
+.final .fbg img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;opacity:.5}
+.final .fbg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,15,13,.9),rgba(16,15,13,.82))}
+.final-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(34px,5.6vw,68px);align-items:start}
+@media(max-width:920px){.final-grid{grid-template-columns:1fr;gap:38px}}
+.final-grid>*{min-width:0}
+.contact-card{background:rgba(26,24,19,.94);border:1px solid var(--line);border-radius:8px;padding:clamp(24px,3vw,34px)}
+.cline{display:flex;gap:16px;padding:15px 0;border-bottom:1px solid var(--line-soft);align-items:flex-start}
+.cline:last-of-type{border-bottom:0}
+.cline .ck{font:600 10.5px/1.3 var(--cond);letter-spacing:.18em;text-transform:uppercase;color:var(--dim);flex:none;width:74px;padding-top:4px}
+.cline .cv{font-size:15.5px;color:var(--bone);line-height:1.5;min-width:0;overflow-wrap:anywhere}
+.cline .cv a{color:var(--bone)}.cline .cv a:hover{color:var(--gold-lt)}
+@media(max-width:430px){.cline{flex-direction:column;gap:6px}.cline .ck{width:auto;padding-top:0}}
+
+footer{border-top:1px solid var(--line-soft);padding:42px 0 58px;font-size:13.6px;color:var(--dim)}
+.fgrid{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+.fgrid img{width:42px;height:42px;object-fit:contain;opacity:.8}
+.fgrid .fr{margin-left:auto;text-align:right;line-height:1.6}
+@media(max-width:700px){.fgrid .fr{margin-left:0;text-align:left}}
+
+/* pitch */
+.pitch{background:#0D0C10;border-top:1px solid var(--line)}
+.pitch .eyebrow{color:#7CA8E8}.pitch .eyebrow::before{background:#7CA8E8}
+.pitch h2{font-size:clamp(25px,3.4vw,38px)}
+.pcols{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);margin-top:42px}
+@media(max-width:900px){.pcols{grid-template-columns:1fr}}
+.pcol{background:#0D0C10;padding:28px 26px}
+.pcol h4{font-size:16px;font-weight:700;color:var(--bone)}
+.pcol ul{list-style:none;margin-top:15px;display:grid;gap:11px}
+.pcol li{font-size:14.4px;line-height:1.55;color:var(--dim);display:flex;gap:11px}
+.pcol li::before{content:"";width:5px;height:5px;background:#7CA8E8;flex:none;margin-top:8px;transform:rotate(45deg)}
+.disc{margin-top:42px;border:1px solid var(--line);border-radius:8px;padding:27px;background:var(--panel)}
+.disc h4{font:600 11px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:19px}
+@media(max-width:760px){.dgrid{grid-template-columns:1fr;gap:22px}}
+.dgrid h5{font:700 14px/1.3 var(--sans);margin-bottom:11px}
+.dgrid ul{list-style:none;display:grid;gap:8px}
+.dgrid li{font-size:14px;line-height:1.5;color:var(--dim);padding-left:18px;position:relative}
+.dgrid li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%}
+.dgrid .real li::before{background:var(--ok)}
+.dgrid .fake li::before{background:var(--gold)}
+
+.fab{position:fixed;right:18px;bottom:18px;z-index:90;display:flex;align-items:center;gap:10px;background:var(--gold);color:#100F0D;border:0;border-radius:99px;padding:16px 22px;font:700 15px/1 var(--sans);cursor:pointer;box-shadow:0 14px 40px -8px rgba(224,169,21,.5);opacity:0;transform:translateY(70px);transition:opacity .4s,transform .4s,background .2s}
+.fab.on{opacity:1;transform:none}
+.fab:hover{background:var(--gold-lt)}
+.fab svg{width:17px;height:17px;fill:#100F0D}
+@media(max-width:560px){.fab{right:12px;bottom:12px;padding:14px 18px;font-size:14px}}
+</style>
+</head>
+<body>
+
+<div class="ribbon"><div class="wrap">
+  <b>Concept &middot; not the official site</b>
+  <span class="rib-long">An unaffiliated design study built for Goblin Heating &amp; Cooling by <a href="https://locallvrg.co">Local LVRG</a>. The artwork, logo, plan pricing and contact details are Goblin&rsquo;s own. Body copy is ours &mdash; <a href="#disclosure">see exactly what&rsquo;s real</a>. Their live site is <a href="https://www.goblin-hvac.com/" rel="nofollow noopener" target="_blank">goblin-hvac.com</a>.</span>
+  <span class="rib-short">A design study for Goblin by <a href="https://locallvrg.co">Local LVRG</a>. <a href="#disclosure">What&rsquo;s real &rarr;</a></span>
+</div></div>
+
+<header id="hdr"><div class="wrap nav">
+  <a class="brand" href="#top">
+    <img src="assets/logo.png" alt="Goblin Heating and Cooling">
+    <span><span class="bt">GOBLIN</span><span class="bs">Heating &amp; Cooling</span></span>
+  </a>
+  <nav class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#guard">Goblin Guard</a>
+    <a href="#process">Process</a>
+    <a href="#areas">Service Area</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="nav-tel" href="tel:+18109919229"><span class="nl">Someone&rsquo;s awake</span><span class="nn">(810) 991-9229</span></a>
+  <a class="btn btn-gold btn-sm nav-cta" href="#book"><span class="lg">Book Service</span><span class="sm">Book</span></a>
+</div></header>
+
+<div id="top"></div>
+<section class="hero">
+  <div class="hero-bg"><img src="assets/hero-bg.jpg" alt="" fetchpriority="high" width="1800" height="1072"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Clio, Michigan &middot; Open 24 hours, seven days</p>
+    <h1>No heat at midnight?<em>Someone actually answers.</em></h1>
+    <p class="lede">Goblin is open 24 hours, seven days a week. Tell us what the system is doing whenever it happens, and urgent heating and cooling problems get prioritised for the soonest available visit &mdash; with honest diagnostics instead of a sales pitch.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="tel:+18109919229">Call (810) 991-9229</a>
+      <a class="btn btn-line" href="#book">Book Online in 60 Seconds</a>
+    </div>
+    <div class="trust">
+      <div>Licensed <b>#7119682</b></div><div>EPA Certified &amp; Insured</div><div><b>5.00&#9733;</b> &middot; 60+ Reviews</div><div>6 Years in Business</div>
+    </div>
+  </div>
+</section>
+
+<section class="conc" id="book">
+  <div class="wrap conc-grid grid-min">
+    <div class="conc-copy rv">
+      <p class="eyebrow">Book a technician</p>
+      <h2>Tell us what it&rsquo;s doing. We&rsquo;ll be out.</h2>
+      <p class="lede">Most HVAC companies send you to voicemail after five and call back tomorrow &mdash; which is no help when the heat is out in January. Ours answers whatever the hour, works out how urgent it actually is, and puts a technician on the calendar before you hang up.</p>
+      <div class="conc-pts">
+        <div class="conc-pt"><i>01</i><div><b>It triages before it schedules</b><p>System, symptom, how long it&rsquo;s been down, home or business. A house with no heat and a frozen pipe risk gets treated differently to a thermostat that reads two degrees off.</p></div></div>
+        <div class="conc-pt"><i>02</i><div><b>It books the visit itself</b><p>Live availability held on the spot, whatever time you happen to be looking at it. No phone tag, no voicemail, no &ldquo;someone will reach out.&rdquo;</p></div></div>
+        <div class="conc-pt"><i>03</i><div><b>Nothing gets lost at 3am</b><p>Every call lands in one place with the name, the town, the system and the symptom, ready for whoever picks it up.</p></div></div>
+      </div>
+      <div class="push" id="push">
+        <div class="pt">New job booked</div>
+        <div class="pw" id="pushWhen">Tonight &middot; 8:00 PM</div>
+        <div class="pd" id="pushWhat">No heat &middot; Clio &middot; Residential</div>
+        <div class="pf">What lands on the on-call tech&rsquo;s phone one second after the homeowner finishes typing.</div>
+      </div>
+    </div>
+    <div class="rv">
+      <div class="phone-card">
+        <div class="pc-top">
+          <img src="assets/logo.png" alt="">
+          <div><div class="pc-n">Goblin Heating &amp; Cooling</div><div class="pc-s">Answers in seconds &middot; 24/7</div></div>
+          <div class="pc-tag">Demo</div>
+        </div>
+        <div class="thread" id="thread" role="log" aria-live="polite" aria-label="Booking conversation"></div>
+        <div class="chips" id="chips"></div>
+        <div class="replay">
+          <button type="button" id="replay">Start over</button>
+          <span class="rn">Interactive demo &mdash; nothing is sent anywhere</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head narrow rv">
+      <p class="eyebrow">What we do</p>
+      <h2>Heating, cooling and hot water. Diagnosed properly.</h2>
+      <p class="lede">We take the time to find the actual fault instead of replacing parts until something works. You get the real answer and clear options, then you decide.</p>
+    </div>
+    <div class="svcs rv grid-min">
+      <article class="svc">
+        <div class="ic"><img src="assets/icon-ac-repair.jpg" alt="" loading="lazy"></div>
+        <h3>AC Repair</h3>
+        <p>Cooling issues diagnosed accurately and fixed the same day wherever we can, so you&rsquo;re not sleeping in the heat waiting on a part.</p>
+        <ul><li>Emergency repairs</li><li>Same-day diagnostics</li><li>Refrigerant leaks and recharge</li><li>Airflow and duct issues</li><li>All major brands</li></ul>
+      </article>
+      <article class="svc">
+        <div class="ic"><img src="assets/icon-ac-install.jpg" alt="" loading="lazy"></div>
+        <h3>AC Installation</h3>
+        <p>Properly sized, cleanly installed systems that cool evenly and don&rsquo;t cost a fortune to run. Sizing is calculated, not guessed from the old unit.</p>
+        <ul><li>Load-calculated system sizing</li><li>New installs and replacements</li><li>Old equipment removal and disposal</li><li>Efficiency upgrades</li><li>Full commissioning and testing</li></ul>
+      </article>
+      <article class="svc">
+        <div class="ic"><img src="assets/icon-heat-repair.jpg" alt="" loading="lazy"></div>
+        <h3>Heating Repair</h3>
+        <p>Furnace down in a Michigan winter is an emergency and we treat it as one. Diagnostics first, so you&rsquo;re not paying for parts the system didn&rsquo;t need.</p>
+        <ul><li>Furnace diagnostics</li><li>Ignitor, board and blower repairs</li><li>Airflow and short-cycling fixes</li><li>Emergency service</li><li>Safety and combustion checks</li></ul>
+      </article>
+      <article class="svc">
+        <div class="ic"><img src="assets/icon-heat-install.jpg" alt="" loading="lazy"></div>
+        <h3>Heating Installation</h3>
+        <p>New furnaces set up right the first time &mdash; correctly sized, properly vented, and tested before we leave you with it for the winter.</p>
+        <ul><li>New furnace installation</li><li>System replacement</li><li>Proper sizing and venting</li><li>Thermostat setup and configuration</li><li>Performance testing</li></ul>
+      </article>
+      <article class="svc">
+        <div class="ic"><img src="assets/icon-commercial.jpg" alt="" loading="lazy"></div>
+        <h3>Commercial HVAC</h3>
+        <p>Rooftop units, split systems and maintenance contracts for businesses that can&rsquo;t afford to close because the building is too cold to work in.</p>
+        <ul><li>RTU service and repair</li><li>Scheduled maintenance plans</li><li>Commercial installations</li><li>After-hours work to avoid downtime</li><li>Priority response for contract customers</li></ul>
+      </article>
+      <article class="svc">
+        <div class="ic"><img src="assets/icon-water.jpg" alt="" loading="lazy"></div>
+        <h3>Water Heaters</h3>
+        <p>Tank and tankless, repaired or replaced, with the gas and venting done to code &mdash; because this is the one nobody thinks about until it&rsquo;s cold.</p>
+        <ul><li>Tank repair and replacement</li><li>Tankless installation</li><li>Annual maintenance flushing</li><li>Gas line service</li><li>Anode rod and element replacement</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="guard" id="guard">
+  <div class="wrap">
+    <div class="guard-head rv">
+      <img src="assets/guard-title.svg" alt="Choose Your Goblin Guard — heating and cooling maintenance plan options">
+      <p>The systems that get looked at twice a year are the ones that don&rsquo;t die in a cold snap. Pick a guard, get priority when everyone else is calling at once, and pay less on every repair.</p>
+    </div>
+    <div class="tiers rv grid-min">
+      <div class="tier">
+        <div class="art"><img src="assets/tier-hatchling.svg" alt="Hatchling — starter plan" loading="lazy"></div>
+        <div class="body">
+          <div class="price">$150<span>Per year &middot; Starter</span></div>
+          <ul>
+            <li>1 annual HVAC inspection (spring or fall)</li>
+            <li>Priority scheduling</li>
+            <li>10% off all repairs</li>
+          </ul>
+          <a class="btn btn-line" href="tel:+18109919229">Call to Enlist</a>
+        </div>
+      </div>
+      <div class="tier feat">
+        <span class="flag">Most popular</span>
+        <div class="art"><img src="assets/tier-warrior.svg" alt="Warrior — standard plan" loading="lazy"></div>
+        <div class="body">
+          <div class="price">$250<span>Per year &middot; Standard</span></div>
+          <ul>
+            <li>2 annual HVAC inspections (spring and fall)</li>
+            <li>Priority scheduling</li>
+            <li>Thermostat battery replacement included</li>
+            <li>15% off all repairs</li>
+          </ul>
+          <a class="btn btn-gold" href="tel:+18109919229">Call to Enlist</a>
+        </div>
+      </div>
+      <div class="tier">
+        <div class="art"><img src="assets/tier-overlord.svg" alt="Overlord — premium plan" loading="lazy"></div>
+        <div class="body">
+          <div class="price">$350<span>Per year &middot; Premium</span></div>
+          <ul>
+            <li>2 annual HVAC inspections (spring and fall)</li>
+            <li>Priority scheduling</li>
+            <li>Thermostat battery replacement included</li>
+            <li>Free filter change at every visit</li>
+            <li>Annual water heater flush</li>
+            <li>Outdoor chemical-free coil cleaning</li>
+            <li>20% off all repairs</li>
+          </ul>
+          <a class="btn btn-line" href="tel:+18109919229">Call to Enlist</a>
+        </div>
+      </div>
+    </div>
+    <p class="guard-note">Call <a href="tel:+18109919229">(810) 991-9229</a> to enlist or to ask which plan actually makes sense for your system.</p>
+  </div>
+</section>
+
+<div class="brands">
+  <div class="wrap">
+    <div class="bl">We service and install all major brands</div>
+    <img src="assets/brand-goodman.png" alt="Goodman" loading="lazy">
+    <img src="assets/brand-amana.png" alt="Amana" loading="lazy">
+    <img src="assets/brand-daikin.png" alt="Daikin" loading="lazy">
+    <img src="assets/brand-navien.png" alt="Navien" loading="lazy">
+    <img src="assets/brand-fujitsu.png" alt="Fujitsu" loading="lazy">
+  </div>
+</div>
+
+<div class="band rv">
+  <img src="assets/crew.jpg" alt="The Goblin Heating and Cooling crew" loading="lazy" width="1800" height="638">
+  <div class="bo"><div class="stats grid-min">
+    <div class="stat"><div class="v">24/7</div><div class="k">Open every day</div></div>
+    <div class="stat"><div class="v">5.00&#9733;</div><div class="k">Across 60+ reviews</div></div>
+    <div class="stat"><div class="v">6 yrs</div><div class="k">Serving Genesee County</div></div>
+    <div class="stat"><div class="v">21</div><div class="k">Towns covered</div></div>
+  </div></div>
+</div>
+
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head narrow rv">
+      <p class="eyebrow">How we work</p>
+      <h2>Five steps, every job, no exceptions.</h2>
+      <p class="lede">Consistency is the whole point. You get the same process whether it&rsquo;s a $90 capacitor or a full system replacement.</p>
+    </div>
+    <div class="proc rv grid-min">
+      <div class="step"><div class="sn">01</div><h3>System evaluation</h3><p>Detailed diagnostics to find the root issue rather than the first symptom. We test before we quote.</p></div>
+      <div class="step"><div class="sn">02</div><h3>Clear options</h3><p>Straightforward choices with upfront pricing, explained in plain language. No pressure to replace what can be repaired.</p></div>
+      <div class="step"><div class="sn">03</div><h3>Clean work</h3><p>Organised installs with labelled components, proper documentation and the site left the way we found it.</p></div>
+      <div class="step"><div class="sn">04</div><h3>System testing</h3><p>Confirmed safe and efficient operation before we leave &mdash; airflow, temperature split, combustion, the lot.</p></div>
+      <div class="step"><div class="sn">05</div><h3>Ongoing support</h3><p>We stay reachable. Maintenance plans keep the system ahead of the next breakdown instead of reacting to it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap proof grid-min">
+    <div class="rv">
+      <p class="eyebrow">The receipts</p>
+      <h2 style="margin-top:17px">Sixty-odd reviews. Not one below five stars.</h2>
+      <p class="lede">Locally owned and independent, which means the person who answers has a stake in whether you call again. Licensed and EPA certified for safe, code-compliant work on gas, refrigerant and electrical.</p>
+      <div class="creds">
+        <div class="cred"><div class="ck">License</div><div class="cv">#7119682 &mdash; licensed and insured</div></div>
+        <div class="cred"><div class="ck">Certified</div><div class="cv">EPA certified technicians</div></div>
+        <div class="cred"><div class="ck">Hours</div><div class="cv">Monday to Sunday, open 24 hours</div></div>
+        <div class="cred"><div class="ck">Payment</div><div class="cv">Cash, check and card</div></div>
+      </div>
+    </div>
+    <div class="rv">
+      <div class="rating">
+        <div class="sc">5.00</div>
+        <div class="st">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg>
+        </div>
+        <div class="cnt">Over 60 happy customers</div>
+        <div class="src">Verified on Google</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="areas" style="padding-top:0">
+  <div class="wrap areas-grid grid-min">
+    <div class="rv">
+      <p class="eyebrow">Service area</p>
+      <h2 style="margin-top:17px">Based in Clio. Covering most of the Tri-Cities.</h2>
+      <p class="lede">Twenty-one towns across Genesee, Saginaw and Shiawassee counties. If you&rsquo;re just outside and it&rsquo;s an emergency, call anyway.</p>
+      <div class="areas">
+        <a href="#book">Clio</a><a href="#book">Flint</a><a href="#book">Birch Run</a><a href="#book">Saginaw</a>
+        <a href="#book">Bay City</a><a href="#book">Midland</a><a href="#book">Davison</a><a href="#book">Burton</a>
+        <a href="#book">Mount Morris</a><a href="#book">Flushing</a><a href="#book">Swartz Creek</a><a href="#book">Fenton</a>
+        <a href="#book">Grand Blanc</a><a href="#book">Lapeer</a><a href="#book">Owosso</a><a href="#book">Frankenmuth</a>
+        <a href="#book">Bridgeport</a><a href="#book">Chesaning</a><a href="#book">Corunna</a><a href="#book">Holly</a><a href="#book">Durand</a>
+      </div>
+    </div>
+    <div class="rv mapimg"><img src="assets/map.jpg" alt="Map of the Goblin Heating and Cooling service area" loading="lazy" width="1200" height="566"></div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap narrow">
+    <div class="sec-head rv">
+      <p class="eyebrow">Straight answers</p>
+      <h2>Questions people actually ask.</h2>
+    </div>
+    <div class="faq rv">
+      <details><summary>How do I know if my system needs service?</summary><div class="a"><p>If it isn&rsquo;t holding a consistent temperature, it&rsquo;s making a noise it didn&rsquo;t used to make, or your energy bill jumped without the weather explaining it, something is off. Short-cycling &mdash; kicking on and off every few minutes &mdash; is worth a call on its own.</p><p>Catching it early is usually the difference between a part and a system.</p></div></details>
+      <details><summary>Do you really answer at night and on weekends?</summary><div class="a"><p>Yes &mdash; we&rsquo;re open 24 hours, seven days a week, so you can reach us and get the job logged whatever time the system decides to quit.</p><p>Urgent heating and cooling problems are prioritised for the soonest available visit. If it can safely wait until morning we&rsquo;ll tell you that rather than push a call-out you don&rsquo;t need.</p></div></details>
+      <details><summary>Should I repair it or replace it?</summary><div class="a"><p>Depends on age, the specific failure and what the repair costs against a new system. A fifteen-year-old furnace with a cracked heat exchanger is a replacement. A ten-year-old unit needing a capacitor is a repair, and anyone telling you otherwise is selling.</p><p>We&rsquo;ll give you the honest read and the numbers for both, then you decide.</p></div></details>
+      <details><summary>What brands do you work on?</summary><div class="a"><p>Air conditioners, furnaces and water heaters across all major brands. We install Goodman, Amana, Daikin, Navien and Fujitsu, and we service whatever is already in your house regardless of who put it there.</p></div></details>
+      <details><summary>What does a service call cost?</summary><div class="a"><p>We give you upfront pricing before any work begins &mdash; you approve the number first. What we won&rsquo;t do is quote a repair over the phone from a description of a noise, because that number would be a guess and guesses are how people end up paying for parts they didn&rsquo;t need.</p><p>Maintenance plan members get 10&ndash;20% off repairs depending on tier.</p></div></details>
+      <details><summary>Are the maintenance plans worth it?</summary><div class="a"><p>If your system is more than about five years old, generally yes. Two inspections a year catch the failures that turn into no-heat calls, and priority scheduling matters a great deal on the first properly cold night of the year when everyone is calling at once.</p><p>The Warrior plan pays for itself on one moderate repair. If your system is nearly new, Hatchling is plenty.</p></div></details>
+      <details><summary>What payment do you take?</summary><div class="a"><p>Cash, check and card.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="fbg"><img src="assets/footer-art.jpg" alt="" loading="lazy"></div>
+  <div class="wrap final-grid">
+    <div class="rv">
+      <p class="eyebrow">Get help</p>
+      <h2 style="margin-top:17px">Something&rsquo;s wrong with the system. Let&rsquo;s fix it.</h2>
+      <p class="lede">Call and you&rsquo;ll get a person, whatever time it is. Message and you&rsquo;ll get an answer and a technician on the calendar.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="tel:+18109919229">Call (810) 991-9229</a>
+        <a class="btn btn-line" href="#book">Book Online</a>
+      </div>
+    </div>
+    <div class="contact-card rv">
+      <div class="cline"><div class="ck">Phone</div><div class="cv"><a href="tel:+18109919229">(810) 991-9229</a></div></div>
+      <div class="cline"><div class="ck">Based in</div><div class="cv">Clio, Michigan</div></div>
+      <div class="cline"><div class="ck">Hours</div><div class="cv">Monday &ndash; Sunday<br><span style="color:var(--gold)">Open 24 hours</span></div></div>
+      <div class="cline"><div class="ck">License</div><div class="cv">#7119682 &middot; EPA certified &amp; insured</div></div>
+      <div class="cline"><div class="ck">Serving</div><div class="cv">Genesee, Saginaw &amp; Shiawassee counties</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap fgrid">
+    <img src="assets/logo.png" alt="">
+    <div>
+      <div style="color:var(--bone);font-weight:700;font-size:15px">Goblin Heating &amp; Cooling</div>
+      <div style="margin-top:5px">Clio, MI &middot; <a href="tel:+18109919229">(810) 991-9229</a> &middot; Licensed #7119682</div>
+    </div>
+    <div class="fr">Concept design by <a href="https://locallvrg.co">Local LVRG</a><br>Not affiliated with Goblin Heating &amp; Cooling</div>
+  </div>
+</footer>
+
+<section class="pitch" id="disclosure">
+  <div class="wrap">
+    <div class="narrow rv">
+      <p class="eyebrow">A note for Goblin &mdash; from the person who built this</p>
+      <h2>You already had the best brand in Michigan HVAC. It was just buried.</h2>
+      <p class="lede">Hatchling, Warrior and Overlord is genuinely great naming, and the artwork behind it is better than what most companies ten times your size are working with. On the current site it sits in a plain pricing table near the bottom. Here it&rsquo;s the centrepiece, because it should be.</p>
+      <p class="lede">Everything above is your own artwork, your own logo, your own plan pricing and your own phone number &mdash; just arranged to make the most of it, and wired to answer people at 2am. Take the ideas to whoever built your current site, or don&rsquo;t use any of it. No invoice, no catch.</p>
+    </div>
+    <div class="pcols rv grid-min">
+      <div class="pcol"><h4>What changed structurally</h4><ul>
+        <li>The 24/7 answer leads, because for HVAC that is the whole differentiator and it was a footnote before</li>
+        <li>Goblin Guard is a feature section, not a price table &mdash; recurring revenue deserves the best real estate on the page</li>
+        <li>Named service-area towns, so &ldquo;furnace repair Frankenmuth&rdquo; has somewhere to land</li>
+        <li>The FAQ answers repair-versus-replace, which is the question every customer is actually chewing on</li>
+      </ul></div>
+      <div class="pcol"><h4>What changed technically</h4><ul>
+        <li>Your tier artwork is vector, so it&rsquo;s razor sharp at any size instead of a blurry upscale</li>
+        <li>Whole page loads in well under a second with no page-builder framework underneath it</li>
+        <li>No third-party requests at all &mdash; fonts and images all served from your own domain</li>
+        <li>Keyboard navigable, screen-reader labeled, legible at any window size</li>
+      </ul></div>
+      <div class="pcol"><h4>The part that makes money</h4><ul>
+        <li>The assistant at the top is live &mdash; try it, it triages and books</li>
+        <li>It answers nights and weekends, which is when HVAC emergencies actually happen</li>
+        <li>Urgent jobs are flagged and pushed to the top of the list automatically</li>
+        <li>The on-call tech gets the job pushed to their phone the second it books</li>
+      </ul></div>
+    </div>
+    <div class="disc rv">
+      <h4>Full disclosure &mdash; what&rsquo;s real and what isn&rsquo;t</h4>
+      <div class="dgrid">
+        <div>
+          <h5 style="color:var(--ok)">Real, taken from Goblin&rsquo;s own site</h5>
+          <ul class="real">
+            <li>Company name, logo and every piece of artwork</li>
+            <li>Phone number, Clio location, 24-hour operating hours</li>
+            <li>License #7119682, EPA certified and insured</li>
+            <li>All three plan names, prices and their exact perks</li>
+            <li>The six services and the five-step process</li>
+            <li>5.00 rating, 60+ reviews, 6 years in business</li>
+            <li>All 21 service-area towns and the brands serviced</li>
+          </ul>
+        </div>
+        <div>
+          <h5 style="color:var(--gold)">Written by me as placeholder</h5>
+          <ul class="fake">
+            <li>Every word of body copy and all headlines</li>
+            <li>The service bullet lists, expanded beyond the originals</li>
+            <li>FAQ answers &mdash; the questions are yours, the wording is mine</li>
+            <li>The "Warrior pays for itself" and repair-vs-replace claims</li>
+            <li>The three-county framing of the service area</li>
+            <li>&ldquo;Prioritised for the soonest available visit&rdquo; &mdash; your FAQ says urgent issues are prioritised, but not how fast</li>
+          </ul>
+        </div>
+      </div>
+      <p style="font-size:14px;line-height:1.6;color:var(--dim);margin-top:21px;padding-top:19px;border-top:1px solid var(--line-soft)">One thing worth calling out specifically: your site lists <b>Mon&ndash;Sun, open 24 hours</b>, so this page says you can be <em>reached</em> at any hour and that urgent problems get prioritised. It deliberately stops short of promising a technician at the door at 2am, because I have no way to know whether you actually dispatch overnight. If you do, say so plainly and it becomes the strongest line on the page. If you don&rsquo;t, this wording is already accurate. Either way, that is your call to make, not mine. Nothing else in the placeholder column should go live until you confirm it either. I also deliberately left off customer quotes &mdash; your reviews load through a widget I couldn&rsquo;t read, and I won&rsquo;t invent a testimonial. Pull the real ones from your Google profile and they&rsquo;ll be stronger than anything I could write. This page is set to <code style="font-family:var(--mono);font-size:13px;color:var(--gold-lt)">noindex</code> so it can never compete with your real site in search.</p>
+    </div>
+    <div class="rv" style="margin-top:42px;display:flex;gap:13px;flex-wrap:wrap">
+      <a class="btn btn-gold" href="https://locallvrg.co">See what Local LVRG does</a>
+      <a class="btn btn-line" href="https://www.goblin-hvac.com/" rel="nofollow noopener" target="_blank">Goblin&rsquo;s official site</a>
+    </div>
+  </div>
+</section>
+
+<button class="fab" id="fab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>Book Service</button>
+
+<script>
+(function(){
+"use strict";
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.08,rootMargin:"0px 0px -8% 0px"});
+document.querySelectorAll(".rv").forEach(function(el){io.observe(el);});
+
+var hdr=document.getElementById("hdr"), fab=document.getElementById("fab"), bookOnScreen=false;
+function onScroll(){ var y=window.scrollY; hdr.classList.toggle("stuck",y>12); fab.classList.toggle("on", y>900 && !bookOnScreen); }
+window.addEventListener("scroll",onScroll,{passive:true}); onScroll();
+new IntersectionObserver(function(es){es.forEach(function(e){bookOnScreen=e.isIntersecting;});onScroll();},{threshold:.15})
+  .observe(document.getElementById("book"));
+fab.addEventListener("click",function(){document.getElementById("book").scrollIntoView({behavior:"smooth",block:"start"});});
+
+/* ================= CONCIERGE ================= */
+var thread=document.getElementById("thread"), chips=document.getElementById("chips"),
+    push=document.getElementById("push"), pushWhen=document.getElementById("pushWhen"), pushWhat=document.getElementById("pushWhat");
+var S={};
+
+var ISSUES={
+  noheat:  {label:"No heat",              sys:"Heating", follow:"Furnace down in a Michigan winter is top of the list."},
+  nocool:  {label:"No cooling",           sys:"Cooling", follow:"Got it. We'll want to know whether the outdoor unit is running at all — the tech will check that first."},
+  water:   {label:"Water heater",         sys:"Water heater", follow:"Understood. We'll check the gas, the venting and the tank condition before anything else."},
+  noise:   {label:"Strange noise or smell", sys:"Diagnostic", follow:"Worth taking seriously. A burning or gas smell is an emergency — if you smell gas, leave the house and call the gas company first, then us."},
+  plan:    {label:"Maintenance plan",     sys:"Goblin Guard", follow:"Good call — the systems that get looked at twice a year are the ones that don't die in a cold snap."}
+};
+var URG={
+  out:     {label:"It's completely out",       tag:"URGENT", note:"That gets flagged urgent. Let's get the details down so dispatch can move on it."},
+  bad:     {label:"Running, but not right",    tag:"Priority", note:"Good — catching it while it still runs usually means a part rather than a system."},
+  planning:{label:"Not urgent, just planning", tag:"Scheduled", note:"No problem. We'll find a time that suits you rather than squeezing you in."}
+};
+
+function el(c,h){var d=document.createElement("div");d.className=c;d.innerHTML=h;return d;}
+function scroll(){thread.scrollTop=thread.scrollHeight;}
+function say(html,cls){
+  return new Promise(function(res){
+    var t=el("typing","<i></i><i></i><i></i>"); thread.appendChild(t); scroll();
+    setTimeout(function(){ t.remove(); thread.appendChild(el("msg bot"+(cls?" "+cls:""),html)); scroll(); res(); },
+      Math.min(1150,320+String(html).length*7));
+  });
+}
+function me(t){thread.appendChild(el("msg me",t));scroll();}
+function ask(opts){
+  chips.innerHTML="";
+  opts.forEach(function(o){
+    var b=document.createElement("button");
+    b.type="button"; b.className="chip"+(o.ghost?" ghost":"")+(o.hot?" hot":""); b.textContent=o.label;
+    b.addEventListener("click",function(){me(o.label);chips.innerHTML="";o.go();});
+    chips.appendChild(b);
+  });
+}
+function askText(ph,cb){
+  chips.innerHTML="";
+  var f=document.createElement("form"); f.className="chip-form";
+  f.innerHTML='<input type="text" placeholder="'+ph+'" autocomplete="off"><button type="submit">Send</button>';
+  f.addEventListener("submit",function(e){e.preventDefault();var v=f.querySelector("input").value.trim();if(!v)return;me(v);chips.innerHTML="";cb(v);});
+  chips.appendChild(f);
+  setTimeout(function(){if(window.innerWidth>900)f.querySelector("input").focus();},80);
+}
+function slots(urgent){
+  var out=[], d=new Date(), h=d.getHours();
+  if(urgent){
+    out.push({label:"Soonest available — flagged urgent",short:"Urgent · soonest available"});
+    out.push({label:"First thing tomorrow, 7:30 AM",short:"Tomorrow · 7:30 AM"});
+    out.push({label:"Tomorrow midday, 12:00 PM",short:"Tomorrow · 12:00 PM"});
+    return out.slice(0,3);
+  }
+  var times=["8:00 AM","1:00 PM","4:00 PM"], i=0, dd=new Date(); dd.setHours(0,0,0,0);
+  while(out.length<3){
+    dd.setDate(dd.getDate()+1);
+    if(dd.getDay()===0) continue;
+    out.push({label:dd.toLocaleDateString(undefined,{weekday:"long"})+", "+dd.toLocaleDateString(undefined,{month:"short",day:"numeric"})+" at "+times[i],
+              short:dd.toLocaleDateString(undefined,{weekday:"long"})+" · "+times[i]});
+    i++;
+  }
+  return out;
+}
+
+var FAQ=[
+ {k:["cost","price","much","expensive","cheap","quote","fee","charge","rate"],
+  a:"We give you upfront pricing before any work starts — you approve the number first. What we won't do is quote a repair over the phone from a description, because that's a guess and guesses are how people pay for parts they didn't need."},
+ {k:["night","weekend","emergency","24","after hours","sunday","holiday","late","urgent"],
+  a:"We're open 24 hours, seven days. No heat in January and no cooling in July are both genuine emergencies. If it can safely wait until morning we'll tell you that rather than charge you for an after-hours call."},
+ {k:["repair or replace","replace","new system","worth fixing","old furnace","how old","age"],
+  a:"Depends on age, the specific failure and the repair cost against a new system. A fifteen-year-old furnace with a cracked heat exchanger is a replacement; a ten-year-old unit needing a capacitor is a repair. We'll give you both numbers and let you decide."},
+ {k:["brand","goodman","amana","daikin","navien","fujitsu","carrier","trane","lennox","rheem"],
+  a:"We service all major brands whatever is already in your house, and we install Goodman, Amana, Daikin, Navien and Fujitsu."},
+ {k:["plan","membership","maintenance","hatchling","warrior","overlord","guard","tune"],
+  a:"Three tiers. Hatchling is $150/year for one inspection, priority scheduling and 10% off repairs. Warrior is $250 for two inspections and 15% off. Overlord is $350 and adds filter changes, a water heater flush and coil cleaning with 20% off repairs."},
+ {k:["pay","payment","card","cash","check","finance","credit"],
+  a:"Cash, check and card."},
+ {k:["how long","time","wait","today","same day","fast","when can"],
+  a:"Urgent calls get prioritised and we'll often be out the same day. Most repairs are done in one visit; installs are typically a day."},
+ {k:["where","area","serve","located","travel","far","clio","cover"],
+  a:"We're based in Clio and cover 21 towns across Genesee, Saginaw and Shiawassee — Flint, Davison, Burton, Grand Blanc, Fenton, Flushing, Swartz Creek, Saginaw, Bay City, Midland, Frankenmuth, Owosso and more."},
+ {k:["license","insured","certified","epa","qualified","credential"],
+  a:"Licensed #7119682, EPA certified and fully insured. That covers safe, code-compliant work on gas, refrigerant and electrical."},
+ {k:["thermostat","nest","smart","program","wifi"],
+  a:"We install and configure standard and smart thermostats, and wiring issues behind a thermostat are a common cause of what looks like a dead system."},
+ {k:["noise","rattle","bang","squeal","smell","burning","gas leak"],
+  a:"Worth taking seriously. Squealing is often a blower bearing, banging on start-up can be delayed ignition. If you smell gas, leave the house and call the gas company first, then us."},
+ {k:["freon","refrigerant","recharge","leak","r22","410"],
+  a:"If it's low on refrigerant there's a leak somewhere — topping it up without finding that is money down the drain. We'll locate it and give you the repair cost against replacement."}
+];
+function answerFree(t){
+  t=t.toLowerCase(); var best=null,score=0;
+  FAQ.forEach(function(f){var s=0;f.k.forEach(function(k){if(t.indexOf(k)>-1)s++;});if(s>score){score=s;best=f;}});
+  return best?best.a:null;
+}
+
+function issueChips(extra){
+  ask(Object.keys(ISSUES).map(function(k){
+    return {label:ISSUES[k].label, hot:(k==="noheat"), go:function(){pickIssue(k);}};
+  }).concat(extra||[]));
+}
+
+function start(){
+  thread.innerHTML=""; chips.innerHTML=""; S={}; push.classList.remove("on");
+  var h=new Date().getHours(), greet = (h>=22||h<6) ? "Yes, someone's actually awake." : "You've got Goblin Heating &amp; Cooling.";
+  say(greet+" We're open 24 hours, so whatever it's doing, let's deal with it.").then(function(){
+    return say("What's going on?");
+  }).then(function(){
+    issueChips([{label:"I just have a question", ghost:true, go:freeMode}]);
+  });
+}
+
+function freeMode(){
+  say("Go ahead — ask me anything about the systems, the plans or how we work.").then(function(){
+    askText("Type your question…", handleFree);
+  });
+}
+function handleFree(text){
+  var a=answerFree(text);
+  if(a){
+    say(a).then(function(){
+      ask([{label:"Book a technician", go:function(){ say("What's going on with it?").then(function(){issueChips();}); }},
+           {label:"Ask something else", ghost:true, go:function(){askText("Type your question…",handleFree);}}]);
+    });
+  } else {
+    say("Good question — I'd rather have a tech answer that properly than guess at it. Want me to get someone out, or have them call you?").then(function(){
+      ask([{label:"Get someone out", go:function(){ say("What's the system doing?").then(function(){issueChips();}); }},
+           {label:"Have them call me", ghost:true, go:function(){S.callbackOnly=true;getName();}}]);
+    });
+  }
+}
+
+function pickIssue(k){
+  S.issue=k;
+  say(ISSUES[k].follow).then(function(){
+    if(k==="plan"){ S.urg="planning"; return propertyQ(); }
+    return say("Is it completely out right now, or still running badly?").then(function(){
+      ask([{label:URG.out.label, hot:true, go:function(){S.urg="out";propertyQ();}},
+           {label:URG.bad.label, go:function(){S.urg="bad";propertyQ();}},
+           {label:URG.planning.label, go:function(){S.urg="planning";propertyQ();}}]);
+    });
+  });
+}
+
+function propertyQ(){
+  say(URG[S.urg].note).then(function(){ return say("Home or business?"); }).then(function(){
+    ask([{label:"Home", go:function(){S.prop="Residential";townQ();}},
+         {label:"Business", go:function(){S.prop="Commercial";townQ();}}]);
+  });
+}
+function townQ(){
+  say("What town are you in?").then(function(){
+    askText("e.g. Clio, Flint, Davison…", function(v){ S.town=v.replace(/[<>]/g,"").slice(0,40); offerVisit(); });
+  });
+}
+
+function offerVisit(){
+  var urgent = S.urg==="out";
+  var html='<div class="qh">'+URG[S.urg].tag+" · "+ISSUES[S.issue].sys+'</div>'
+    +'<div class="qp">'+(urgent?"Emergency call-out":"Technician visit")+'</div>'
+    +'<div class="qn">'+ISSUES[S.issue].label+" · "+S.prop+" · "+S.town
+    +". Upfront pricing before any work starts, and you approve the number first."+(urgent?" Urgent problems are prioritised for the soonest available visit.":"")+'</div>';
+  thread.appendChild(el("msg bot card"+(urgent?" urgent":""),html)); scroll();
+  say(urgent?"Want me to get this logged as urgent?":"Want me to put a tech on the calendar?").then(function(){
+    ask([{label:urgent?"Yes, log it urgent":"Yes, book it", hot:urgent, go:getName},
+         {label:"Not yet — I have a question", ghost:true, go:freeMode}]);
+  });
+}
+
+function getName(){
+  say("What's your first name?").then(function(){
+    askText("Your first name…", function(v){
+      S.name=v.split(" ")[0].replace(/[^A-Za-z'\-]/g,"")||"there";
+      if(S.callbackOnly && !S.town){ return say("Thanks "+S.name+". What town are you in?").then(function(){
+        askText("e.g. Clio, Flint, Davison…", function(t){S.town=t.replace(/[<>]/g,"").slice(0,40);book();});
+      }); }
+      book();
+    });
+  });
+}
+
+function book(){
+  var urgent=S.urg==="out", opts=slots(urgent);
+  say(urgent?"Thanks "+S.name+". Here's what I can get you — dispatch confirms the window:":"Thanks "+S.name+". Here's what's open:").then(function(){
+    ask(opts.map(function(sl){return {label:sl.label, go:function(){confirmBooking(sl);}};})
+      .concat([{label:"None of those work", ghost:true, go:function(){
+        say("No problem — I'll have the on-call tech reach out directly to find something that does. They'll have your details in front of them.").then(function(){
+          confirmBooking({short:"Callback requested",label:"a callback"});
+        });
+      }}]));
+  });
+}
+
+function confirmBooking(slot){
+  var detail = S.callbackOnly && !S.issue
+    ? "Question for the tech · "+(S.town||"Clio")
+    : ISSUES[S.issue].label+" · "+(S.town||"Clio")+" · "+(S.prop||"Residential");
+  say("Done — you're on the board.").then(function(){
+    return say("<b>"+slot.label+"</b><br>"+detail+"<br><br>You'll get a text confirmation and another when the tech is on the way. If anything changes, reply here.");
+  }).then(function(){
+    return say(S.urg==="out"
+      ? "In the meantime: if it's the furnace, check the breaker and the filter, and keep a door open between floors. Anything else before they arrive, "+S.name+"?"
+      : "Anything else you want to know before then, "+S.name+"?");
+  }).then(function(){
+    pushWhen.textContent=slot.short;
+    pushWhat.textContent=detail;
+    push.classList.add("on");
+    ask([{label:"Ask a question", go:function(){askText("Type your question…",handleFree);}},
+         {label:"Start the demo over", ghost:true, go:start}]);
+  });
+}
+
+document.getElementById("replay").addEventListener("click",start);
+var started=false;
+new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!started){started=true;start();}});},{threshold:.25}).observe(thread);
+})();
+</script>
+</body>
+</html>

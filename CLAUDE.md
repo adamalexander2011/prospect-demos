@@ -1,102 +1,140 @@
 # CLAUDE.md — how a prospect demo gets built
 
-Read this before building any demo in this repo. It is the standard that makes
-demo #7 as good as the first one. Two builds exist to copy from:
+Read this before building any demo in this repo.
 
-- **Viper Concrete Coatings** (Grand Blanc) — `coatings.locallvrg.co/viper.html`
-- **Goblin Heating & Cooling** (Clio) — `coatings.locallvrg.co/goblin-hvac/`
+**The treatment is decided per business, not applied from a recipe.** What stays
+fixed is the honesty contract and the technical floor. Everything else is a
+diagnosis: look at what the business actually has, find the thing that is being
+wasted, and build the page that shows it to them.
 
-## What this is
+Two builds exist, and they were deliberately built differently.
 
-An unsolicited, complete spec rebuild of a local business's website, built from
-**their own material**, sent to the owner with no invoice attached. It is a lead
-magnet that happens to be a finished product. The pitch is the page itself.
+---
 
-It is not a mockup, not a proposal deck, and not a template with their logo
-dropped in. If it does not stand on its own as a site they could ship, it is not
-finished.
+## The diagnosis, through the two builds
 
-## The rules that do not bend
+### Viper Concrete Coatings, Grand Blanc
+`coatings.locallvrg.co/viper.html`
 
-**Assets come from the prospect. Only.**
-Every photo, the logo, the reviews, the phone number, the address — pulled from
-their own site, their Google Business Profile, or their Facebook page.
-Download them into `<slug>/assets/` and commit them. No stock photography, ever.
-Before committing, check every file and be able to say where it came from. If you
-cannot source it, it does not go in.
+**What they had:** genuinely good photography of their own floors. Real reviews
+readable on their site. No published prices.
 
-**Never invent a review.**
-Quote real reviews verbatim, with the reviewer's real name. If there are only
-three, use three. A fabricated testimonial is the one mistake that ends the
-relationship before it starts.
+**Treatment:** lead with the photos. A before/after slider on the same slab, a
+lightbox gallery of eight jobs, prep and grind shots. All three reviews quoted
+verbatim with the reviewers' names. Not a single price anywhere on the page,
+because they publish none and inventing one would be inventing.
 
-**Never quote a price.**
-No per-square-foot figures, no "starting at," no package pricing. The page's job
-is to get the estimator in front of the owner. Pricing is theirs to set and yours
-to stay out of.
+**The angle:** *"Your photos are genuinely good and the work speaks for itself,
+so I wanted to see what it would look like turned all the way up."*
 
-**Label it a concept in three places.**
-1. The `<title>`, ending in `| Concept Site`
-2. The page header or nav
-3. The disclosure panel at the bottom
+### Goblin Heating & Cooling, Clio
+`goblin-hvac/index.html`
 
-Somebody will land on this page without context. They must never mistake it for
-the company's real site.
+**What they had:** a genuinely distinctive brand identity, artwork and all. No
+usable photography of actual jobs. Published membership pricing, three tiers with
+named perks. Reviews trapped behind a widget that could not be read.
 
-**noindex on every page.**
-`<meta name="robots" content="noindex,nofollow">` in the head, plus the site-wide
-`robots.txt`. This page must never compete with the prospect's real site in
-search results. Say so in the disclosure, because it is a genuine courtesy and it
-reads as one.
+**Treatment:** build on the artwork instead of photography, because the artwork
+was the asset. Use the three plan names, prices and exact perks, because those are
+theirs and published. Leave customer quotes off the page entirely, and say in the
+disclosure exactly why.
 
-**Self-host the fonts.**
-Drop the `.woff2` files in `<slug>/assets/fonts/` and `@font-face` them. No
-Google Fonts link, no external CDN. The page should load with zero third-party
-requests.
+**The angle:** *"You already had the best brand in Michigan HVAC. It was just
+buried."*
 
-**One file, no framework.**
-The whole page is a single `index.html` with inline CSS and JS. It loads in well
-under a second, and that speed is one of the things you are selling.
+Same skeleton underneath. Opposite decisions about imagery, pricing and proof,
+because the two businesses were sitting on different unused assets.
 
-## The disclosure panel is mandatory
+---
 
-Bottom of every page, in the builder's own voice, signed. It does four things:
+## What never changes
 
-1. **Says you built it uninvited**, and that they owe nothing. "Take the ideas and
-   hand them to whoever built your current site. Or don't use any of it."
-2. **Explains what the page does** structurally, technically, and commercially —
-   three short lists.
-3. **Splits real from placeholder in two columns.** Left: what came from them
-   (name, logo, photography, phone, address, reviews, service categories). Right:
-   what you wrote as placeholder (all body copy, timelines, warranty figures,
-   product specifics, service-area lists, hours). Be exhaustive and unflattering
-   to yourself. This column is what makes the whole thing trustworthy.
-4. **States plainly that nothing in the placeholder column should go live until
-   they confirm it.**
+**Invent nothing they would have to defend.**
+No fabricated review. No invented price. No made-up license number, certification
+or year founded. If they have not published it, you do not get to state it as
+theirs.
 
-The honesty is not a disclaimer bolted on. It is the reason the page works.
+**When you cannot read a source, say so and leave it out.**
+Goblin's reviews sat behind a widget. The right move was to omit them and write:
+*"I won't invent a testimonial. Pull the real ones from your Google profile and
+they'll be stronger than anything I could write."* That paragraph does more for
+trust than the reviews would have.
+
+**Disclose in two columns, exhaustively, unflattering to yourself.**
+Left: everything real, taken from them. Right: everything you wrote as
+placeholder, including all body copy and every claim inside it. Be more thorough
+than is comfortable. This column is the reason the page is believable.
+End with: nothing in the placeholder column goes live until they confirm it.
+
+**Make it unmistakably not their real site.**
+It has to be obvious to somebody who lands with no context. Say it in the title,
+say it near the top, say it in the disclosure, and link to their real site. The
+wording is yours to choose. Viper used "Concept Site", Goblin used "design study".
+Either works. Ambiguity does not.
+
+**noindex, always.**
+`<meta name="robots" content="noindex,nofollow">` plus the site-wide `robots.txt`.
+This page must never compete with their real site in search, and telling them so
+in the disclosure is a genuine courtesy that reads as one.
+
+**Their material, committed with the page.**
+Everything they own goes in `<slug>/assets/`. Before committing, be able to say
+where each file came from. Anything you made or sourced yourself is disclosed as
+yours in the right-hand column.
+
+**Same-day takedown, no argument.**
+Any company with a page here can email and it comes down that day. Honor it.
+
+---
+
+## The technical floor
+
+These do not vary by business.
+
+- **One file.** `<slug>/index.html` with inline CSS and JS. No framework, no build
+  step. It loads in well under a second and that speed is part of what you are
+  selling.
+- **Self-hosted fonts.** `.woff2` in `<slug>/assets/fonts/`, `@font-face`d. Zero
+  third-party requests on the page.
+- **Their images, sized for the web.** Thumbnails separate from full-size. Lazy
+  loading below the fold.
+- **Real titles and Open Graph tags,** so a link posted to Facebook shows the
+  company name and a decent image.
+- **Keyboard-navigable, screen-reader labeled, legible at any width.**
+- **Relative asset paths only,** so the folder stays portable.
+
+---
+
+## What you decide, every time
+
+| Question | If yes | If no |
+|---|---|---|
+| Do they have usable photos of their own work? | Lead with them. Gallery, before/after, crew shots. | Find the other asset. Brand, artwork, credentials, hours, coverage. Do not substitute stock and call it theirs. |
+| Do they publish prices? | Use them exactly, names and perks included. | No prices on the page at all. |
+| Can you read their real reviews? | Quote verbatim, with names. | Leave them off and explain why in the disclosure. |
+| Is there a credential worth surfacing? | State it exactly as published. License numbers, certifications, years. | Skip it. Do not approximate. |
+| What is actually being wasted? | That is the angle, and the disclosure note is written in that voice. | If nothing is being wasted, they are the wrong prospect. |
+
+The structure adapts too. Goblin needed 24/7 urgency triage and membership tiers.
+Viper needed a prep-and-grind process story and a before/after. Start from the
+common skeleton, then cut and add for the trade.
+
+**Common skeleton:** hero, the assistant with a booking notification visible,
+services in their own words, process, proof, service area with named towns, FAQ
+answering the objections that otherwise become phone calls, one final CTA,
+disclosure panel.
+
+---
 
 ## The assistant
 
-The live chat at the top qualifies and books. Describe it honestly: it answers
-nights and weekends, it captures name, job size, address and intent, and it
-pushes the booking to the owner's phone. Do not claim it is a person, and do not
-claim it is already connected to their calendar.
+The live chat qualifies and books. Describe it honestly: it answers nights and
+weekends, it captures name, job details, location and intent, and it pushes the
+booking to the owner's phone. Do not claim it is a person. Do not claim it is
+already wired to their calendar. Label the demo as a demo, the way Goblin does:
+*"Interactive demo, nothing is sent anywhere."*
 
-## Page skeleton
-
-Both builds follow this. Deviate when the trade demands it, not for variety.
-
-1. **Hero** — one line that only this company could say
-2. **The assistant**, above the fold, with a booking notification visible
-3. **Services** — their actual categories, named their way
-4. **Process** — numbered steps, what happens between the call and the work
-5. **Proof** — their photography, before/after if it exists
-6. **Reviews** — real ones, verbatim
-7. **Service area** — named towns, so local searches have something to land on
-8. **FAQ** — the objections that otherwise become phone calls
-9. **Final CTA** — one action
-10. **Disclosure panel**
+---
 
 ## Shipping
 
@@ -104,7 +142,7 @@ Both builds follow this. Deviate when the trade demands it, not for variety.
 ./bin/new-demo.sh <slug> "Business Name" "Owner"
 ```
 
-Then fill the copy, drop their assets in `<slug>/assets/`, and push. Live at
+Fill the copy, put their material in `<slug>/assets/`, push. Live at
 `demos.locallvrg.co/<slug>/`.
 
 ## Finding the next one
@@ -113,18 +151,11 @@ Then fill the copy, drop their assets in `<slug>/assets/`, and push. Live at
 ./bin/audit-site.py https://theirsite.com
 ```
 
-Scores a site on how badly it needs rebuilding. Higher is worse, which means
-better prospect. **Viper scored 67** — treat that as the bar. Below roughly 35
-there is not enough wrong to wow anybody, and you should leave them alone.
+Scores how badly a site needs rebuilding. Higher is worse, which means better
+prospect. **Viper scored 67.** Treat that as the bar. Below roughly 35 there is
+not enough wrong to be worth the swing.
 
-The score measures the website, not the buyer. Before committing to a build,
-check by hand that there is a real crew, a real address, and money visibly going
-out the door — a paid builder subscription, BBB accreditation, chamber dues,
-review software. And open the site and look at the photography. A great page
-cannot be made from four blurry phone pictures.
-
-## The standing promise
-
-Any company with a page here can email and it comes down the same day. Honor it
-without argument. It costs nothing and it is the difference between this reading
-as generous and reading as taking liberties with someone's brand.
+The score measures the website, not the buyer. Check by hand for a real crew, a
+real address, and money visibly going out the door: a paid builder subscription,
+BBB accreditation, chamber dues, review software. Then open the site and look at
+what there is to work with, because that is what decides the treatment.
