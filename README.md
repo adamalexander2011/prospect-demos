@@ -40,9 +40,12 @@ CNAME               demos.locallvrg.co
 assets/lvrg.css     shared design system, matches locallvrg.co
 _template/          the demo shell, copy it, do not edit in place
 bin/new-demo.sh     the copier
+bin/qualify.sh      one command: score a prospect and inventory what they own
 bin/audit-site.py   scores a prospect site's plumbing
 bin/design-probe.js renders it in headless Chrome and scores how it looks
+bin/asset-inventory.js  what the business owns: photos, stock tells, whose brand
 bin/preflight.sh    run before a demo link goes out
+PROSPECTING.md      the pipeline, find through send
 CLAUDE.md           the build standard, read it before building anything
 <slug>/index.html   one prospect demo
 ```

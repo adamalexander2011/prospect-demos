@@ -161,7 +161,13 @@ gate stops a bad page. Only those three stop a *generic* one.
 
 ## Finding the next one
 
-Two scorers, because a site fails in two independent ways.
+**The full pipeline is `PROSPECTING.md`.** One command runs it:
+
+```bash
+./bin/qualify.sh https://theirsite.com
+```
+
+Underneath, two scorers, because a site fails in two independent ways.
 
 ```bash
 ./bin/audit-site.py https://theirsite.com       # plumbing
