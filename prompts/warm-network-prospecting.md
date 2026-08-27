@@ -139,6 +139,10 @@ browser session.
    and a `**Connection:**` line naming how Adam knows them.
 6. Commit each read separately so they can be reviewed one at a time.
 
+**Work on a branch.** Another agent may be writing NOTES.md files on `main` at
+the same time, so start with `git checkout -b warm/facebook-pass` and stay there.
+Do not merge it yourself.
+
 ## Hard boundaries
 
 - **Do not message anyone.** Not a DM, not a comment, not a friend request, not a
