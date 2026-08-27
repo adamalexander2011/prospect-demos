@@ -1,12 +1,43 @@
 # Warm network pass — Adam's Facebook
 
-First pass, 27 August 2026. **Blocked partway. Read "What stopped this" before
-re-running it, or you will repeat the same dead ends.**
+First pass, 27 August 2026.
 
-The point of this file is that nobody has to research these names twice. Every
-business checked is here, including the skips.
+**Read this first: the method in the original brief is wrong, and DeBoer proves it.**
 
-## What stopped this
+The brief ranks "Pages Adam follows or likes" as rung 1, on the reasoning that the
+list is short and "heavily weighted toward people he actually knows." That
+reasoning does not hold for this account.
+
+**Following a Page is a marketing artifact, not a relationship.** Adam follows 465
+Pages. He follows them because of the coatings campaign, because of the algorithm,
+because of a video he liked in 2019. The list answers "what has Adam tapped a
+button on", which is not the question. Meanwhile the people he actually knows
+mostly are not in it, because you do not follow your family friend's business page,
+you just know them.
+
+**DeBoer Concrete And Construction is the proof.** Family friend, Clio MI, scored
+**96**, the highest on this board and above Viper. Their Facebook Page shows
+**Follow**, not **Following**. They were unreachable from rung 1 by construction,
+and the only thing that surfaced them was Adam saying their name out loud.
+
+### The ladder that actually applies
+
+1. **Ask Adam.** He can name more in five minutes than a week of graph-walking
+   returns. Every name he gives is pre-qualified on the only axis that matters,
+   which is whether the relationship is real. Start here, always.
+2. **From a named business, work outward.** Who do they sub to, who subs to them,
+   who is tagged in their job posts. Trades cluster, and a family friend's
+   neighbours in the trade are one introduction away rather than zero.
+3. Group member overlap in local town groups, for names to take back to Adam.
+4. Pages that interact with Adam's own Page.
+5. Followed Pages. **Last, not first.** It is a low-yield list full of strangers.
+
+Everything below this line is the original pass, kept because the skips are still
+worth not repeating.
+
+---
+
+## What stopped the graph-walking half of this
 
 Facebook served this session **exactly the first 20 items of every list and then
 refused to fetch any more.** Confirmed on four separate surfaces and in a clean
@@ -81,6 +112,7 @@ is the strongest rung-2 lead list for next time:
 
 | Business | Trade | Town | How found | Verdict |
 |---|---|---|---|---|
+| **DeBoer Concrete And Construction LLC** | Concrete | Clio, MI | **Adam named them. Family friend.** | **BUILD. Score 96, highest on the board.** Paying for domain, Squarespace and Google Workspace; the site says "Coming Soon". Real photos, real logo, one quotable review, no Google Business Profile. See `deboer-concrete/NOTES.md`. |
 | **Maximum Roofing** | Roofing | Chesaning, MI | Followed Page | **Skip, score 40.** Their site is genuinely decent. Separate finding: their old domain now runs a casino. See `maximum-roofing/NOTES.md`. |
 | **Awesome Custom Painting LLC** | House painting | Montrose, MI | Followed Page | **Not this build. Page, no website.** See below. |
 | **Supply Haus 1775** | Epoxy product supplier | Grand Junction, **CO** | Followed Page | Skip. Out of state, sells DIY kits, no crew, coatings-campaign follow. |
