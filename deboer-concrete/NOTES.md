@@ -117,8 +117,7 @@ of the slab:
 
 | Section | Why it exists |
 |---|---|
-| Spec strip, `30 × 40 · 6″ · REBAR` | The only hard numbers that exist, and they came from the review |
-| The review at full weight | It is the only one and it is specific. Opposite call to Goblin, who had none quotable |
+| The review at full weight, on the dark ground | It is the only one and it is specific. Opposite call to Goblin, who had none quotable |
 | The work, six photographs | Includes the poured foundation, which proves structural and not just flatwork |
 | Six questions worth asking | Framed as questions so no specification is invented, and it argues against the cheapest quote |
 | The estimator | Captures dimensions, because that is what a concrete quote needs. Not Goblin's triage |
@@ -154,3 +153,18 @@ better to a family friend than manufactured altruism, which Nick would smell any
 **Structure of the note now:** not on the map at all → what Patriot and Osborn are
 defending (21 / 12 / 0) → reviews are how you pass them → the site is where they land
 once they find you → the honest ask.
+
+
+## Cut after review, 27 August 2026
+
+**The spec strip came out.** It set `30 × 40 · 6″ · REBAR` in condensed caps on black,
+immediately above a quote that says *"they did my 30 x 40 barn pad, 6" thick with
+rebar"*. Adam called it: the same three facts twice in a row, and the strip spent them
+before the customer got to say them, which deflated the strongest asset on the page.
+
+The quote took the black ground instead. It now lands cold, the numbers arrive once in
+Greg Taylor's own voice, and the footnote does the strip's job as commentary rather than
+repetition: *thirty by forty, six inches, rebar, he wrote the specification himself.*
+
+Worth remembering as a general trap. Extracting a highlight from a quote and placing it
+next to that quote is not emphasis, it is a spoiler.

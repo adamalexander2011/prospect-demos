@@ -103,22 +103,14 @@ header.stuck{border-bottom-color:var(--line);box-shadow:0 6px 22px -14px rgba(20
 .hero-cap{display:flex;gap:10px;align-items:baseline;margin-top:26px;font:600 12px/1.5 var(--cond);letter-spacing:.17em;text-transform:uppercase;color:var(--dim)}
 .hero-cap i{width:7px;height:7px;background:var(--red);flex:none;transform:translateY(-1px)}
 
-/* ---- spec strip ---- */
-.spec{background:var(--ink);color:#fff;padding:clamp(36px,4.4vw,54px) 0}
-.spec-in{display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap}
-.spec-nums{display:flex;gap:clamp(22px,4vw,58px);flex-wrap:wrap}
-.spec-n{display:flex;flex-direction:column;gap:9px}
-.spec-n b{font:600 clamp(30px,4.4vw,54px)/1 var(--cond);letter-spacing:.03em;color:#fff}
-.spec-n span{font:600 11px/1 var(--cond);letter-spacing:.22em;text-transform:uppercase;color:#9AA1A8}
-.spec-note{max-width:31ch;font-size:14.5px;line-height:1.6;color:#B8BEC4;border-left:2px solid var(--red);padding-left:17px}
-
-/* ---- quote ---- */
-.quote blockquote{font:800 clamp(24px,3.5vw,40px)/1.22 var(--sans);color:var(--ink);letter-spacing:-.022em;text-wrap:balance}
-.quote .qm{color:var(--red)}
-.qwho{display:flex;align-items:center;gap:13px;margin-top:28px;font-size:15px;color:var(--body)}
-.qwho b{color:var(--ink);font-weight:800}
-.qwho i{width:34px;height:2px;background:var(--red);flex:none;font-style:normal}
-.qfoot{margin-top:22px;font-size:14px;color:var(--dim);max-width:56ch}
+/* ---- quote, on the dark ground so it carries ---- */
+.quote{background:var(--ink)}
+.quote blockquote{font:800 clamp(26px,3.8vw,44px)/1.2 var(--sans);color:#fff;letter-spacing:-.022em;text-wrap:balance}
+.quote .qm{color:var(--red-lt)}
+.qwho{display:flex;align-items:center;gap:13px;margin-top:30px;font-size:15px;color:#B8BEC4}
+.qwho b{color:#fff;font-weight:800}
+.qwho i{width:34px;height:2px;background:var(--red-lt);flex:none;font-style:normal}
+.qfoot{margin-top:24px;font-size:14.4px;line-height:1.6;color:#858C93;max-width:60ch}
 
 /* ---- work grid ---- */
 .work{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -316,23 +308,12 @@ footer a{color:#C6CCD2}
   </div>
 </section>
 
-<section class="spec">
-  <div class="wrap spec-in">
-    <div class="spec-nums">
-      <div class="spec-n"><b>30 &times; 40</b><span>Barn pad</span></div>
-      <div class="spec-n"><b>6&Prime;</b><span>Thick</span></div>
-      <div class="spec-n"><b>Rebar</b><span>Reinforced</span></div>
-    </div>
-    <p class="spec-note">Not our spec sheet. That is a customer describing his own slab, in his own words, in a review he left unprompted.</p>
-  </div>
-</section>
-
 <section class="quote" id="review">
   <div class="wrap narrow rv">
-    <p class="eyebrow">What a customer said</p>
+    <p class="eyebrow pale">What a customer said</p>
     <blockquote style="margin-top:26px"><span class="qm">&ldquo;</span>they did my 30 x 40 barn pad, 6&quot; thick with rebar, absolutely great work! highly recommend.<span class="qm">&rdquo;</span></blockquote>
     <p class="qwho"><i></i> <span><b>Greg Taylor</b>, verified recommendation</span></p>
-    <p class="qfoot">This is the only customer review reproduced anywhere on this page, and it is quoted exactly as written. Nothing here has been tidied up, shortened or invented.</p>
+    <p class="qfoot">Thirty by forty, six inches, rebar. He wrote the specification himself, unprompted, because that is what people actually remember about a slab. It is quoted exactly as written, and it is the only customer review reproduced anywhere on this page.</p>
   </div>
 </section>
 
