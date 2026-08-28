@@ -1,6 +1,7 @@
 # DeBoer Concrete And Construction LLC — Clio, MI
 
-**Status:** read on record, not built. **Strongest prospect on the board.**
+**Status:** **BUILT**, not yet sent. Strongest prospect on the board.
+**Demo:** `deboer-concrete/index.html` (design score 5, preflight clear)
 **Their site:** deboerconcreteandconstructionllc.com
 **Score:** 84 plumbing + 12 design = **96** (highest recorded here, above Viper's 85)
 **Found via:** Adam named them. Not discoverable from his follow graph, see below.
@@ -99,3 +100,35 @@ something he started, not as fixing something he got wrong.
 - **Service area and hours.** Nothing published on the Page or the site.
 - **How many photos exist.** Eight loaded, the grid reserved more, and the rest
   never rendered. There is likely more to pull.
+
+
+## The build, 27 August 2026
+
+**Design language derived from their own mark, not from Goblin.** The DeBoer logo is a
+heavy geometric DB monogram in near-black with a thin red keyline. So: paper white
+ground, `#14181C` ink, `#7E2224` oxblood, Archivo at 900 for display and Barlow
+Condensed for the spec numbers, matching the condensed DEBOER wordmark. The keyline is
+the signature device, reused as an offset red rule around the hero. Goblin's dark-and-gold
+Cinzel treatment would have been actively wrong here and none of it was reused.
+
+**Structure was decided by the trade.** Concrete has no 2am emergency, so there is no
+urgency triage. The buyer's fear is thickness, base and steel, so the spine is the spec
+of the slab:
+
+| Section | Why it exists |
+|---|---|
+| Spec strip, `30 × 40 · 6″ · REBAR` | The only hard numbers that exist, and they came from the review |
+| The review at full weight | It is the only one and it is specific. Opposite call to Goblin, who had none quotable |
+| The work, six photographs | Includes the poured foundation, which proves structural and not just flatwork |
+| Six questions worth asking | Framed as questions so no specification is invented, and it argues against the cheapest quote |
+| The estimator | Captures dimensions, because that is what a concrete quote needs. Not Goblin's triage |
+| Review request after the pour | Adam's call, and the reason is in the note: 21 and 12 is a weekend, not a wall |
+
+**Assets:** seven photographs and the logo, supplied by Adam from their Facebook page at
+full resolution (2048px originals, not the 927px the extension could capture). Processed
+to web sizes with separate thumbnails. Originals kept outside the repo.
+
+**Refused on purpose:** no prices, no year founded, no licence number, no insurance
+claim, no crew size, and exactly one review rather than a wall of them. The service area
+town list is a guess from Clio and is flagged as mine in the disclosure, because they
+publish no service area anywhere.

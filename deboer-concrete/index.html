@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>DeBoer Concrete &amp; Construction — Clio, MI | Flatwork &amp; Foundations | Concept Site</title>
+<meta name="description" content="Concept website built for DeBoer Concrete And Construction LLC of Clio, Michigan. Barn pads, driveways, foundations and flatwork across Genesee County.">
+<meta property="og:title" content="DeBoer Concrete &amp; Construction — Clio, MI">
+<meta property="og:description" content="Barn pads, driveways, approaches and poured foundations. Concept site built by Local LVRG.">
+<meta property="og:image" content="assets/hero-shop-apron.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://demos.locallvrg.co/deboer-concrete/">
+<link rel="icon" href="assets/logo.png">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo.woff2" crossorigin>
+<link rel="preload" as="image" href="assets/hero-shop-apron.jpg" fetchpriority="high">
+<style>
+/* self-hosted, zero third-party requests */
+@font-face{font-family:'Archivo';font-weight:400 900;font-stretch:100%;font-display:swap;src:url(assets/fonts/archivo.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Barlow Condensed';font-weight:600;font-display:swap;src:url(assets/fonts/barlow-condensed.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root{
+  --paper:#F7F6F4; --panel:#EFEDE8; --panel2:#E4E1DA; --white:#fff;
+  --ink:#14181C; --ink2:#22272C; --body:#4B5259; --dim:#858C93;
+  --red:#7E2224; --red-lt:#9E2C30; --red-pale:#F0E4E4;
+  --line:#DCD8D2; --line-dk:#2C3238;
+  --sans:'Archivo',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --cond:'Barlow Condensed','Archivo',-apple-system,sans-serif;
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{max-width:100%;background:var(--paper);color:var(--body);font:400 17px/1.62 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--red);text-decoration:none}
+h1,h2,h3{color:var(--ink);text-wrap:balance;line-height:1.04;letter-spacing:-.022em}
+h1{font:900 clamp(40px,6.6vw,78px)/.98 var(--sans)}
+h2{font:800 clamp(28px,4.2vw,48px)/1.03 var(--sans)}
+h3{font:800 19px/1.28 var(--sans);letter-spacing:-.02em}
+p{text-wrap:pretty}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+.narrow{max-width:840px}
+section{padding:clamp(58px,8vw,108px) 0;position:relative}
+section[id]{scroll-margin-top:92px}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:2px}
+::selection{background:var(--ink);color:var(--paper)}
+.grid-min>*{min-width:0}
+
+/* ---- the logo's signature device: a thin red keyline, offset ---- */
+.keyline{position:relative}
+.keyline::after{content:"";position:absolute;inset:-11px;border:1px solid var(--red);pointer-events:none}
+@media(max-width:640px){.keyline::after{inset:-7px}}
+
+.eyebrow{font:600 13px/1 var(--cond);letter-spacing:.24em;text-transform:uppercase;color:var(--red);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--red);flex:none}
+.eyebrow.pale{color:#C99B9C}
+.eyebrow.pale::before{background:#C99B9C}
+.lede{font-size:clamp(16.5px,1.8vw,19.5px);color:var(--body);max-width:60ch;margin-top:18px}
+.sec-head{margin-bottom:clamp(34px,5vw,54px)}
+.sec-head h2{margin-top:16px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font:800 15px/1 var(--sans);padding:18px 30px;border:2px solid transparent;cursor:pointer;transition:background .17s,color .17s,border-color .17s;text-align:center;letter-spacing:-.01em}
+.btn-ink{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn-ink:hover{background:var(--red);border-color:var(--red);color:#fff}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+.btn-pale{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.btn-pale:hover{background:var(--red);border-color:var(--red);color:#fff}
+.btn-sm{padding:13px 20px;font-size:14px}
+
+/* ---- ribbon ---- */
+.ribbon{background:var(--ink);color:#B8BEC4;font-size:13.5px;line-height:1.5;padding:11px 0}
+.ribbon b{color:#fff;font-weight:800;margin-right:9px;white-space:nowrap}
+.ribbon a{color:#E8B4B5;text-decoration:underline;text-underline-offset:2px}
+.rib-short{display:none}
+@media(max-width:900px){.rib-long{display:none}.rib-short{display:inline}}
+
+/* ---- header ---- */
+header{position:sticky;top:0;z-index:60;background:rgba(247,246,244,.94);backdrop-filter:saturate(1.4) blur(9px);border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+header.stuck{border-bottom-color:var(--line);box-shadow:0 6px 22px -14px rgba(20,24,28,.4)}
+.nav{display:flex;align-items:center;gap:24px;padding-top:13px;padding-bottom:13px}
+.brand{display:flex;align-items:center;gap:12px;flex:none}
+.brand img{width:52px;height:auto}
+.brand span{display:flex;flex-direction:column;line-height:1}
+.bt{font:900 17px/1 var(--sans);color:var(--ink);letter-spacing:-.02em}
+.bs{font:600 10.5px/1 var(--cond);letter-spacing:.19em;text-transform:uppercase;color:var(--dim);margin-top:4px}
+.nav-links{display:flex;gap:26px;margin-left:auto}
+.nav-links a{font:700 14.5px/1 var(--sans);color:var(--ink2);letter-spacing:-.01em}
+.nav-links a:hover{color:var(--red)}
+.nav-tel{display:flex;flex-direction:column;line-height:1;text-align:right;flex:none}
+.nav-tel .nl{font:600 10px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.nav-tel .nn{font:800 16px/1 var(--sans);color:var(--ink);margin-top:5px}
+@media(max-width:1080px){.nav-links{display:none}}
+@media(max-width:620px){.brand img{width:42px}.nav-tel{display:none}.nav{gap:14px}}
+
+/* ---- hero ---- */
+.hero{padding-top:clamp(46px,5.6vw,74px);padding-bottom:0}
+.hero h1{margin-top:19px}
+.hero h1 em{font-style:normal;color:var(--red);display:block}
+.hero-cta{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}
+.hero-fig{margin-top:clamp(42px,5.4vw,66px)}
+.hero-fig img{width:100%}
+.hero-cap{display:flex;gap:10px;align-items:baseline;margin-top:26px;font:600 12px/1.5 var(--cond);letter-spacing:.17em;text-transform:uppercase;color:var(--dim)}
+.hero-cap i{width:7px;height:7px;background:var(--red);flex:none;transform:translateY(-1px)}
+
+/* ---- spec strip ---- */
+.spec{background:var(--ink);color:#fff;padding:clamp(36px,4.4vw,54px) 0}
+.spec-in{display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap}
+.spec-nums{display:flex;gap:clamp(22px,4vw,58px);flex-wrap:wrap}
+.spec-n{display:flex;flex-direction:column;gap:9px}
+.spec-n b{font:600 clamp(30px,4.4vw,54px)/1 var(--cond);letter-spacing:.03em;color:#fff}
+.spec-n span{font:600 11px/1 var(--cond);letter-spacing:.22em;text-transform:uppercase;color:#9AA1A8}
+.spec-note{max-width:31ch;font-size:14.5px;line-height:1.6;color:#B8BEC4;border-left:2px solid var(--red);padding-left:17px}
+
+/* ---- quote ---- */
+.quote blockquote{font:800 clamp(24px,3.5vw,40px)/1.22 var(--sans);color:var(--ink);letter-spacing:-.022em;text-wrap:balance}
+.quote .qm{color:var(--red)}
+.qwho{display:flex;align-items:center;gap:13px;margin-top:28px;font-size:15px;color:var(--body)}
+.qwho b{color:var(--ink);font-weight:800}
+.qwho i{width:34px;height:2px;background:var(--red);flex:none;font-style:normal}
+.qfoot{margin-top:22px;font-size:14px;color:var(--dim);max-width:56ch}
+
+/* ---- work grid ---- */
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.work figure{margin:0;position:relative;overflow:hidden;background:var(--panel2);cursor:zoom-in;aspect-ratio:4/3}
+.work img{width:100%;height:100%;object-fit:cover;object-position:center 62%;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.work figure:hover img,.work figure:focus-within img{transform:scale(1.045)}
+.work figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 18px 15px;font:600 11.5px/1.35 var(--cond);letter-spacing:.19em;text-transform:uppercase;color:#fff;background:linear-gradient(to top,rgba(20,24,28,.86),rgba(20,24,28,0));pointer-events:none}
+.work button{position:absolute;inset:0;width:100%;height:100%;background:none;border:0;cursor:zoom-in;padding:0}
+@media(max-width:900px){.work{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.work{grid-template-columns:1fr}}
+
+/* ---- lightbox ---- */
+.lb{position:fixed;inset:0;z-index:200;background:rgba(16,19,22,.96);display:none;align-items:center;justify-content:center;padding:30px}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:84vh;object-fit:contain}
+.lb-cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;font:600 12px/1.5 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:#9AA1A8}
+.lb-x{position:absolute;top:18px;right:20px;background:none;border:0;color:#fff;font:400 34px/1 var(--sans);cursor:pointer;padding:8px 12px}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:none;border:0;color:#fff;font:400 42px/1 var(--sans);cursor:pointer;padding:14px 18px;opacity:.7}
+.lb-nav:hover{opacity:1}
+.lb-prev{left:6px}.lb-next{right:6px}
+
+/* ---- checklist ---- */
+.checks{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.chk{background:var(--paper);padding:clamp(26px,3.2vw,38px)}
+.chk .n{font:600 12px/1 var(--cond);letter-spacing:.2em;color:var(--red)}
+.chk h3{margin:15px 0 11px}
+.chk p{font-size:15.4px;line-height:1.6}
+@media(max-width:760px){.checks{grid-template-columns:1fr}}
+.ask{margin-top:30px;padding:24px 26px;background:var(--ink);color:#C6CCD2;font-size:15.5px;line-height:1.6}
+.ask b{color:#fff}
+
+/* ---- estimator ---- */
+.est{background:var(--ink);color:#B8BEC4}
+.est h2,.est h3{color:#fff}
+.est .lede{color:#B8BEC4}
+.est-grid{display:grid;grid-template-columns:1fr 420px;gap:clamp(34px,4.6vw,62px);align-items:start}
+@media(max-width:1000px){.est-grid{grid-template-columns:1fr}}
+.est-pts{display:grid;gap:22px;margin-top:32px}
+.est-pt{display:flex;gap:17px}
+.est-pt i{font:600 13px/1 var(--cond);letter-spacing:.14em;color:var(--red-lt);font-style:normal;padding-top:4px;flex:none;width:22px}
+.est-pt b{display:block;color:#fff;font-weight:800;font-size:16.5px;margin-bottom:5px}
+.est-pt p{font-size:15.2px;line-height:1.58}
+
+.push{margin-top:34px;border:1px solid var(--line-dk);background:#1B2025;padding:20px 22px;position:relative}
+.push::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:#4E8C4A}
+.push .pt{font:600 11px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:#7FBF79}
+.push .pw{font:800 17px/1 var(--sans);color:#fff;margin-top:10px}
+.push .pd{font-size:14.6px;color:#B8BEC4;margin-top:7px}
+.push .pf{font-size:13px;color:#7C848C;margin-top:13px;line-height:1.5}
+
+.rev-step{margin-top:16px;border:1px solid var(--line-dk);background:#1B2025;padding:20px 22px;position:relative}
+.rev-step::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--red-lt)}
+.rev-step .pt{font:600 11px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:#D08A8C}
+.rev-step .pw{font:800 16px/1.3 var(--sans);color:#fff;margin-top:10px}
+.rev-step .pd{font-size:14.4px;color:#B8BEC4;margin-top:8px;line-height:1.55}
+.rev-step .pf{font-size:13px;color:#7C848C;margin-top:13px;line-height:1.5}
+
+/* ---- chat ---- */
+.chat{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;height:560px;position:sticky;top:96px}
+@media(max-width:1000px){.chat{position:static;height:520px}}
+.chat-top{display:flex;align-items:center;gap:11px;padding:14px 16px;border-bottom:1px solid var(--line);flex:none}
+.chat-top img{width:36px;height:auto}
+.ct-n{font:800 14.5px/1.2 var(--sans);color:var(--ink)}
+.ct-s{font:600 10px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-top:4px}
+.ct-tag{margin-left:auto;font:600 10px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;color:var(--red);border:1px solid var(--red);padding:5px 8px}
+.thread{flex:1;overflow-y:auto;padding:18px 16px;display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth}
+.msg{max-width:85%;padding:11px 14px;font-size:15px;line-height:1.5}
+.msg.bot{background:var(--panel);color:var(--ink2);align-self:flex-start}
+.msg.me{background:var(--ink);color:#fff;align-self:flex-end}
+.msg.flag{background:var(--red-pale);color:#5E1A1C;border-left:2px solid var(--red)}
+.typing{align-self:flex-start;background:var(--panel);padding:13px 15px;display:flex;gap:4px}
+.typing i{width:6px;height:6px;background:var(--dim);border-radius:50%;animation:bl 1.1s infinite}
+.typing i:nth-child(2){animation-delay:.16s}.typing i:nth-child(3){animation-delay:.32s}
+@keyframes bl{0%,60%,100%{opacity:.28}30%{opacity:1}}
+.chips{padding:0 16px 12px;display:flex;flex-wrap:wrap;gap:7px;flex:none}
+.chip{font:700 13.5px/1 var(--sans);padding:11px 14px;background:#fff;border:1.5px solid var(--ink);color:var(--ink);cursor:pointer;transition:background .15s,color .15s}
+.chip:hover{background:var(--ink);color:#fff}
+.chip-form{display:flex;gap:7px;width:100%}
+.chip-form input{flex:1;min-width:0;font:400 15px/1 var(--sans);padding:12px 13px;border:1.5px solid var(--line);background:#fff;color:var(--ink)}
+.chip-form input:focus{outline:none;border-color:var(--ink)}
+.chip-form button{font:700 13.5px/1 var(--sans);padding:12px 16px;background:var(--ink);color:#fff;border:0;cursor:pointer}
+.replay{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 16px;border-top:1px solid var(--line);flex:none}
+.replay button{font:700 12.5px/1 var(--sans);background:none;border:0;color:var(--red);cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0}
+.replay .rn{font:600 10px/1.3 var(--cond);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:right}
+
+/* ---- area ---- */
+.area-list{display:flex;flex-wrap:wrap;gap:9px;margin-top:30px}
+.area-list span{font:700 14px/1 var(--sans);padding:11px 15px;background:var(--panel);color:var(--ink2);border:1px solid var(--line)}
+.area-list span.home{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* ---- final ---- */
+.final{background:var(--panel)}
+.final-in{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(30px,4.4vw,60px);align-items:center}
+@media(max-width:860px){.final-in{grid-template-columns:1fr}}
+.fcta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.fdet{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.fdet div{background:var(--paper);padding:17px 20px}
+.fdet dt{font:600 10.5px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.fdet dd{font:800 16.5px/1.35 var(--sans);color:var(--ink);margin-top:8px}
+
+footer{background:var(--ink);color:#7C848C;padding:34px 0;font-size:14px}
+.fcols{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
+footer a{color:#C6CCD2}
+
+/* ---- pitch + disclosure ---- */
+.pitch{background:var(--ink2);color:#B8BEC4}
+.pitch h2,.pitch h3,.pitch h4{color:#fff}
+.pitch .lede{color:#B8BEC4}
+.pnote{font-size:16.4px;line-height:1.66;max-width:66ch}
+.pnote p{margin-top:15px}
+.pnote b{color:#fff}
+.pcols{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px}
+@media(max-width:880px){.pcols{grid-template-columns:1fr}}
+.pcol h4{font:800 16px/1.3 var(--sans);color:#fff}
+.pcol ul{list-style:none;margin-top:14px;display:grid;gap:10px}
+.pcol li{font-size:14.4px;line-height:1.55;color:#A9B0B7;display:flex;gap:11px}
+.pcol li::before{content:"";width:5px;height:5px;background:var(--red-lt);flex:none;margin-top:8px}
+.rev-math{margin-top:40px;border:1px solid var(--line-dk);background:#191E23;padding:clamp(24px,3vw,34px)}
+.rev-math h4{font:800 17px/1.3 var(--sans);color:#fff;margin-bottom:16px}
+.rm-row{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:18px}
+.rm{flex:1;min-width:150px;border-left:2px solid var(--line-dk);padding-left:15px}
+.rm.you{border-left-color:var(--red-lt)}
+.rm b{display:block;font:600 32px/1 var(--cond);color:#fff;letter-spacing:.02em}
+.rm span{font:600 10.5px/1.4 var(--cond);letter-spacing:.18em;text-transform:uppercase;color:#858C93;display:block;margin-top:8px}
+.rm.you b{color:#D08A8C}
+.rev-math p{font-size:15.2px;line-height:1.62;color:#A9B0B7}
+
+.disc{margin-top:44px;border:1px solid var(--line-dk);padding:clamp(24px,3vw,32px);background:#191E23}
+.disc h4{font:600 11px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:#858C93}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:20px}
+@media(max-width:760px){.dgrid{grid-template-columns:1fr;gap:22px}}
+.dgrid h5{font:800 14px/1.3 var(--sans);color:#fff;margin-bottom:11px}
+.dgrid ul{list-style:none;display:grid;gap:8px}
+.dgrid li{font-size:14px;line-height:1.5;color:#A9B0B7;padding-left:17px;position:relative}
+.dgrid li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%}
+.dgrid .real li::before{background:#5FAF6A}
+.dgrid .fake li::before{background:#C08A3E}
+.dfoot{margin-top:22px;padding-top:20px;border-top:1px solid var(--line-dk);font-size:14.2px;line-height:1.62;color:#A9B0B7}
+.dfoot b{color:#fff}
+
+.fab{position:fixed;right:18px;bottom:18px;z-index:90;display:flex;align-items:center;gap:9px;background:var(--ink);color:#fff;border:0;padding:16px 22px;font:800 15px/1 var(--sans);cursor:pointer;box-shadow:0 14px 36px -10px rgba(20,24,28,.5);opacity:0;transform:translateY(70px);transition:opacity .35s,transform .35s,background .18s}
+.fab.on{opacity:1;transform:none}
+.fab:hover{background:var(--red)}
+@media(max-width:560px){.fab{right:12px;bottom:12px;padding:14px 18px;font-size:14px}}
+
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.work img{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="ribbon"><div class="wrap">
+  <b>Concept &middot; not the official site</b>
+  <span class="rib-long">An unaffiliated concept site built for DeBoer Concrete And Construction LLC by <a href="https://locallvrg.co">Local LVRG</a>. The logo, photographs, phone number and the customer review are DeBoer&rsquo;s own. Body copy is ours, <a href="#disclosure">see exactly what&rsquo;s real</a>. Their real domain is <a href="https://deboerconcreteandconstructionllc.com/" rel="nofollow noopener" target="_blank">deboerconcreteandconstructionllc.com</a>.</span>
+  <span class="rib-short">A concept site for DeBoer by <a href="https://locallvrg.co">Local LVRG</a>. <a href="#disclosure">What&rsquo;s real &rarr;</a></span>
+</div></div>
+
+<header id="hdr"><div class="wrap nav">
+  <a class="brand" href="#top">
+    <img src="assets/logo.png" alt="DeBoer Concrete and Construction" width="52">
+    <span><span class="bt">DEBOER</span><span class="bs">Concrete &amp; Construction</span></span>
+  </a>
+  <nav class="nav-links">
+    <a href="#work">The Work</a>
+    <a href="#buying">What You&rsquo;re Buying</a>
+    <a href="#estimate">Get a Number</a>
+    <a href="#area">Service Area</a>
+  </nav>
+  <a class="nav-tel" href="tel:+12482129577"><span class="nl">Clio, Michigan</span><span class="nn">(248) 212-9577</span></a>
+  <a class="btn btn-ink btn-sm" href="#estimate">Get a Number</a>
+</div></header>
+
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="narrow rv">
+      <p class="eyebrow">Clio, Michigan &middot; Flatwork, barn pads &amp; foundations</p>
+      <h1>Concrete you<em>only pour once.</em></h1>
+      <p class="lede">Anybody can trowel the top of a slab so it looks good the day it goes down. What decides whether it is still flat in ten years is the base under it, how thick it actually got poured, and whether there is steel in it. That is the part nobody photographs, and it is the part we care about most.</p>
+      <div class="hero-cta">
+        <a class="btn btn-ink" href="#estimate">Get a number on your job</a>
+        <a class="btn btn-line" href="tel:+12482129577">Call (248) 212-9577</a>
+      </div>
+    </div>
+    <figure class="hero-fig keyline rv">
+      <img src="assets/hero-shop-apron.jpg" alt="A finished concrete apron and covered walkway wrapping the front of a dark metal pole barn shop in Michigan" width="1500" height="1125" fetchpriority="high">
+    </figure>
+    <p class="hero-cap rv"><i></i> Apron, walkway and porch slab, poured and finished by DeBoer</p>
+  </div>
+</section>
+
+<section class="spec">
+  <div class="wrap spec-in">
+    <div class="spec-nums">
+      <div class="spec-n"><b>30 &times; 40</b><span>Barn pad</span></div>
+      <div class="spec-n"><b>6&Prime;</b><span>Thick</span></div>
+      <div class="spec-n"><b>Rebar</b><span>Reinforced</span></div>
+    </div>
+    <p class="spec-note">Not our spec sheet. That is a customer describing his own slab, in his own words, in a review he left unprompted.</p>
+  </div>
+</section>
+
+<section class="quote" id="review">
+  <div class="wrap narrow rv">
+    <p class="eyebrow">What a customer said</p>
+    <blockquote style="margin-top:26px"><span class="qm">&ldquo;</span>they did my 30 x 40 barn pad, 6&quot; thick with rebar, absolutely great work! highly recommend.<span class="qm">&rdquo;</span></blockquote>
+    <p class="qwho"><i></i> <span><b>Greg Taylor</b>, verified recommendation</span></p>
+    <p class="qfoot">This is the only customer review reproduced anywhere on this page, and it is quoted exactly as written. Nothing here has been tidied up, shortened or invented.</p>
+  </div>
+</section>
+
+<section id="work" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head narrow rv">
+      <p class="eyebrow">The work</p>
+      <h2>Flatwork, foundations and pads across Genesee County.</h2>
+      <p class="lede">Every photograph below is a DeBoer job. Click any of them to see it full size.</p>
+    </div>
+    <div class="work rv" id="grid">
+      <figure><img src="assets/job-approach-thumb.jpg" data-full="assets/job-approach.jpg" alt="A poured concrete approach leading up to a timber pavilion with a green metal roof" loading="lazy" width="570" height="760"><figcaption>Approach &amp; apron</figcaption><button type="button" aria-label="View larger: approach and apron"></button></figure>
+      <figure><img src="assets/job-barn-slab-thumb.jpg" data-full="assets/job-barn-slab.jpg" alt="A large finished concrete slab inside an open pole barn looking out to a green field" loading="lazy" width="760" height="570"><figcaption>Barn pad</figcaption><button type="button" aria-label="View larger: barn pad"></button></figure>
+      <figure><img src="assets/job-foundation-thumb.jpg" data-full="assets/job-foundation.jpg" alt="Poured concrete foundation walls forming the footprint of a new building" loading="lazy" width="760" height="570"><figcaption>Poured foundation</figcaption><button type="button" aria-label="View larger: poured foundation"></button></figure>
+      <figure><img src="assets/job-banded-drive-thumb.jpg" data-full="assets/job-banded-drive.jpg" alt="A finished residential driveway with a contrasting decorative border band, freshly poured and taped off" loading="lazy" width="760" height="570"><figcaption>Drive with banding</figcaption><button type="button" aria-label="View larger: drive with banding"></button></figure>
+      <figure><img src="assets/job-walkway-thumb.jpg" data-full="assets/job-walkway.jpg" alt="A broom finished concrete walkway running alongside a dark metal building with stone columns" loading="lazy" width="570" height="760"><figcaption>Walkway</figcaption><button type="button" aria-label="View larger: walkway"></button></figure>
+      <figure><img src="assets/job-curved-drive-thumb.jpg" data-full="assets/job-curved-drive.jpg" alt="A curving concrete drive leading to a blue pole barn with a garage door" loading="lazy" width="569" height="760"><figcaption>Curved drive</figcaption><button type="button" aria-label="View larger: curved drive"></button></figure>
+    </div>
+  </div>
+</section>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-x" id="lbx" type="button" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" id="lbp" type="button" aria-label="Previous photo">&lsaquo;</button>
+  <img id="lbi" src="" alt="">
+  <button class="lb-nav lb-next" id="lbn" type="button" aria-label="Next photo">&rsaquo;</button>
+  <div class="lb-cap" id="lbc"></div>
+</div>
+
+<section id="buying" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head narrow rv">
+      <p class="eyebrow">What you&rsquo;re actually buying</p>
+      <h2>Six questions worth asking anyone who quotes you.</h2>
+      <p class="lede">Concrete is one of the few things you buy where the expensive part is buried before you ever see it. Two quotes can look identical on paper and be completely different slabs. These are the questions that tell them apart.</p>
+    </div>
+    <div class="checks rv">
+      <div class="chk">
+        <span class="n">01</span>
+        <h3>What is going under it?</h3>
+        <p>A slab is only as good as what it sits on. Undisturbed or properly compacted base, graded to drain, is what stops a slab settling and cracking in the first two winters. If nobody mentions the base, ask why.</p>
+      </div>
+      <div class="chk">
+        <span class="n">02</span>
+        <h3>How thick, actually?</h3>
+        <p>Four inches and six inches are different prices and different slabs. A pad that will hold equipment, a hoist, or a loaded truck is not the same pour as a garden path. Get the number written down rather than implied.</p>
+      </div>
+      <div class="chk">
+        <span class="n">03</span>
+        <h3>Is there steel in it?</h3>
+        <p>Rebar, mesh, or nothing at all. It changes what happens after the slab cracks, which matters because concrete does crack. Reinforcement is what keeps a crack from becoming two separate slabs at different heights.</p>
+      </div>
+      <div class="chk">
+        <span class="n">04</span>
+        <h3>Where will it crack?</h3>
+        <p>Honest answer: everywhere eventually. Control joints are how you decide in advance where it happens, cut straight and in the right places so the cracking goes where you put it instead of across the middle of your floor.</p>
+      </div>
+      <div class="chk">
+        <span class="n">05</span>
+        <h3>How is it finished and cured?</h3>
+        <p>Broom, trowel, or exposed changes how it wears and how it handles ice. Curing is the boring part that decides the surface strength, and it is the easiest corner to cut because nobody is standing there watching.</p>
+      </div>
+      <div class="chk">
+        <span class="n">06</span>
+        <h3>Who is actually pouring it?</h3>
+        <p>Concrete is unforgiving about timing. Once it is in the forms the clock runs whatever the weather does, and there is no pausing to think it over. Ask who will be on site and what happens if the pour goes sideways.</p>
+      </div>
+    </div>
+    <p class="ask rv"><b>Ask us all six.</b> Then ask whoever else is quoting you the same six, and compare the answers rather than the bottom line. If a quote is cheaper because it is thinner, has no steel in it, or skips the base, that is worth knowing before it is in the ground and not after.</p>
+  </div>
+</section>
+
+<section class="est" id="estimate">
+  <div class="wrap est-grid grid-min">
+    <div class="rv">
+      <p class="eyebrow pale">Get a number</p>
+      <h2 style="margin-top:16px">Tell it what you&rsquo;re pouring. It works out the rest.</h2>
+      <p class="lede">Concrete quotes come down to what, how big, and when. Most contractors make you leave a voicemail and wait two days to answer three questions. This answers them whenever you happen to be asking, then puts the site visit on the calendar.</p>
+      <div class="est-pts">
+        <div class="est-pt"><i>01</i><div><b>It asks for dimensions, not a description</b><p>A pad, a drive and a foundation are priced differently, and all of them need a number. It gets the shape and the square footage down while you are still thinking about it.</p></div></div>
+        <div class="est-pt"><i>02</i><div><b>It books the site visit itself</b><p>Concrete cannot be quoted properly from a phone call. It holds a time to come and look at the grade, the access and where the truck can actually reach.</p></div></div>
+        <div class="est-pt"><i>03</i><div><b>Nothing gets lost in a voicemail</b><p>Every enquiry lands in one place with the name, the town, the job and the size, whether it came in at nine in the morning or ten at night.</p></div></div>
+      </div>
+      <div class="push" id="push">
+        <div class="pt">New estimate request</div>
+        <div class="pw" id="pushWhen">Site visit &middot; Thursday, 9:00 AM</div>
+        <div class="pd" id="pushWhat">Barn pad &middot; 30 &times; 40 &middot; Clio</div>
+        <div class="pf">What lands on Nick&rsquo;s phone a second after somebody finishes typing.</div>
+      </div>
+      <div class="rev-step">
+        <div class="pt">Then, after the pour</div>
+        <div class="pw">The same system asks for the review.</div>
+        <div class="pd">Once the job is signed off, it sends one message with a direct link to the Google review page. No chasing, no awkward ask in person, no forgetting the customers who would have been happy to.</div>
+        <div class="pf">This step is a proposal, not something running today. See the note at the bottom of this page for why it matters more here than almost anywhere else.</div>
+      </div>
+    </div>
+    <div class="rv">
+      <div class="chat">
+        <div class="chat-top">
+          <img src="assets/logo.png" alt="" width="36">
+          <div><div class="ct-n">DeBoer Concrete</div><div class="ct-s">Replies in seconds</div></div>
+          <div class="ct-tag">Demo</div>
+        </div>
+        <div class="thread" id="thread" role="log" aria-live="polite" aria-label="Estimate conversation"></div>
+        <div class="chips" id="chips"></div>
+        <div class="replay">
+          <button type="button" id="replay">Start over</button>
+          <span class="rn">Interactive demo &middot; nothing is sent anywhere</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap">
+    <div class="sec-head narrow rv">
+      <p class="eyebrow">Service area</p>
+      <h2>Based in Clio. Pouring across Genesee County.</h2>
+      <p class="lede">If you are just outside the list and the job is worth the drive, ask anyway. The honest limit on a concrete job is how far a loaded truck can travel before the mix is no longer worth placing.</p>
+    </div>
+    <div class="area-list rv">
+      <span class="home">Clio</span><span>Mount Morris</span><span>Montrose</span><span>Flushing</span><span>Birch Run</span><span>Vienna Township</span><span>Thetford Township</span><span>Genesee</span><span>Flint</span><span>Burton</span><span>Davison</span><span>Swartz Creek</span><span>Frankenmuth</span><span>Chesaning</span><span>Otisville</span>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap final-in">
+    <div class="rv">
+      <p class="eyebrow">Next step</p>
+      <h2 style="margin-top:16px">Send the dimensions. Get a real number.</h2>
+      <p class="lede">Tell us what you are pouring and roughly how big, and we will come and look at it properly before quoting anything.</p>
+      <div class="fcta">
+        <a class="btn btn-ink" href="#estimate">Start with the dimensions</a>
+        <a class="btn btn-line" href="tel:+12482129577">Call (248) 212-9577</a>
+      </div>
+    </div>
+    <dl class="fdet rv">
+      <div><dt>Phone</dt><dd>(248) 212-9577</dd></div>
+      <div><dt>Email</dt><dd style="font-size:14.5px;word-break:break-all">nick@deboerconcreteandconstructionllc.com</dd></div>
+      <div><dt>Based in</dt><dd>Clio, Michigan 48420</dd></div>
+      <div><dt>Work</dt><dd>Flatwork, barn pads, drives, approaches &amp; poured foundations</dd></div>
+    </dl>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap fcols">
+    <div>DeBoer Concrete And Construction LLC &middot; Clio, MI &middot; <a href="tel:+12482129577">(248) 212-9577</a></div>
+    <div>Concept design by <a href="https://locallvrg.co">Local LVRG</a> &middot; not affiliated with DeBoer Concrete And Construction LLC</div>
+  </div>
+</footer>
+
+<section class="pitch" id="disclosure">
+  <div class="wrap">
+    <div class="narrow rv">
+      <p class="eyebrow pale">A note for Nick, from the person who built this</p>
+      <h2 style="margin-top:16px">You bought the domain in May. The email works. The website says &ldquo;coming soon.&rdquo;</h2>
+      <div class="pnote" style="margin-top:26px">
+        <p>Your email address is on your Facebook page, and it is a real address at your own domain, which already puts you ahead of most of the trade. But anyone who is curious enough to type the part after the @ gets a Squarespace holding page that says you are under construction. It has said that since May.</p>
+        <p>Meanwhile your Facebook page is carrying the whole business on its own. <b>The photographs on this page came off it, and they are genuinely good.</b> The foundation walls, the barn pad, the banded drive, the apron on the dark shop. That is a range most concrete companies around here cannot show, and none of it is anywhere a person searching at ten at night would find it.</p>
+        <p>So this is what your own photographs and your own review look like on a finished page. Everything on it is yours except the words, and the words are all listed below. Take the whole thing, take one idea off it, or take nothing. There is no invoice attached to it either way.</p>
+      </div>
+
+      <div class="rev-math">
+        <h4>The other thing, and honestly it might matter more than the website</h4>
+        <div class="rm-row">
+          <div class="rm"><b>21</b><span>Patriot Concrete &middot; Clio</span></div>
+          <div class="rm"><b>12</b><span>Osborn Inc &middot; Clio</span></div>
+          <div class="rm you"><b>0</b><span>DeBoer &middot; no profile at all</span></div>
+        </div>
+        <p>Search for a concrete contractor in Clio and Google shows a map with three businesses on it. You are not one of them, because there is no Google Business Profile for DeBoer to show. That is not a ranking problem, it is an empty chair. The profile is free and takes about twenty minutes.</p>
+        <p style="margin-top:14px">Then look at the numbers those two are defending. Twenty one reviews and twelve reviews is not a wall, it is a weekend. If every customer from here on gets one message asking for a review after the job is signed off, you pass both of them inside a season, with better photographs and a five star average you already have. <b>That is the cheapest thing on this entire page and it is the one I would do first.</b></p>
+      </div>
+
+      <div class="pcols">
+        <div class="pcol">
+          <h4>What changed structurally</h4>
+          <ul>
+            <li>The review leads, because it is specific. &ldquo;30 x 40, 6 inch, rebar&rdquo; sells concrete better than any adjective</li>
+            <li>The foundation photo is in the gallery, because it proves you do structural work and not only flatwork</li>
+            <li>Six questions to ask any contractor, so the page argues for thickness and steel instead of for the lowest price</li>
+            <li>Named towns, so &ldquo;concrete contractor Montrose&rdquo; has somewhere to land once a profile exists</li>
+          </ul>
+        </div>
+        <div class="pcol">
+          <h4>What changed technically</h4>
+          <ul>
+            <li>Whole page loads in well under a second, with no page builder underneath it</li>
+            <li>Zero third party requests. Fonts and photographs all served from one place</li>
+            <li>Your number is tappable on a phone, which the holding page has no way to be</li>
+            <li>Keyboard navigable, screen reader labelled, and legible at any window size</li>
+          </ul>
+        </div>
+        <div class="pcol">
+          <h4>The part that makes money</h4>
+          <ul>
+            <li>The assistant asks for dimensions, because that is what a concrete quote actually needs</li>
+            <li>It answers at ten at night, which is when people price out a driveway</li>
+            <li>Every enquiry lands in one place with the job, the size and the town already captured</li>
+            <li>The same system asks for the Google review after the pour, which is where the 21 goes away</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="disc">
+        <h4>Full disclosure &middot; what is real and what is not</h4>
+        <div class="dgrid">
+          <div class="real">
+            <h5>Real, and taken from you</h5>
+            <ul>
+              <li>Company name, and the DeBoer logo exactly as it appears on your Facebook page</li>
+              <li>All seven photographs. Every one is a DeBoer job, supplied from your own Facebook uploads</li>
+              <li>Phone number (248) 212-9577 and the email nick@deboerconcreteandconstructionllc.com</li>
+              <li>Clio, Michigan 48420 as the base</li>
+              <li>Greg Taylor&rsquo;s review, quoted word for word including the spelling, and his name</li>
+              <li>The &ldquo;30 x 40, 6 inch, rebar&rdquo; figures, which come from that review and nowhere else</li>
+              <li>The competitor review counts, read off Google&rsquo;s own local results for Clio</li>
+            </ul>
+          </div>
+          <div class="fake">
+            <h5>Written by me, as placeholder</h5>
+            <ul>
+              <li>Every headline and every word of body copy on the page</li>
+              <li>All six &ldquo;questions worth asking&rdquo; and their answers. They are general concrete practice, not a description of your specification</li>
+              <li>The service area town list. <b>You publish no service area anywhere, so I guessed it from Clio</b></li>
+              <li>&ldquo;Flatwork, barn pads, drives, approaches and poured foundations&rdquo; as your service list, inferred from the photographs</li>
+              <li>The photo captions, including &ldquo;approach&rdquo;, &ldquo;walkway&rdquo; and &ldquo;drive with banding&rdquo;</li>
+              <li>&ldquo;Replies in seconds&rdquo; and every word the assistant says</li>
+              <li>The site visit times and the notification, which are illustrative</li>
+            </ul>
+          </div>
+        </div>
+        <p class="dfoot">
+          Some things are missing on purpose. <b>There are no prices anywhere on this page</b>, because you publish none and I will not invent one. <b>There is no year founded, no licence number, no insurance claim and no crew size</b>, because I could not find any of them published and they are exactly the sort of thing you would then have to defend on a job site. You have two reviews on Facebook, one of which I could read, so <b>you will find exactly one review on this page and not a wall of them</b>. If you have more on paper or in your texts, they belong here and they will be stronger than anything I could write.
+          <br><br>
+          The after-the-pour review message is <b>a proposal, not a thing that is running</b>. Nothing on this page is connected to your phone, your calendar or your email, and the assistant sends nothing anywhere.
+          <br><br>
+          The photographs are the versions Facebook stores rather than the originals off your phone. They are good enough here, but <b>send me the originals and this page gets noticeably sharper</b>. Nothing in the right hand column goes live until you have read it and confirmed it. This page is set to <b>noindex</b>, so it can never compete with your own domain in search, and if you would rather it did not exist at all, say so and it is gone the same day.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<button class="fab" id="fab" type="button">Get a number</button>
+
+<script>
+(function(){
+"use strict";
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.08,rootMargin:"0px 0px -8% 0px"});
+document.querySelectorAll(".rv").forEach(function(el){io.observe(el);});
+
+var hdr=document.getElementById("hdr"), fab=document.getElementById("fab"), estOn=false;
+function onScroll(){var y=window.scrollY;hdr.classList.toggle("stuck",y>10);fab.classList.toggle("on",y>860&&!estOn);}
+window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+new IntersectionObserver(function(es){es.forEach(function(e){estOn=e.isIntersecting;});onScroll();},{threshold:.12})
+  .observe(document.getElementById("estimate"));
+fab.addEventListener("click",function(){document.getElementById("estimate").scrollIntoView({behavior:"smooth",block:"start"});});
+
+/* ---------------- lightbox ---------------- */
+var figs=[].slice.call(document.querySelectorAll("#grid figure"));
+var lb=document.getElementById("lb"),lbi=document.getElementById("lbi"),lbc=document.getElementById("lbc"),cur=0,lastFocus=null;
+function show(i){
+  cur=(i+figs.length)%figs.length;
+  var im=figs[cur].querySelector("img");
+  lbi.src=im.getAttribute("data-full");lbi.alt=im.alt;
+  lbc.textContent=figs[cur].querySelector("figcaption").textContent+"  ("+(cur+1)+" of "+figs.length+")";
+}
+function open(i){lastFocus=document.activeElement;show(i);lb.classList.add("on");document.body.style.overflow="hidden";document.getElementById("lbx").focus();}
+function close(){lb.classList.remove("on");document.body.style.overflow="";if(lastFocus)lastFocus.focus();}
+figs.forEach(function(f,i){f.querySelector("button").addEventListener("click",function(){open(i);});});
+document.getElementById("lbx").addEventListener("click",close);
+document.getElementById("lbp").addEventListener("click",function(){show(cur-1);});
+document.getElementById("lbn").addEventListener("click",function(){show(cur+1);});
+lb.addEventListener("click",function(e){if(e.target===lb)close();});
+document.addEventListener("keydown",function(e){
+  if(!lb.classList.contains("on"))return;
+  if(e.key==="Escape")close();
+  else if(e.key==="ArrowLeft")show(cur-1);
+  else if(e.key==="ArrowRight")show(cur+1);
+});
+
+/* ---------------- estimator ---------------- */
+var thread=document.getElementById("thread"),chips=document.getElementById("chips"),
+    pushWhen=document.getElementById("pushWhen"),pushWhat=document.getElementById("pushWhat");
+var S={};
+
+var JOBS={
+  pad:   {label:"Garage or barn pad", n:"Barn pad",       f:"Pads are the ones where thickness and steel matter most, because of what ends up parked on them."},
+  drive: {label:"Driveway",           n:"Driveway",       f:"Drives take the worst of a Michigan winter, so the base and the jointing do the heavy lifting."},
+  patio: {label:"Patio or sidewalk",  n:"Patio / walk",   f:"Good. Those are the ones where the finish and the edge detail are what you actually notice."},
+  found: {label:"Foundation",         n:"Foundation",     f:"Understood. Footings and walls need the grade and the access looked at before anybody quotes it."},
+  tear:  {label:"Tear out and replace",n:"Tear out & replace", f:"Worth knowing what is under the old slab before we price the new one, so the site visit matters here."},
+  other: {label:"Something else",     n:"Other concrete", f:"No problem. Easier to work out standing on it than over the phone."}
+};
+var WHEN={
+  asap:  {label:"As soon as possible", tag:"Soonest available", note:"Understood. We will get out to look at it quickly."},
+  season:{label:"This season",         tag:"This season",       note:"Plenty of time to do it properly then."},
+  plan:  {label:"Just pricing it out", tag:"Planning",          note:"Sensible. Better to price it before you have committed to anything."}
+};
+
+function el(c,h){var d=document.createElement("div");d.className=c;d.innerHTML=h;return d;}
+function toBottom(){thread.scrollTop=thread.scrollHeight;}
+function say(html,cls){
+  return new Promise(function(res){
+    var t=el("typing","<i></i><i></i><i></i>");thread.appendChild(t);toBottom();
+    setTimeout(function(){t.remove();thread.appendChild(el("msg bot"+(cls?" "+cls:""),html));toBottom();res();},
+      Math.min(1100,300+String(html).length*6.5));
+  });
+}
+function me(t){thread.appendChild(el("msg me",t));toBottom();}
+function ask(opts){
+  chips.innerHTML="";
+  opts.forEach(function(o){
+    var b=document.createElement("button");
+    b.type="button";b.className="chip";b.textContent=o.label;
+    b.addEventListener("click",function(){me(o.label);chips.innerHTML="";o.go();});
+    chips.appendChild(b);
+  });
+}
+function askText(ph,cb){
+  chips.innerHTML="";
+  var f=document.createElement("form");f.className="chip-form";
+  var i=document.createElement("input");i.type="text";i.placeholder=ph;i.autocomplete="off";i.setAttribute("aria-label",ph);
+  var b=document.createElement("button");b.type="submit";b.textContent="Send";
+  f.appendChild(i);f.appendChild(b);
+  f.addEventListener("submit",function(e){e.preventDefault();var v=i.value.trim();if(!v)return;me(v);chips.innerHTML="";cb(v);});
+  chips.appendChild(f);
+  setTimeout(function(){if(window.innerWidth>1000)i.focus();},80);
+}
+function visitSlots(){
+  var out=[],times=["9:00 AM","1:00 PM","4:30 PM"],i=0,d=new Date();d.setHours(0,0,0,0);
+  while(out.length<3){
+    d.setDate(d.getDate()+1);
+    if(d.getDay()===0)continue;
+    out.push({label:d.toLocaleDateString(undefined,{weekday:"long"})+", "+d.toLocaleDateString(undefined,{month:"short",day:"numeric"})+" at "+times[i],
+              short:d.toLocaleDateString(undefined,{weekday:"long"})+" · "+times[i]});
+    i++;
+  }
+  return out;
+}
+
+function start(){
+  thread.innerHTML="";chips.innerHTML="";S={};
+  say("Hi, DeBoer Concrete. Tell me roughly what you are looking to pour and I can get you a real number rather than a guess.")
+    .then(function(){return say("What is the job?");})
+    .then(function(){
+      ask(Object.keys(JOBS).map(function(k){
+        return {label:JOBS[k].label,go:function(){S.job=k;step2();}};
+      }));
+    });
+}
+function step2(){
+  var j=JOBS[S.job];
+  say(j.f)
+    .then(function(){return say("Roughly what size? Length by width is plenty, and a rough guess is fine at this stage.");})
+    .then(function(){askText("e.g. 30 x 40, or about 900 sq ft",function(v){S.size=v;step3();});});
+}
+function step3(){
+  say("Got it. And when are you hoping to have it done?")
+    .then(function(){
+      ask(Object.keys(WHEN).map(function(k){
+        return {label:WHEN[k].label,go:function(){S.when=k;step4();}};
+      }));
+    });
+}
+function step4(){
+  say(WHEN[S.when].note)
+    .then(function(){return say("Which town is it in? It decides whether a loaded truck can get there sensibly.");})
+    .then(function(){askText("Town or township",function(v){S.town=v;step5();});});
+}
+function step5(){
+  say("Thanks. Concrete cannot be quoted honestly over a phone, so the next step is coming out to look at the grade, the access and where the truck can actually reach. That visit is free.")
+    .then(function(){return say("Which of these suits you?");})
+    .then(function(){
+      var sl=visitSlots();
+      ask(sl.map(function(s){
+        return {label:s.label,go:function(){S.slot=s;step6();}};
+      }));
+    });
+}
+function step6(){
+  say("Done. And your name and the best number to reach you on?")
+    .then(function(){askText("Name and phone number",function(v){S.who=v;finish();});});
+}
+function finish(){
+  var j=JOBS[S.job];
+  pushWhen.textContent="Site visit · "+S.slot.short;
+  pushWhat.textContent=j.n+" · "+S.size+" · "+S.town;
+  say("<b>Booked.</b> "+S.slot.label+", for a "+j.n.toLowerCase()+" at roughly "+S.size+" in "+S.town+".","flag")
+    .then(function(){return say("That has gone straight to Nick&rsquo;s phone with the size and the town already on it, so nobody has to ring you back to ask what you told me.");})
+    .then(function(){return say("You will get a text to confirm the day before. And once the job is finished and you are happy with it, you will get one more asking for a review, which is the only marketing a concrete company really needs.");})
+    .then(function(){
+      chips.innerHTML="";
+      var b=document.createElement("button");
+      b.type="button";b.className="chip";b.textContent="Run it again";
+      b.addEventListener("click",start);
+      chips.appendChild(b);
+    });
+}
+document.getElementById("replay").addEventListener("click",start);
+start();
+})();
+</script>
+
+</body>
+</html>
