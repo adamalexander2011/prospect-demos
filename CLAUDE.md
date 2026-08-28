@@ -49,6 +49,26 @@ because the two businesses were sitting on different unused assets.
 
 ## What never changes
 
+**Build from their personality, not from the last build.**
+The design language is derived from *this* company: their logo, their palette, their
+photographs, their trade. Read those first and let them decide the ground colour, the
+type, the structure and the rhythm. Borrow from an existing build only where a concept
+is genuinely a perfect fit, and when you do, borrow the *idea* rather than the CSS.
+
+Three builds, three deliberately different languages, all derived from the assets:
+
+| | Their asset | What it forced |
+|---|---|---|
+| Viper | Good photography of their floors | Photo-led, before/after slider, lightbox |
+| Goblin | Distinctive fantasy artwork, no job photos | Near-black and gold, Cinzel serif, artwork-led |
+| DeBoer | Black geometric monogram with a red keyline | Paper white, heavy grotesk, oxblood, red keyline device |
+
+If a new page could be recoloured into a previous one without anybody noticing, it is
+a template with their logo on it, and the read was wasted. The common skeleton below is
+a checklist of what a page usually needs, **not a layout to reproduce**. Goblin needed
+24/7 triage and membership tiers. DeBoer needed dimensions and a spec strip, and had no
+use for either of Goblin's ideas.
+
 **Invent nothing they would have to defend.**
 No fabricated review. No invented price. No made-up license number, certification
 or year founded. If they have not published it, you do not get to state it as
