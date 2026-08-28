@@ -55,7 +55,7 @@ in exactly the town he does it in.
 
 **Angle:** you are already paying for the domain, the hosting and the email. The email works. The website behind it says "under construction."
 
-**Warm opening:** your barn-pad photos are better than anything the guys ranking above you in Clio have on their sites, so I built the site they should have been on. Free, no catch, use it or don't.
+**Warm opening:** three concrete companies come up when somebody searches Clio and you are not one of them, so I built what your page should look like. The page is yours free. Putting it live is what I do for a living, and I would charge you for that.
 
 **Connection:** family friend. Adam named them directly. Worth noting that they never surfaced in his followed-Pages list, because he does not follow the page.
 
@@ -132,3 +132,25 @@ to web sizes with separate thumbnails. Originals kept outside the repo.
 claim, no crew size, and exactly one review rather than a wall of them. The service area
 town list is a guess from Clio and is flagged as mine in the disclosure, because they
 publish no service area anywhere.
+
+
+## Commercial framing, corrected 27 August 2026
+
+The first build carried Goblin's line, *"no invoice, no catch."* **Adam would want
+paying for this**, so that line was false and it came out. It was an honesty problem
+before it was a sales one.
+
+The note now leads with the competition rather than the domain, at Adam's direction,
+and states an explicit split:
+
+- **The page as it stands is free.** Screenshot it, take the ideas elsewhere, or leave it.
+- **Putting it live is paid work.** Domain pointed, Google profile set up, review message
+  running after every pour, assistant wired to a real phone instead of demonstrating.
+
+The reason-why is Adam's own and it is true: he watched the work go up all year, saw the
+site was still not there, and websites are the thing he is actually good at. That reads
+better to a family friend than manufactured altruism, which Nick would smell anyway.
+
+**Structure of the note now:** not on the map at all → what Patriot and Osborn are
+defending (21 / 12 / 0) → reviews are how you pass them → the site is where they land
+once they find you → the honest ask.
