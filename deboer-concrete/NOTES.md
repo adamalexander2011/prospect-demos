@@ -55,7 +55,11 @@ in exactly the town he does it in.
 
 **Angle:** you are already paying for the domain, the hosting and the email. The email works. The website behind it says "under construction."
 
-**Warm opening:** three concrete companies come up when somebody searches Clio and you are not one of them, so I built what your page should look like. The page is yours free. Putting it live is what I do for a living, and I would charge you for that.
+**Warm opening:** *"Search concrete in Clio and Google hands you three companies. You're
+not one of them. The one at the top has four photos on its homepage and three are stock,
+and your barn pads are better than all four. So I built the site they should have been
+on."* (Send with a few words before the link. The paid/free split is on the page itself,
+not in the text.)
 
 **Connection:** family friend. Adam named them directly. Worth noting that they never surfaced in his followed-Pages list, because he does not follow the page.
 
@@ -168,3 +172,32 @@ repetition: *thirty by forty, six inches, rebar, he wrote the specification hims
 
 Worth remembering as a general trap. Extracting a highlight from a quote and placing it
 next to that quote is not emphasis, it is a spoiler.
+
+
+## Competitor photography, verified 27 August 2026
+
+The opening line claims DeBoer's photographs beat the sites of the companies ranking
+above him. That was an unverified comparison until it was actually scanned, and it is
+the sort of claim that collapses in front of a family friend if it turns out to be
+wrong. `bin/asset-inventory.js` on both:
+
+| | Google reviews | Photography on the homepage |
+|---|---|---|
+| **Patriot Concrete**, Clio | 21 | **4 photos, 3 of them stock.** One real, a CSS background at 1105px |
+| **Osborn Inc**, Clio | 12 | 10 image files, only **2 real photographs**, both served off Facebook, widest 1425px. No stock detected |
+| **DeBoer** | 2 (Facebook) | **7 real photographs, no stock, up to 2048px** |
+
+So the claim is true and understated. The two holding the map pack are holding it on
+review count, not on proof of work.
+
+**Two details deliberately left out of the outreach.** Osborn's live site publishes
+`555-555-5555` alongside their real number, and Patriot's stock photography is named but
+not mocked. Punching at a named third party in a text to a family friend reads as mean
+rather than sharp, and neither fact is what makes the case.
+
+**Wording note.** The first draft said *"the guys ranking above you"*. That concedes a
+race DeBoer is not actually in: he is not ranked below them, he is absent, because there
+is no profile at all. "Ranking" was also the only word in the line that sounded like
+marketing rather than like Adam. The clause *"the site they should have been on"* was
+kept exactly, because "they" reads as the photographs, which makes Nick's work the thing
+that deserved better instead of making Adam the hero.
