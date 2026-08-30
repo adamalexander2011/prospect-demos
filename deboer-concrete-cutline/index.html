@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; font-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>DeBoer Concrete — Cut Line Alternative Concept Site</title>
+<meta name="description" content="An alternative concept site for DeBoer Concrete And Construction LLC, built from its published logo and Facebook photography. This is not the official website.">
+<meta name="theme-color" content="#17191B">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DeBoer Concrete — Cut Line Alternative Concept Site">
+<meta property="og:description" content="A clearly labelled visual concept built around photography published on DeBoer's Facebook page. Not the official website.">
+<meta property="og:image" content="https://demos.locallvrg.co/deboer-concrete-cutline/assets/hero-shop-apron.jpg">
+<meta property="og:image:alt" content="Concrete apron and covered walkway at a dark metal building">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo.woff2" crossorigin>
+<link rel="preload" as="image" href="assets/hero-shop-apron.jpg" fetchpriority="high">
+<style>
+@font-face{font-family:Archivo;src:url(assets/fonts/archivo.woff2) format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:"Barlow Condensed";src:url(assets/fonts/barlow-condensed.woff2) format("woff2");font-weight:600;font-display:swap}
+
+:root{
+  --canvas:#17191B;
+  --raised:#222528;
+  --concrete:#F1EFEA;
+  --concrete-muted:#D8D4CB;
+  --ink:#FFFFFF;
+  --body:#B8BEC2;
+  --body-light:#282B2E;
+  --muted-light:#5E656A;
+  --joint:#3B3F42;
+  --oxblood:#7E2224;
+  --oxblood-hover:#9E2C30;
+  --oxblood-bright:#D5787A;
+  --success:#66AE7E;
+  --archivo:Archivo,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --cond:"Barlow Condensed",Archivo,sans-serif;
+  --wrap:1440px;
+  --rail:36px;
+  --pad:clamp(24px,4vw,64px);
+  --section:clamp(72px,10vw,144px);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--canvas);scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--canvas);color:var(--body);font:400 17px/1.65 var(--archivo);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button,input{font:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:3px solid var(--oxblood-bright);outline-offset:4px}
+::selection{background:var(--oxblood);color:var(--ink)}
+.wrap{width:min(100%,var(--wrap));margin-inline:auto;padding-inline:var(--pad)}
+.skip{position:fixed;left:16px;top:-100px;z-index:300;background:var(--concrete);color:var(--body-light);padding:14px 18px;font-weight:800;text-decoration:none}
+.skip:focus{top:12px}
+.kicker{font:600 12px/1.2 var(--cond);letter-spacing:.18em;text-transform:uppercase}
+.kicker.red{color:var(--oxblood-bright)}
+.display{color:var(--ink);font:500 clamp(42px,6vw,92px)/.94 var(--archivo);letter-spacing:-.05em;text-wrap:balance}
+.display.dark{color:var(--body-light)}
+.lede{max-width:62ch;font-size:clamp(18px,1.7vw,22px);line-height:1.55}
+.btn{min-height:50px;display:inline-flex;align-items:center;justify-content:center;padding:15px 28px;border:1px solid transparent;background:none;color:var(--ink);font:800 13px/1 var(--archivo);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .18s,border-color .18s,color .18s}
+.btn-primary{background:var(--oxblood);border-color:var(--oxblood)}
+.btn-primary:hover{background:var(--oxblood-hover);border-color:var(--oxblood-hover)}
+.btn-outline{border-color:rgba(255,255,255,.7)}
+.btn-outline:hover{background:var(--ink);color:var(--canvas)}
+.btn-dark{border-color:var(--body-light);color:var(--body-light)}
+.btn-dark:hover{background:var(--body-light);color:var(--concrete)}
+
+/* The concept label is the only permanently fixed piece of chrome. */
+.concept-rail{position:fixed;inset:0 0 auto;z-index:150;height:var(--rail);background:var(--oxblood);color:#fff;display:flex;align-items:center}
+.concept-rail .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;font:700 11px/1.2 var(--archivo);letter-spacing:.1em;text-transform:uppercase}
+.concept-rail a{text-underline-offset:3px}
+
+.site-header{position:absolute;z-index:80;top:var(--rail);left:0;right:0;border-bottom:1px solid rgba(255,255,255,.2)}
+.nav{height:82px;display:flex;align-items:center;gap:32px}
+.brand{display:flex;align-items:center;gap:14px;color:#fff;text-decoration:none}
+.brand-mark{width:54px;height:54px;background:var(--concrete);display:grid;place-items:center;padding:5px;flex:none}
+.brand-mark img{width:100%;height:100%;object-fit:contain}
+.brand-name{display:flex;flex-direction:column;line-height:1}
+.brand-name strong{font-size:16px;letter-spacing:.03em}
+.brand-name span{margin-top:6px;color:#D9DCDE;font:600 10px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase}
+.nav-links{margin-left:auto;display:flex;align-items:center;gap:30px}
+.nav-links a{color:#fff;font:700 12px/1 var(--archivo);letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
+.nav-links a:hover{text-decoration:underline;text-underline-offset:5px}
+.nav-phone{font:700 13px/1 var(--archivo);color:#fff;text-decoration:none;white-space:nowrap}
+
+.hero{position:relative;min-height:max(760px,100svh);display:flex;align-items:flex-end;isolation:isolate;padding:calc(var(--rail) + 128px) 0 clamp(64px,8vw,112px)}
+.hero-media{position:absolute;inset:0;z-index:-2;background:#101214}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 54%}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,12,13,.92) 0%,rgba(10,12,13,.68) 38%,rgba(10,12,13,.16) 74%),linear-gradient(0deg,rgba(10,12,13,.94) 0%,rgba(10,12,13,.12) 58%,rgba(10,12,13,.34) 100%)}
+.hero-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:end}
+.hero-copy{grid-column:1/9;position:relative;padding-left:clamp(20px,3vw,48px)}
+.hero-copy::before{content:"";position:absolute;left:0;top:2px;bottom:4px;width:3px;background:var(--oxblood-bright)}
+.hero h1{max-width:9.6ch;margin-top:24px;color:#fff;font:500 clamp(53px,8.5vw,134px)/.88 var(--archivo);letter-spacing:-.06em;text-wrap:balance}
+.hero .lede{margin-top:30px;color:#E0E3E4;max-width:55ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-index{grid-column:10/13;align-self:end;border-top:1px solid rgba(255,255,255,.42);padding-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:16px;color:#fff}
+.hero-index b{display:block;font:600 28px/1 var(--cond)}
+.hero-index span{display:block;margin-top:8px;color:#D9DCDE;font:600 11px/1.3 var(--cond);letter-spacing:.16em;text-transform:uppercase}
+
+.intro{padding:var(--section) 0;background:var(--canvas)}
+.split{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.split-label{grid-column:1/4;padding-top:8px}
+.split-copy{grid-column:5/12;border-left:1px solid var(--joint);padding-left:clamp(28px,4vw,64px)}
+.split-copy p{margin-top:30px;max-width:62ch;font-size:clamp(18px,1.6vw,22px)}
+.split-copy .micro{margin-top:24px;color:#8F969B;font-size:14px}
+
+.proof{background:var(--concrete);color:var(--body-light);padding:var(--section) 0}
+.proof-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.proof-meta{grid-column:1/4}
+.proof-meta p{margin-top:20px;color:var(--muted-light);max-width:26ch}
+.proof blockquote{grid-column:4/13;font:500 clamp(32px,5vw,76px)/1.05 var(--archivo);letter-spacing:-.045em;text-wrap:balance}
+.proof blockquote::before{content:"\201C";color:var(--oxblood);display:block;font:600 76px/.6 var(--cond);margin-bottom:24px}
+.proof cite{grid-column:4/13;margin-top:28px;font-style:normal;color:var(--muted-light);font-size:15px}
+.proof cite strong{color:var(--body-light)}
+
+.work-section{padding:var(--section) 0;background:var(--canvas)}
+.work-head{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:end;margin-bottom:clamp(56px,8vw,104px)}
+.work-head .display{grid-column:1/8}
+.work-head .lede{grid-column:9/13;color:var(--body)}
+.job-ledger{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(24px,3vw,48px) 24px}
+.job{min-width:0}
+.job:nth-child(1){grid-column:1/9}
+.job:nth-child(2){grid-column:10/13;margin-top:clamp(64px,10vw,160px)}
+.job:nth-child(3){grid-column:3/13;margin-top:clamp(24px,5vw,72px)}
+.job:nth-child(4){grid-column:1/6;margin-top:clamp(40px,8vw,120px)}
+.job:nth-child(5){grid-column:7/13}
+.job:nth-child(6){grid-column:2/11;margin-top:clamp(32px,7vw,96px)}
+.job-frame{position:relative;overflow:hidden;background:var(--raised)}
+.job img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.job:hover img{transform:scale(1.012)}
+.job:nth-child(1) .job-frame,.job:nth-child(3) .job-frame,.job:nth-child(6) .job-frame{aspect-ratio:16/10}
+.job:nth-child(2) .job-frame,.job:nth-child(4) .job-frame{aspect-ratio:3/4}
+.job:nth-child(5) .job-frame{aspect-ratio:4/3}
+.job figcaption{display:grid;grid-template-columns:60px 1fr auto;gap:16px;align-items:baseline;border-top:1px solid var(--joint);padding-top:14px;margin-top:14px;color:var(--body)}
+.job-no{color:var(--oxblood-bright);font:600 16px/1 var(--cond);letter-spacing:.12em}
+.job-title{color:#fff;font-size:15px}
+.job-note{font:600 10px/1 var(--cond);letter-spacing:.15em;text-transform:uppercase;color:#8F969B;text-align:right}
+
+.field-notes{padding:var(--section) 0;background:var(--raised)}
+.field-head{max-width:950px;margin-bottom:clamp(48px,7vw,88px)}
+.field-head .display{margin-top:20px}
+.field-head .lede{margin-top:28px}
+.question-list{border-top:1px solid #51565A}
+.question{display:grid;grid-template-columns:1fr 4fr 7fr;gap:24px;padding:34px 0;border-bottom:1px solid #51565A}
+.question .num{font:600 18px/1 var(--cond);color:var(--oxblood-bright);letter-spacing:.14em}
+.question h3{color:#fff;font:600 clamp(20px,2vw,28px)/1.15 var(--archivo);letter-spacing:-.025em}
+.question p{max-width:60ch;color:var(--body)}
+
+.visit{padding:var(--section) 0;background:var(--concrete);color:var(--body-light)}
+.visit-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(48px,7vw,112px);align-items:start}
+.visit-copy .display{margin-top:20px}
+.visit-copy .lede{margin-top:28px;color:var(--muted-light)}
+.visit-facts{margin-top:36px;border-top:1px solid var(--concrete-muted)}
+.visit-facts li{list-style:none;display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--concrete-muted)}
+.visit-facts b{font:600 14px/1 var(--cond);color:var(--oxblood);letter-spacing:.12em}
+.visit-shell{background:var(--canvas);color:var(--body);border-top:4px solid var(--oxblood);min-height:590px;display:flex;flex-direction:column}
+.visit-top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 22px;border-bottom:1px solid var(--joint)}
+.visit-top strong{color:#fff;font-size:15px}
+.demo-badge{display:inline-flex;align-items:center;gap:8px;color:#fff;font:700 10px/1 var(--archivo);letter-spacing:.12em;text-transform:uppercase}
+.demo-badge::before{content:"";width:8px;height:8px;background:var(--oxblood-bright)}
+.visit-log{flex:1;display:flex;flex-direction:column;gap:12px;padding:24px;overflow:auto;max-height:410px;scroll-behavior:smooth}
+.bubble{max-width:86%;padding:13px 16px;border:1px solid var(--joint);line-height:1.5}
+.bubble.agent{align-self:flex-start;background:var(--raised);color:#E1E3E4}
+.bubble.user{align-self:flex-end;background:var(--oxblood);border-color:var(--oxblood);color:#fff}
+.bubble.notice{align-self:stretch;max-width:none;border-color:#805356;color:#F0DCDD;background:#291D1F}
+.ticket{border:1px solid #62676B;border-left:3px solid var(--success);padding:18px;align-self:stretch;color:#fff}
+.ticket-label{font:600 10px/1 var(--cond);letter-spacing:.17em;text-transform:uppercase;color:var(--success)}
+.ticket-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;margin-top:16px}
+.ticket-grid dt{font:600 10px/1 var(--cond);letter-spacing:.12em;text-transform:uppercase;color:#92999E}
+.ticket-grid dd{margin-top:5px;color:#fff;font-size:14px}
+.visit-controls{padding:18px 22px;border-top:1px solid var(--joint);display:flex;flex-wrap:wrap;gap:9px}
+.choice{min-height:46px;padding:12px 15px;border:1px solid #6A7074;background:transparent;color:#fff;font-weight:700;cursor:pointer;text-align:left}
+.choice:hover{background:#fff;color:var(--canvas)}
+.choice:disabled{opacity:.45;cursor:default}
+.text-step{display:grid;grid-template-columns:1fr auto;gap:10px;width:100%}
+.text-step label{grid-column:1/-1;color:#fff;font:600 12px/1.3 var(--archivo)}
+.text-step input{min-width:0;height:48px;border:1px solid #747A7E;background:#111315;color:#fff;padding:0 14px}
+.text-step button{min-height:48px;padding:0 20px;border:0;background:var(--oxblood);color:#fff;font-weight:800;cursor:pointer}
+.field-error{grid-column:1/-1;color:#FFB9BB;font-size:13px;min-height:1.4em}
+.visit-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 22px;border-top:1px solid var(--joint)}
+.restart{border:0;background:none;color:var(--oxblood-bright);font-weight:800;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:8px 0}
+.visit-bottom span{font:600 10px/1.3 var(--cond);letter-spacing:.14em;text-transform:uppercase;color:#92999E;text-align:right}
+.no-js-only{color:#fff}
+
+.contact{padding:clamp(72px,9vw,128px) 0;background:var(--canvas);border-top:1px solid var(--joint)}
+.contact-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:end}
+.contact .display{grid-column:1/8}
+.contact-details{grid-column:9/13;border-top:1px solid #5B6064}
+.contact-details a,.contact-details p{display:block;padding:18px 0;border-bottom:1px solid #5B6064;color:#fff;text-decoration:none;overflow-wrap:anywhere}
+.contact-details a:hover{text-decoration:underline;text-underline-offset:4px}
+
+.disclosure{padding:var(--section) 0;background:var(--concrete);color:var(--body-light)}
+.disclosure-head{max-width:900px}
+.disclosure-head .display{margin-top:20px}
+.disclosure-head .lede{margin-top:28px;color:var(--muted-light)}
+.disclosure-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--concrete-muted);border:1px solid var(--concrete-muted);margin-top:clamp(48px,7vw,88px)}
+.disclosure-col{background:#FAF9F6;padding:clamp(28px,4vw,52px)}
+.disclosure-col h3{font:600 clamp(22px,2.5vw,32px)/1.1 var(--archivo);letter-spacing:-.025em}
+.disclosure-col ul{margin-top:26px;padding-left:20px}
+.disclosure-col li+li{margin-top:13px}
+.closing{margin-top:1px;background:var(--body-light);color:#E4E6E7;padding:clamp(28px,4vw,52px)}
+.closing strong{color:#fff}
+
+footer{padding:48px 0;background:#111315;color:#9BA1A5;border-top:1px solid var(--joint)}
+.footer-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+footer strong{color:#fff}
+footer a{color:#fff;text-underline-offset:3px}
+
+@media(max-width:1000px){
+  .nav-links{display:none}
+  .hero-copy{grid-column:1/10}
+  .hero-index{grid-column:10/13}
+  .work-head .display{grid-column:1/9}.work-head .lede{grid-column:9/13}
+  .visit-grid{grid-template-columns:1fr;gap:56px}.visit-copy{max-width:800px}.visit-shell{min-height:560px}
+  .contact .display{grid-column:1/8}.contact-details{grid-column:8/13}
+}
+
+@media(max-width:780px){
+  :root{--pad:clamp(20px,5vw,40px);--section:clamp(64px,12vw,96px)}
+  .brand-name{display:none}.nav-phone{margin-left:auto}
+  .hero{min-height:760px;padding-bottom:58px}.hero-media img{object-position:58% center}
+  .hero-media::after{background:linear-gradient(0deg,rgba(10,12,13,.96) 0%,rgba(10,12,13,.52) 56%,rgba(10,12,13,.42) 100%)}
+  .hero-copy{grid-column:1/13}.hero-index{display:none}.hero h1{max-width:8.8ch}
+  .split-label{grid-column:1/13}.split-copy{grid-column:1/13;margin-top:32px;padding-left:28px}
+  .proof-meta{grid-column:1/13}.proof-meta p{max-width:50ch}.proof blockquote,.proof cite{grid-column:1/13}.proof blockquote{margin-top:48px}
+  .work-head .display,.work-head .lede{grid-column:1/13}.work-head .lede{margin-top:28px}
+  .job-ledger{display:block}.job,.job:nth-child(n){margin:0 0 56px}.job:nth-child(n) .job-frame{aspect-ratio:auto}.job img{height:auto}.job figcaption{grid-template-columns:48px 1fr}.job-note{grid-column:2;text-align:left}
+  .question{grid-template-columns:48px 1fr}.question p{grid-column:2;margin-top:8px}
+  .contact .display,.contact-details{grid-column:1/13}.contact-details{margin-top:48px}
+  .disclosure-grid{grid-template-columns:1fr}
+}
+
+@media(max-width:560px){
+  :root{--rail:56px}
+  .concept-rail .wrap{font-size:9.5px;line-height:1.35}.concept-rail .rail-note{max-width:22ch}.concept-rail a{max-width:12ch;text-align:right}
+  .nav{height:74px}.brand-mark{width:48px;height:48px}.nav-phone{font-size:12px}
+  .hero{min-height:700px;padding-top:calc(var(--rail) + 108px)}
+  .hero h1{font-size:clamp(48px,15vw,68px)}
+  .hero .lede{font-size:17px;line-height:1.5}.hero-actions{display:grid}.hero-actions .btn{width:100%}
+  .job figcaption{font-size:13px}
+  .question{padding:28px 0}.question h3{font-size:20px}
+  .visit-log{padding:18px}.visit-controls{padding:16px}.choice{width:100%}
+  .text-step{grid-template-columns:1fr}.text-step label,.field-error{grid-column:1}.text-step button{width:100%}
+  .ticket-grid{grid-template-columns:1fr}
+  .visit-bottom{align-items:flex-start;flex-direction:column}.visit-bottom span{text-align:left}
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="concept-rail">
+  <div class="wrap">
+    <span class="rail-note">Alternative concept site · not DeBoer&rsquo;s official website · visit demo sends nothing</span>
+    <a href="../deboer-concrete/" rel="nofollow">Compare direction 01</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="DeBoer Concrete alternative concept, back to top">
+      <span class="brand-mark"><img src="assets/logo.png" alt="" width="620" height="471"></span>
+      <span class="brand-name"><strong>DEBOER</strong><span>Concrete &amp; Construction</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Concept navigation">
+      <a href="#work">The work</a>
+      <a href="#questions">Field notes</a>
+      <a href="#visit">Visit demo</a>
+      <a href="#disclosure">Disclosure</a>
+    </nav>
+    <a class="nav-phone" href="tel:+12482129577">(248) 212-9577</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-media" aria-hidden="true">
+      <img src="assets/hero-shop-apron.jpg" alt="" width="1500" height="1125" fetchpriority="high">
+    </div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker red">Clio, Michigan · Alternative direction 02</p>
+        <h1 id="hero-title">A slab starts below the surface.</h1>
+        <p class="lede">A cinematic website concept built around photography published on DeBoer&rsquo;s Facebook page. The words, job attribution and visit demo are proposed, disclosed, and not connected to the business.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">See the work</a>
+          <a class="btn btn-outline" href="#visit">Try the visit demo</a>
+        </div>
+      </div>
+      <div class="hero-index" aria-label="Concept facts">
+        <div><b>07</b><span>Facebook-sourced photographs</span></div>
+        <div><b>00</b><span>Stock photographs</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro" aria-labelledby="intro-title">
+    <div class="wrap split">
+      <div class="split-label">
+        <p class="kicker red">Cut Line / The idea</p>
+      </div>
+      <div class="split-copy">
+        <h2 class="display" id="intro-title">The work is the page chrome.</h2>
+        <p>This direction treats every photograph like a job record rather than a gallery thumbnail. Thin control-joint rules organize the page; DeBoer&rsquo;s oxblood mark appears only where the eye needs a path.</p>
+        <p class="micro">Concept copy by Local LVRG. This paragraph is not a DeBoer claim.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof" aria-labelledby="proof-title">
+    <div class="wrap proof-grid">
+      <div class="proof-meta">
+        <p class="kicker red" id="proof-title">Published customer recommendation</p>
+        <p>One real quote, kept at full weight and reproduced exactly as recorded from Facebook.</p>
+      </div>
+      <blockquote>they did my 30 x 40 barn pad, 6&quot; thick with rebar, absolutely great work! highly recommend.</blockquote>
+      <cite><strong>Greg Taylor</strong> · Facebook recommendation</cite>
+    </div>
+  </section>
+
+  <section class="work-section" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="work-head">
+        <h2 class="display" id="work-title">Six frames. No stock.</h2>
+        <p class="lede">Every image is from DeBoer&rsquo;s Facebook uploads. Ownership, job attribution and labels need confirmation before any production use.</p>
+      </div>
+
+      <div class="job-ledger">
+        <figure class="job">
+          <div class="job-frame"><img src="assets/job-approach.jpg" alt="Concrete surface leading beneath a timber pavilion with a green metal roof" width="1050" height="1400" loading="lazy" decoding="async"></div>
+          <figcaption><span class="job-no">01</span><span class="job-title">Approach &amp; apron</span><span class="job-note">Concept caption</span></figcaption>
+        </figure>
+        <figure class="job">
+          <div class="job-frame"><img src="assets/job-barn-slab.jpg" alt="Large finished concrete slab inside an open pole barn" width="1600" height="1200" loading="lazy" decoding="async"></div>
+          <figcaption><span class="job-no">02</span><span class="job-title">Barn slab</span><span class="job-note">Concept caption</span></figcaption>
+        </figure>
+        <figure class="job">
+          <div class="job-frame"><img src="assets/job-foundation.jpg" alt="Poured concrete walls forming a building footprint" width="1600" height="1200" loading="lazy" decoding="async"></div>
+          <figcaption><span class="job-no">03</span><span class="job-title">Poured foundation</span><span class="job-note">Concept caption</span></figcaption>
+        </figure>
+        <figure class="job">
+          <div class="job-frame"><img src="assets/job-banded-drive.jpg" alt="Fresh concrete driveway with a contrasting border band" width="1600" height="1200" loading="lazy" decoding="async"></div>
+          <figcaption><span class="job-no">04</span><span class="job-title">Banded drive</span><span class="job-note">Concept caption</span></figcaption>
+        </figure>
+        <figure class="job">
+          <div class="job-frame"><img src="assets/job-walkway.jpg" alt="Broom-finished concrete walkway beside a dark metal building" width="1050" height="1400" loading="lazy" decoding="async"></div>
+          <figcaption><span class="job-no">05</span><span class="job-title">Walkway</span><span class="job-note">Concept caption</span></figcaption>
+        </figure>
+        <figure class="job">
+          <div class="job-frame"><img src="assets/job-curved-drive.jpg" alt="Curving concrete drive leading toward a blue metal building" width="1047" height="1400" loading="lazy" decoding="async"></div>
+          <figcaption><span class="job-no">06</span><span class="job-title">Curved drive</span><span class="job-note">Concept caption</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="field-notes" id="questions" aria-labelledby="questions-title">
+    <div class="wrap">
+      <div class="field-head">
+        <p class="kicker red">Field notes / general questions</p>
+        <h2 class="display" id="questions-title">The finish is only one line on the ticket.</h2>
+        <p class="lede">These are general questions a buyer can ask any concrete contractor. They are not a statement of DeBoer&rsquo;s materials, specifications, or process.</p>
+      </div>
+      <div class="question-list">
+        <article class="question"><span class="num">01</span><h3>What is under it?</h3><p>Ask how the base will be prepared, compacted, and graded before concrete arrives.</p></article>
+        <article class="question"><span class="num">02</span><h3>How thick is the pour?</h3><p>Make the planned thickness explicit for the load the slab is expected to carry.</p></article>
+        <article class="question"><span class="num">03</span><h3>What reinforcement is specified?</h3><p>Ask whether the plan calls for rebar, mesh, another system, or no reinforcement.</p></article>
+        <article class="question"><span class="num">04</span><h3>Where are the joints?</h3><p>Ask how the joint layout relates to the slab geometry and likely movement.</p></article>
+        <article class="question"><span class="num">05</span><h3>What finish fits the use?</h3><p>Foot traffic, vehicle traffic, weather, and appearance all affect that choice.</p></article>
+        <article class="question"><span class="num">06</span><h3>What happens on pour day?</h3><p>Ask who is on site, how timing is handled, and what conditions would change the plan.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap visit-grid">
+      <div class="visit-copy">
+        <p class="kicker red">Visit desk / interaction study</p>
+        <h2 class="display dark" id="visit-title">A visit-request prototype, never an estimator.</h2>
+        <p class="lede">Try the proposed intake flow. It calculates no price, checks no availability, requests no contact details, books no appointment, and sends or stores nothing.</p>
+        <ul class="visit-facts">
+          <li><b>01</b><span>Project, rough size and town establish the visit context.</span></li>
+          <li><b>02</b><span>Time choices are examples only, not live openings.</span></li>
+          <li><b>03</b><span>A real version would confirm only after approved availability and delivery both succeed.</span></li>
+        </ul>
+      </div>
+
+      <div class="visit-shell" role="region" aria-labelledby="visit-demo-title">
+        <div class="visit-top">
+          <strong id="visit-demo-title">DeBoer site-visit concept</strong>
+          <span class="demo-badge">Demo · does not send</span>
+        </div>
+        <div class="visit-log" id="visit-log" role="log" aria-live="polite" aria-label="Demo conversation">
+          <p class="bubble agent no-js-only">This visual prototype needs JavaScript for the sample choices. Nothing is sent either way. Call (248) 212-9577 if you want to contact the real business.</p>
+        </div>
+        <div class="visit-controls" id="visit-controls"></div>
+        <div class="visit-bottom">
+          <button class="restart" id="restart" type="button" hidden>Start the demo over</button>
+          <span>Nothing leaves this browser</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <h2 class="display" id="contact-title">Use the real contact details.</h2>
+      <div class="contact-details">
+        <a href="tel:+12482129577">Call · (248) 212-9577</a>
+        <a href="mailto:nick@deboerconcreteandconstructionllc.com">Email · nick@deboerconcreteandconstructionllc.com</a>
+        <p>Published base · Clio, Michigan</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="disclosure" id="disclosure" aria-labelledby="disclosure-title">
+    <div class="wrap">
+      <div class="disclosure-head">
+        <p class="kicker red">What is real / what is proposed</p>
+        <h2 class="display dark" id="disclosure-title">The line has to stay visible.</h2>
+        <p class="lede">This is a separate alternative concept by Local LVRG, not DeBoer&rsquo;s official site. The visual direction is original; the business material is identified below.</p>
+      </div>
+
+      <div class="disclosure-grid">
+        <div class="disclosure-col">
+          <h3>Real, supplied or published by DeBoer</h3>
+          <ul>
+            <li>The company name and DB logo from its Facebook page.</li>
+            <li>Seven photographs downloaded from DeBoer&rsquo;s public Facebook uploads; ownership and job attribution still need confirmation.</li>
+            <li>The published phone number, email address, Clio base, and official domain.</li>
+            <li>Greg Taylor&rsquo;s name and recommendation, reproduced word for word as recorded.</li>
+          </ul>
+        </div>
+        <div class="disclosure-col">
+          <h3>Created for this concept and not yet DeBoer claims</h3>
+          <ul>
+            <li>The Cut Line design, layout, navigation, typography treatment and interaction.</li>
+            <li>Every headline, paragraph, CTA, metadata description and footer line.</li>
+            <li>Every photograph caption, alt-text job classification and inferred service label.</li>
+            <li>All buying-question language and any process, material, workmanship or durability statement.</li>
+            <li>The entire visit-request prototype script, choices, example time windows and completion state.</li>
+            <li>Any suggestion that a request reaches a phone, inbox, CRM or calendar.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="closing">
+        <p><strong>Nothing in the proposed column represents DeBoer until DeBoer confirms it.</strong> This site-visit planning flow is a visual prototype, not an estimator: it calculates no price, checks no availability, books no appointment, and sends or stores no information. The visit demo is not connected to DeBoer&rsquo;s inbox, calendar or CRM; the separate call and email links use DeBoer&rsquo;s published contact details. The page is <code>noindex,nofollow</code> and will be removed the same day on request. The concept page was built at no charge; publishing it and connecting real booking, communications or marketing systems would be paid implementation.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <p><strong>DeBoer Concrete — Cut Line</strong><br>Alternative concept by Local LVRG · not affiliated</p>
+    <p><a href="https://deboerconcreteandconstructionllc.com/" rel="nofollow noopener">Real business website</a> · <a href="#disclosure">Full disclosure</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  var log=document.getElementById("visit-log");
+  var controls=document.getElementById("visit-controls");
+  var restart=document.getElementById("restart");
+  var state={};
+
+  var jobs=[
+    ["Garage or barn pad","Pad"],
+    ["Driveway or approach","Drive"],
+    ["Patio or walkway","Patio / walk"],
+    ["Foundation","Foundation"],
+    ["Something else","Other concrete"]
+  ];
+
+  function node(tag,className,text){
+    var el=document.createElement(tag);
+    if(className)el.className=className;
+    if(text!==undefined)el.textContent=text;
+    return el;
+  }
+
+  function message(text,type){
+    var p=node("p","bubble "+(type||"agent"),text);
+    log.appendChild(p);
+    log.scrollTop=log.scrollHeight;
+  }
+
+  function user(text){message(text,"user");}
+
+  function clearControls(){controls.replaceChildren();}
+
+  function focusFirst(){
+    requestAnimationFrame(function(){
+      var first=controls.querySelector("button,input,a[href]");
+      if(first)first.focus();
+    });
+  }
+
+  function choose(options,callback,shouldFocus){
+    clearControls();
+    options.forEach(function(option){
+      var button=node("button","choice",option[0]);
+      button.type="button";
+      button.addEventListener("click",function(){
+        controls.querySelectorAll("button").forEach(function(item){item.disabled=true;});
+        user(option[0]);
+        callback(option[1]);
+      },{once:true});
+      controls.appendChild(button);
+    });
+    if(shouldFocus!==false)focusFirst();
+  }
+
+  function askText(label,placeholder,callback){
+    clearControls();
+    var form=node("form","text-step");
+    var submitted=false;
+    var id="demo-field-"+Math.random().toString(36).slice(2);
+    var lab=node("label","",label);lab.htmlFor=id;
+    var input=node("input");input.id=id;input.type="text";input.placeholder=placeholder;input.maxLength=80;input.autocomplete="off";
+    var submit=node("button","","Continue");submit.type="submit";
+    var error=node("p","field-error");error.id=id+"-error";error.setAttribute("aria-live","polite");input.setAttribute("aria-describedby",error.id);
+    form.append(lab,input,submit,error);
+    input.addEventListener("input",function(){
+      if(input.value.trim()){error.textContent="";input.removeAttribute("aria-invalid");}
+    });
+    form.addEventListener("submit",function(event){
+      event.preventDefault();
+      if(submitted)return;
+      var value=input.value.trim();
+      if(!value){
+        error.textContent="Add a short answer to continue the demo.";
+        input.setAttribute("aria-invalid","true");
+        input.focus();
+        return;
+      }
+      submitted=true;
+      submit.disabled=true;input.disabled=true;input.removeAttribute("aria-invalid");
+      user(value);callback(value);
+    },{once:false});
+    controls.appendChild(form);
+    focusFirst();
+  }
+
+  function ticket(){
+    clearControls();
+    message("Demo complete. No appointment was booked, and no information left this browser.","notice");
+    var card=node("div","ticket");
+    card.appendChild(node("p","ticket-label","Preview only · not booked or sent"));
+    var dl=node("dl","ticket-grid");
+    [["Project",state.job],["Rough size",state.size],["Town",state.town],["Example window",state.time]].forEach(function(pair){
+      var box=node("div");box.append(node("dt","",pair[0]),node("dd","",pair[1]));dl.appendChild(box);
+    });
+    card.appendChild(dl);log.appendChild(card);log.scrollTop=log.scrollHeight;
+    var call=node("a","choice","Call DeBoer instead · (248) 212-9577");call.href="tel:+12482129577";controls.appendChild(call);
+    focusFirst();
+  }
+
+  function timeStep(){
+    message("Choose an example preference. These are not live openings.");
+    choose([["Weekday morning","Weekday morning"],["Weekday afternoon","Weekday afternoon"],["Another time","custom"]],function(value){
+      if(value==="custom"){
+        message("What general window would suit you?");
+        askText("Example preferred time","For example: Saturday morning",function(custom){state.time=custom;ticket();});
+      }else{state.time=value;ticket();}
+    });
+  }
+
+  function townStep(){
+    message("Which town or township is the project in?");
+    askText("Town or township","For example: Clio",function(value){state.town=value;timeStep();});
+  }
+
+  function sizeStep(){
+    message("Roughly how large is it? A simple length by width is enough for this preview.");
+    askText("Rough size","For example: 30 x 40",function(value){state.size=value;townStep();});
+  }
+
+  function start(shouldFocus){
+    state={};log.replaceChildren();clearControls();
+    message("This is a non-sending visual demo. It cannot quote, check a calendar, reserve a time, or contact DeBoer.","notice");
+    message("What kind of concrete project are you considering?");
+    choose(jobs,function(value){state.job=value;sizeStep();},shouldFocus);
+  }
+
+  restart.addEventListener("click",function(){start(true);});
+  restart.hidden=false;
+  start(false);
+})();
+</script>
+</body>
+</html>
