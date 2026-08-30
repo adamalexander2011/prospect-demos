@@ -100,7 +100,13 @@ header.stuck{border-bottom-color:var(--line);box-shadow:0 6px 22px -14px rgba(20
 @media(max-width:620px){.brand img{width:42px}.nav-tel{display:none}.nav{gap:14px}}
 
 /* ---- hero ---- */
-.hero{padding-top:clamp(36px,4.4vw,58px);padding-bottom:clamp(10px,1.6vw,22px)}
+/* The hero owns the whole first screen, so the dark review section always
+   begins below the fold rather than at a fixed 625px. Header is 71px desktop
+   / 66px mobile; subtracting slightly less keeps it a shade over, never under. */
+.hero{padding-top:clamp(36px,4.4vw,58px);padding-bottom:clamp(10px,1.6vw,22px);
+  display:flex;flex-direction:column;justify-content:center;
+  min-height:calc(100vh - 68px);min-height:calc(100svh - 68px)}
+@media(max-width:620px){.hero{min-height:calc(100vh - 63px);min-height:calc(100svh - 63px)}}
 .hero-in{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(30px,3.6vw,52px);align-items:center}
 /* Narrower column, so the display size comes down to hold the two-line break. */
 .hero-in h1{font:900 clamp(38px,4.6vw,66px)/1 var(--sans)}
@@ -264,6 +270,25 @@ a.chip:hover{color:#fff}
 noscript .ns{display:block;margin-top:18px;border:1px solid var(--line-dk);background:#1B2025;padding:20px 22px;color:#B8BEC4;font-size:15px;line-height:1.6}
 noscript .ns b{color:#fff}
 noscript .ns a{color:#E8B4B5}
+/* A first screen this tall needs the content to grow into it, or it floats.
+   More width for both columns, a squarer photo, a larger headline. */
+@media(min-width:1500px){:root{--maxw:1320px}}
+/* Stacked but short — a windowed browser. Flatten the band so the photo
+   still finishes above the fold. */
+/* Short landscape window: there is width going spare, so use the two-column
+   hero here too rather than stacking into a viewport that cannot take it. */
+@media(min-width:760px) and (max-width:999px) and (max-height:820px){
+  .hero-in{grid-template-columns:1.06fr .94fr;gap:clamp(22px,3vw,40px)}
+  .hero-in h1{font:900 clamp(34px,4.4vw,52px)/1 var(--sans)}
+  .hero-fig{margin-top:0;--heroAR:1.15}
+}
+/* Narrow and short: flatten the band instead. */
+@media(max-width:759px) and (max-height:780px){.hero-fig{--heroAR:2.6}}
+@media(min-width:1200px) and (min-height:880px){
+  .hero-fig{--heroAR:1}
+  .hero-in h1{font-size:clamp(60px,4.8vw,78px)}
+  .hero .lede{font-size:20.5px}
+}
 </style>
 
 <script type="application/ld+json">
