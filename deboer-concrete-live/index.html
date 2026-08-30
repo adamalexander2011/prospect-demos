@@ -12,7 +12,7 @@
 <meta property="og:title" content="DeBoer Concrete &amp; Construction — Clio, MI">
 <meta property="og:description" content="Barn pads, driveways, approaches and poured foundations across Genesee County. Concrete you only pour once.">
 <meta property="og:image" content="https://deboerconcreteandconstructionllc.com/assets/hero-shop-apron.jpg">
-<meta property="og:image:alt" content="A finished concrete apron poured at a dark-clad shop building">
+<meta property="og:image:alt" content="A finished concrete apron poured at a dark-clad pole barn shop">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://deboerconcreteandconstructionllc.com/">
@@ -50,6 +50,7 @@ h3{font:800 19px/1.28 var(--sans);letter-spacing:-.02em}
 p{text-wrap:pretty}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
 .narrow{max-width:840px}
+.hero-in .narrow{max-width:none}
 section{padding:clamp(58px,8vw,108px) 0;position:relative}
 section[id]{scroll-margin-top:92px}
 :focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:2px}
@@ -99,13 +100,35 @@ header.stuck{border-bottom-color:var(--line);box-shadow:0 6px 22px -14px rgba(20
 @media(max-width:620px){.brand img{width:42px}.nav-tel{display:none}.nav{gap:14px}}
 
 /* ---- hero ---- */
-.hero{padding-top:clamp(46px,5.6vw,74px);padding-bottom:0}
+.hero{padding-top:clamp(36px,4.4vw,58px);padding-bottom:clamp(10px,1.6vw,22px)}
+.hero-in{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(30px,3.6vw,52px);align-items:center}
+/* Narrower column, so the display size comes down to hold the two-line break. */
+.hero-in h1{font:900 clamp(38px,4.6vw,66px)/1 var(--sans)}
+@media(max-width:999px){.hero-in{grid-template-columns:1fr;gap:0}
+  .hero-in h1{font:900 clamp(40px,6.6vw,78px)/.98 var(--sans)}}
+/* On a phone the work comes first: photo, then the claim it backs up. */
+@media(max-width:560px){
+  .hero-fig-col{order:-1;margin-bottom:20px}
+  /* Reclaim ~35px so the primary CTA clears the fold on a 390-wide phone. */
+  .hero h1{margin-top:13px}
+  .hero .lede{margin-top:13px}
+  .hero-cta{margin-top:21px}
+  .hero-cap{margin-top:13px}
+}
+@media(max-width:400px){.hero-in h1{font-size:36px}}
+/* The header CTA is the persistent one on a phone; it must not wrap. */
+@media(max-width:620px){.btn-sm{padding:11px 14px;font-size:13px;white-space:nowrap}}
 .hero h1{margin-top:19px}
 .hero h1 em{font-style:normal;color:var(--red);display:block}
-.hero-cta{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}
-.hero-fig{margin-top:clamp(42px,5.4vw,66px)}
-.hero-fig img{width:100%}
-.hero-cap{display:flex;gap:10px;align-items:baseline;margin-top:26px;font:600 12px/1.5 var(--cond);letter-spacing:.17em;text-transform:uppercase;color:var(--dim)}
+.hero-cta{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+/* The apron runs across the lower third of this frame, so the crop favours
+   the building base and the slab rather than the sky above it. */
+.hero-fig{--heroAR:1.15;--heroY:50%}
+.hero-fig img{width:100%;display:block;aspect-ratio:var(--heroAR);object-fit:cover;object-position:center var(--heroY)}
+/* Stacked, it becomes a band wide enough to stay above the fold. */
+@media(max-width:999px){.hero-fig{margin-top:clamp(30px,4vw,44px);--heroAR:1.6;--heroY:56%}}
+@media(max-width:560px){.hero-fig{margin-top:0;--heroAR:1.78;--heroY:57%}}
+.hero-cap{display:flex;gap:10px;align-items:baseline;margin-top:16px;font:600 12px/1.5 var(--cond);letter-spacing:.17em;text-transform:uppercase;color:var(--dim)}
 .hero-cap i{width:7px;height:7px;background:var(--red);flex:none;transform:translateY(-1px)}
 
 /* ---- quote, on the dark ground so it carries ---- */
@@ -316,7 +339,7 @@ noscript .ns a{color:#E8B4B5}
 <div id="top"></div>
 <main id="main">
 <section class="hero">
-  <div class="wrap">
+  <div class="wrap hero-in">
     <div class="narrow rv">
       <p class="eyebrow">Clio, Michigan &middot; Flatwork, barn pads &amp; foundations</p>
       <h1>Concrete you<em>only pour once.</em></h1>
@@ -326,10 +349,12 @@ noscript .ns a{color:#E8B4B5}
         <a class="btn btn-line" href="tel:+12482129577">Call (248) 212-9577</a>
       </div>
     </div>
-    <figure class="hero-fig keyline rv">
-      <img src="assets/hero-shop-apron.jpg" alt="A finished concrete apron and covered walkway wrapping the front of a dark metal pole barn shop in Michigan" width="1500" height="1125" fetchpriority="high">
-    </figure>
-    <p class="hero-cap rv"><i></i> Apron, walkway and porch slab, poured and finished by DeBoer</p>
+    <div class="hero-fig-col rv">
+      <figure class="hero-fig keyline">
+        <img src="assets/hero-shop-apron.jpg" alt="A finished concrete apron and covered walkway wrapping the front of a dark metal pole barn shop in Michigan" fetchpriority="high">
+      </figure>
+      <p class="hero-cap"><i></i> Apron, walkway and porch slab, poured and finished by DeBoer</p>
+    </div>
   </div>
 </section>
 
