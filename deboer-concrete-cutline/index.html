@@ -6,13 +6,14 @@
 <meta name="robots" content="noindex,nofollow">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; font-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>DeBoer Concrete — Cut Line Alternative Concept Site</title>
-<meta name="description" content="An alternative concept site for DeBoer Concrete And Construction LLC, built from its published logo and Facebook photography. This is not the official website.">
+<meta name="description" content="A proof-led website concept for DeBoer Concrete in Clio, with Facebook-published photography, one specific customer recommendation and a non-sending project brief preview.">
 <meta name="theme-color" content="#17191B">
 <meta property="og:type" content="website">
 <meta property="og:title" content="DeBoer Concrete — Cut Line Alternative Concept Site">
-<meta property="og:description" content="A clearly labelled visual concept built around photography published on DeBoer's Facebook page. Not the official website.">
+<meta property="og:description" content="See photography from DeBoer’s Facebook page, read a specific customer recommendation and preview a direct path from project idea to first conversation.">
 <meta property="og:image" content="https://demos.locallvrg.co/deboer-concrete-cutline/assets/hero-shop-apron.jpg">
 <meta property="og:image:alt" content="Concrete apron and covered walkway at a dark metal building">
+<link rel="icon" href="assets/logo.png">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo.woff2" crossorigin>
 <link rel="preload" as="image" href="assets/hero-shop-apron.jpg" fetchpriority="high">
 <style>
@@ -70,6 +71,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 .concept-rail{position:fixed;inset:0 0 auto;z-index:150;height:var(--rail);background:var(--oxblood);color:#fff;display:flex;align-items:center}
 .concept-rail .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;font:700 11px/1.2 var(--archivo);letter-spacing:.1em;text-transform:uppercase}
 .concept-rail a{text-underline-offset:3px}
+.rail-short{display:none}
 
 .site-header{position:absolute;z-index:80;top:var(--rail);left:0;right:0;border-bottom:1px solid rgba(255,255,255,.2)}
 .nav{height:82px;display:flex;align-items:center;gap:32px}
@@ -132,10 +134,9 @@ button,a{-webkit-tap-highlight-color:transparent}
 .job:nth-child(1) .job-frame,.job:nth-child(3) .job-frame,.job:nth-child(6) .job-frame{aspect-ratio:16/10}
 .job:nth-child(2) .job-frame,.job:nth-child(4) .job-frame{aspect-ratio:3/4}
 .job:nth-child(5) .job-frame{aspect-ratio:4/3}
-.job figcaption{display:grid;grid-template-columns:60px 1fr auto;gap:16px;align-items:baseline;border-top:1px solid var(--joint);padding-top:14px;margin-top:14px;color:var(--body)}
+.job figcaption{display:grid;grid-template-columns:60px 1fr;gap:16px;align-items:baseline;border-top:1px solid var(--joint);padding-top:14px;margin-top:14px;color:var(--body)}
 .job-no{color:var(--oxblood-bright);font:600 16px/1 var(--cond);letter-spacing:.12em}
 .job-title{color:#fff;font-size:15px}
-.job-note{font:600 10px/1 var(--cond);letter-spacing:.15em;text-transform:uppercase;color:#8F969B;text-align:right}
 
 .field-notes{padding:var(--section) 0;background:var(--raised)}
 .field-head{max-width:950px;margin-bottom:clamp(48px,7vw,88px)}
@@ -191,6 +192,11 @@ button,a{-webkit-tap-highlight-color:transparent}
 .contact-details a:hover{text-decoration:underline;text-underline-offset:4px}
 
 .disclosure{padding:var(--section) 0;background:var(--concrete);color:var(--body-light)}
+.preview-details>summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:24px;font:700 12px/1.4 var(--archivo);letter-spacing:.12em;text-transform:uppercase;color:var(--body-light)}
+.preview-details>summary::-webkit-details-marker{display:none}
+.preview-details>summary::after{content:"+";font:400 28px/1 var(--archivo);color:var(--oxblood)}
+.preview-details[open]>summary::after{content:"−"}
+.preview-details .disclosure-grid{margin-top:32px}
 .disclosure-head{max-width:900px}
 .disclosure-head .display{margin-top:20px}
 .disclosure-head .lede{margin-top:28px;color:var(--muted-light)}
@@ -233,7 +239,7 @@ footer a{color:#fff;text-underline-offset:3px}
 
 @media(max-width:560px){
   :root{--rail:56px}
-  .concept-rail .wrap{font-size:9.5px;line-height:1.35}.concept-rail .rail-note{max-width:22ch}.concept-rail a{max-width:12ch;text-align:right}
+  .concept-rail .wrap{font-size:9.5px;line-height:1.35}.concept-rail .rail-note{max-width:18ch}.concept-rail a{max-width:15ch;text-align:right}.rail-full{display:none}.rail-short{display:inline}
   .nav{height:74px}.brand-mark{width:48px;height:48px}.nav-phone{font-size:12px}
   .hero{min-height:700px;padding-top:calc(var(--rail) + 108px)}
   .hero h1{font-size:clamp(48px,15vw,68px)}
@@ -257,22 +263,22 @@ footer a{color:#fff;text-underline-offset:3px}
 
 <div class="concept-rail">
   <div class="wrap">
-    <span class="rail-note">Alternative concept site · not DeBoer&rsquo;s official website · visit demo sends nothing</span>
+    <span class="rail-note"><span class="rail-full">Concept site preview · not official · project planner sends nothing</span><span class="rail-short">Preview only · nothing sends</span></span>
     <a href="../deboer-concrete/" rel="nofollow">Compare direction 01</a>
   </div>
 </div>
 
 <header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="DeBoer Concrete alternative concept, back to top">
+    <a class="brand" href="#top" aria-label="DeBoer Concrete Cut Line concept, back to top">
       <span class="brand-mark"><img src="assets/logo.png" alt="" width="620" height="471"></span>
       <span class="brand-name"><strong>DEBOER</strong><span>Concrete &amp; Construction</span></span>
     </a>
-    <nav class="nav-links" aria-label="Concept navigation">
-      <a href="#work">The work</a>
-      <a href="#questions">Field notes</a>
-      <a href="#visit">Visit demo</a>
-      <a href="#disclosure">Disclosure</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#work">Photos</a>
+      <a href="#visit">Project brief</a>
+      <a href="#questions">Before the pour</a>
+      <a href="#contact">Contact</a>
     </nav>
     <a class="nav-phone" href="tel:+12482129577">(248) 212-9577</a>
   </div>
@@ -285,17 +291,17 @@ footer a{color:#fff;text-underline-offset:3px}
     </div>
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="kicker red">Clio, Michigan · Alternative direction 02</p>
-        <h1 id="hero-title">A slab starts below the surface.</h1>
-        <p class="lede">A cinematic website concept built around photography published on DeBoer&rsquo;s Facebook page. The words, job attribution and visit demo are proposed, disclosed, and not connected to the business.</p>
+        <p class="kicker red">Concrete &amp; Construction · Clio, Michigan</p>
+        <h1 id="hero-title">Start with the site. Build from there.</h1>
+        <p class="lede">Turn the concrete project you have been picturing into a useful first conversation: what it is, where it sits, roughly how big it is and when you want to begin.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#work">See the work</a>
-          <a class="btn btn-outline" href="#visit">Try the visit demo</a>
+          <a class="btn btn-primary" href="#visit">Build My Project Brief</a>
+          <a class="btn btn-outline" href="tel:+12482129577">Call DeBoer</a>
         </div>
       </div>
-      <div class="hero-index" aria-label="Concept facts">
-        <div><b>07</b><span>Facebook-sourced photographs</span></div>
-        <div><b>00</b><span>Stock photographs</span></div>
+      <div class="hero-index" aria-label="Published proof">
+        <div><b>01</b><span>specific customer recommendation</span></div>
+        <div><b>07</b><span>Facebook-published photographs</span></div>
       </div>
     </div>
   </section>
@@ -303,12 +309,11 @@ footer a{color:#fff;text-underline-offset:3px}
   <section class="intro" aria-labelledby="intro-title">
     <div class="wrap split">
       <div class="split-label">
-        <p class="kicker red">Cut Line / The idea</p>
+        <p class="kicker red">Before the pour</p>
       </div>
       <div class="split-copy">
-        <h2 class="display" id="intro-title">The work is the page chrome.</h2>
-        <p>This direction treats every photograph like a job record rather than a gallery thumbnail. Thin control-joint rules organize the page; DeBoer&rsquo;s oxblood mark appears only where the eye needs a path.</p>
-        <p class="micro">Concept copy by Local LVRG. This paragraph is not a DeBoer claim.</p>
+        <h2 class="display" id="intro-title">You are not buying a gray surface.</h2>
+        <p>You are deciding what the project needs to carry, how it meets the site and what you will live with after the trucks leave. A useful first conversation starts there.</p>
       </div>
     </div>
   </section>
@@ -316,8 +321,8 @@ footer a{color:#fff;text-underline-offset:3px}
   <section class="proof" aria-labelledby="proof-title">
     <div class="wrap proof-grid">
       <div class="proof-meta">
-        <p class="kicker red" id="proof-title">Published customer recommendation</p>
-        <p>One real quote, kept at full weight and reproduced exactly as recorded from Facebook.</p>
+        <p class="kicker red" id="proof-title">A customer put the details in writing</p>
+        <p>One specific recommendation, in the customer&rsquo;s own words.</p>
       </div>
       <blockquote>they did my 30 x 40 barn pad, 6&quot; thick with rebar, absolutely great work! highly recommend.</blockquote>
       <cite><strong>Greg Taylor</strong> · Facebook recommendation</cite>
@@ -327,53 +332,35 @@ footer a{color:#fff;text-underline-offset:3px}
   <section class="work-section" id="work" aria-labelledby="work-title">
     <div class="wrap">
       <div class="work-head">
-        <h2 class="display" id="work-title">Six frames. No stock.</h2>
-        <p class="lede">Every image is from DeBoer&rsquo;s Facebook uploads. Ownership, job attribution and labels need confirmation before any production use.</p>
+        <h2 class="display" id="work-title">Start with the photographs.</h2>
+        <p class="lede">These photographs were published on DeBoer&rsquo;s Facebook page. Ownership and job attribution await DeBoer&rsquo;s confirmation. The captions describe only what is visible.</p>
       </div>
 
       <div class="job-ledger">
         <figure class="job">
           <div class="job-frame"><img src="assets/job-approach.jpg" alt="Concrete surface leading beneath a timber pavilion with a green metal roof" width="1050" height="1400" loading="lazy" decoding="async"></div>
-          <figcaption><span class="job-no">01</span><span class="job-title">Approach &amp; apron</span><span class="job-note">Concept caption</span></figcaption>
+          <figcaption><span class="job-no">01</span><span class="job-title">Concrete beside a timber pavilion</span></figcaption>
         </figure>
         <figure class="job">
           <div class="job-frame"><img src="assets/job-barn-slab.jpg" alt="Large finished concrete slab inside an open pole barn" width="1600" height="1200" loading="lazy" decoding="async"></div>
-          <figcaption><span class="job-no">02</span><span class="job-title">Barn slab</span><span class="job-note">Concept caption</span></figcaption>
+          <figcaption><span class="job-no">02</span><span class="job-title">Finished slab inside a pole barn</span></figcaption>
         </figure>
         <figure class="job">
           <div class="job-frame"><img src="assets/job-foundation.jpg" alt="Poured concrete walls forming a building footprint" width="1600" height="1200" loading="lazy" decoding="async"></div>
-          <figcaption><span class="job-no">03</span><span class="job-title">Poured foundation</span><span class="job-note">Concept caption</span></figcaption>
+          <figcaption><span class="job-no">03</span><span class="job-title">Poured concrete walls</span></figcaption>
         </figure>
         <figure class="job">
           <div class="job-frame"><img src="assets/job-banded-drive.jpg" alt="Fresh concrete driveway with a contrasting border band" width="1600" height="1200" loading="lazy" decoding="async"></div>
-          <figcaption><span class="job-no">04</span><span class="job-title">Banded drive</span><span class="job-note">Concept caption</span></figcaption>
+          <figcaption><span class="job-no">04</span><span class="job-title">Fresh driveway with a border band</span></figcaption>
         </figure>
         <figure class="job">
           <div class="job-frame"><img src="assets/job-walkway.jpg" alt="Broom-finished concrete walkway beside a dark metal building" width="1050" height="1400" loading="lazy" decoding="async"></div>
-          <figcaption><span class="job-no">05</span><span class="job-title">Walkway</span><span class="job-note">Concept caption</span></figcaption>
+          <figcaption><span class="job-no">05</span><span class="job-title">Broom-finished walkway</span></figcaption>
         </figure>
         <figure class="job">
           <div class="job-frame"><img src="assets/job-curved-drive.jpg" alt="Curving concrete drive leading toward a blue metal building" width="1047" height="1400" loading="lazy" decoding="async"></div>
-          <figcaption><span class="job-no">06</span><span class="job-title">Curved drive</span><span class="job-note">Concept caption</span></figcaption>
+          <figcaption><span class="job-no">06</span><span class="job-title">Curving concrete drive</span></figcaption>
         </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="field-notes" id="questions" aria-labelledby="questions-title">
-    <div class="wrap">
-      <div class="field-head">
-        <p class="kicker red">Field notes / general questions</p>
-        <h2 class="display" id="questions-title">The finish is only one line on the ticket.</h2>
-        <p class="lede">These are general questions a buyer can ask any concrete contractor. They are not a statement of DeBoer&rsquo;s materials, specifications, or process.</p>
-      </div>
-      <div class="question-list">
-        <article class="question"><span class="num">01</span><h3>What is under it?</h3><p>Ask how the base will be prepared, compacted, and graded before concrete arrives.</p></article>
-        <article class="question"><span class="num">02</span><h3>How thick is the pour?</h3><p>Make the planned thickness explicit for the load the slab is expected to carry.</p></article>
-        <article class="question"><span class="num">03</span><h3>What reinforcement is specified?</h3><p>Ask whether the plan calls for rebar, mesh, another system, or no reinforcement.</p></article>
-        <article class="question"><span class="num">04</span><h3>Where are the joints?</h3><p>Ask how the joint layout relates to the slab geometry and likely movement.</p></article>
-        <article class="question"><span class="num">05</span><h3>What finish fits the use?</h3><p>Foot traffic, vehicle traffic, weather, and appearance all affect that choice.</p></article>
-        <article class="question"><span class="num">06</span><h3>What happens on pour day?</h3><p>Ask who is on site, how timing is handled, and what conditions would change the plan.</p></article>
       </div>
     </div>
   </section>
@@ -381,85 +368,94 @@ footer a{color:#fff;text-underline-offset:3px}
   <section class="visit" id="visit" aria-labelledby="visit-title">
     <div class="wrap visit-grid">
       <div class="visit-copy">
-        <p class="kicker red">Visit desk / interaction study</p>
-        <h2 class="display dark" id="visit-title">A visit-request prototype, never an estimator.</h2>
-        <p class="lede">Try the proposed intake flow. It calculates no price, checks no availability, requests no contact details, books no appointment, and sends or stores nothing.</p>
+        <p class="kicker red">Project brief</p>
+        <h2 class="display dark" id="visit-title">Build a useful project brief.</h2>
+        <p class="lede">Describe the project, add a rough size and location, and build a clear summary to have in front of you when you call DeBoer. This preview asks for no contact details and sends, saves and books nothing.</p>
         <ul class="visit-facts">
-          <li><b>01</b><span>Project, rough size and town establish the visit context.</span></li>
-          <li><b>02</b><span>Time choices are examples only, not live openings.</span></li>
-          <li><b>03</b><span>A real version would confirm only after approved availability and delivery both succeed.</span></li>
+          <li><b>01</b><span>Start with what you know: project, rough size and town.</span></li>
+          <li><b>02</b><span>Keep the basics together instead of repeating them later.</span></li>
+          <li><b>03</b><span>Finish with a clear summary in front of you when you call.</span></li>
         </ul>
       </div>
 
       <div class="visit-shell" role="region" aria-labelledby="visit-demo-title">
         <div class="visit-top">
-          <strong id="visit-demo-title">DeBoer site-visit concept</strong>
-          <span class="demo-badge">Demo · does not send</span>
+          <strong id="visit-demo-title">Project brief preview</strong>
+          <span class="demo-badge">Does not send</span>
         </div>
-        <div class="visit-log" id="visit-log" role="log" aria-live="polite" aria-label="Demo conversation">
-          <p class="bubble agent no-js-only">This visual prototype needs JavaScript for the sample choices. Nothing is sent either way. Call (248) 212-9577 if you want to contact the real business.</p>
+        <div class="visit-log" id="visit-log" role="log" aria-live="polite" aria-label="Project brief conversation">
+          <p class="bubble agent no-js-only">The project brief preview needs JavaScript. Nothing is collected. You can still call DeBoer at (248) 212-9577.</p>
         </div>
         <div class="visit-controls" id="visit-controls"></div>
         <div class="visit-bottom">
-          <button class="restart" id="restart" type="button" hidden>Start the demo over</button>
-          <span>Nothing leaves this browser</span>
+          <button class="restart" id="restart" type="button" hidden>Start the project brief over</button>
+          <span>No contact details · nothing leaves this page</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="contact" aria-labelledby="contact-title">
+  <section class="field-notes" id="questions" aria-labelledby="questions-title">
+    <div class="wrap">
+      <div class="field-head">
+        <p class="kicker red">Before pour day</p>
+        <h2 class="display" id="questions-title">The surface is what you see. Understand the plan underneath.</h2>
+        <p class="lede">Use these questions to compare what each quote includes&mdash;not only the number at the bottom. They are general buyer guidance, not claims about DeBoer&rsquo;s process.</p>
+      </div>
+      <div class="question-list">
+        <article class="question"><span class="num">01</span><h3>Below it</h3><p>Ask what is planned for the base, grade and drainage before concrete arrives.</p></article>
+        <article class="question"><span class="num">02</span><h3>Inside it</h3><p>Ask how thickness and reinforcement relate to what the project needs to carry.</p></article>
+        <article class="question"><span class="num">03</span><h3>Across it</h3><p>Ask how joints, finish and curing will be handled in the written scope.</p></article>
+        <article class="question"><span class="num">04</span><h3>On pour day</h3><p>Ask who will be on site and what conditions would change the plan.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
     <div class="wrap contact-grid">
-      <h2 class="display" id="contact-title">Use the real contact details.</h2>
+      <h2 class="display" id="contact-title">Ready to talk about your project?</h2>
       <div class="contact-details">
-        <a href="tel:+12482129577">Call · (248) 212-9577</a>
-        <a href="mailto:nick@deboerconcreteandconstructionllc.com">Email · nick@deboerconcreteandconstructionllc.com</a>
-        <p>Published base · Clio, Michigan</p>
+        <a href="tel:+12482129577">Call DeBoer · (248) 212-9577</a>
+        <a href="mailto:nick@deboerconcreteandconstructionllc.com">Email project details</a>
+        <p>Based in Clio, Michigan · Only DeBoer can confirm scope, pricing and timing.</p>
       </div>
     </div>
   </section>
 
   <section class="disclosure" id="disclosure" aria-labelledby="disclosure-title">
     <div class="wrap">
-      <div class="disclosure-head">
-        <p class="kicker red">What is real / what is proposed</p>
-        <h2 class="display dark" id="disclosure-title">The line has to stay visible.</h2>
-        <p class="lede">This is a separate alternative concept by Local LVRG, not DeBoer&rsquo;s official site. The visual direction is original; the business material is identified below.</p>
-      </div>
-
-      <div class="disclosure-grid">
-        <div class="disclosure-col">
-          <h3>Real, supplied or published by DeBoer</h3>
-          <ul>
-            <li>The company name and DB logo from its Facebook page.</li>
-            <li>Seven photographs downloaded from DeBoer&rsquo;s public Facebook uploads; ownership and job attribution still need confirmation.</li>
-            <li>The published phone number, email address, Clio base, and official domain.</li>
-            <li>Greg Taylor&rsquo;s name and recommendation, reproduced word for word as recorded.</li>
-          </ul>
+      <details class="preview-details">
+        <summary id="disclosure-title">Preview details · what is sourced and what needs DeBoer approval</summary>
+        <div class="disclosure-grid">
+          <div class="disclosure-col">
+            <h3>Source-backed</h3>
+            <ul>
+              <li>DeBoer Concrete And Construction LLC, its DB logo and its published Clio contact details.</li>
+              <li>Greg Taylor’s Facebook recommendation, reproduced exactly as recorded.</li>
+              <li>Seven photographs published on DeBoer’s Facebook page; ownership and job attribution still need confirmation.</li>
+            </ul>
+          </div>
+          <div class="disclosure-col">
+            <h3>Needs DeBoer review and approval</h3>
+            <ul>
+              <li>All marketing copy, photograph captions and project labels.</li>
+              <li>The actual service list, coverage area, specifications, pricing, process and timing.</li>
+              <li>Any live request delivery, confirmation, privacy language or follow-up workflow.</li>
+            </ul>
+          </div>
         </div>
-        <div class="disclosure-col">
-          <h3>Created for this concept and not yet DeBoer claims</h3>
-          <ul>
-            <li>The Cut Line design, layout, navigation, typography treatment and interaction.</li>
-            <li>Every headline, paragraph, CTA, metadata description and footer line.</li>
-            <li>Every photograph caption, alt-text job classification and inferred service label.</li>
-            <li>All buying-question language and any process, material, workmanship or durability statement.</li>
-            <li>The entire visit-request prototype script, choices, example time windows and completion state.</li>
-            <li>Any suggestion that a request reaches a phone, inbox, CRM or calendar.</li>
-          </ul>
+        <div class="closing">
+          <p><strong>This is a noindex concept site, not DeBoer’s official website.</strong> The project brief preview asks for no contact details and sends, saves and books nothing. The separate phone and email links use DeBoer’s published contact information. Publishing a live customer-intake system requires DeBoer’s approval and a tested implementation.</p>
         </div>
-      </div>
-      <div class="closing">
-        <p><strong>Nothing in the proposed column represents DeBoer until DeBoer confirms it.</strong> This site-visit planning flow is a visual prototype, not an estimator: it calculates no price, checks no availability, books no appointment, and sends or stores no information. The visit demo is not connected to DeBoer&rsquo;s inbox, calendar or CRM; the separate call and email links use DeBoer&rsquo;s published contact details. The page is <code>noindex,nofollow</code> and will be removed the same day on request. The concept page was built at no charge; publishing it and connecting real booking, communications or marketing systems would be paid implementation.</p>
-      </div>
+      </details>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap footer-grid">
-    <p><strong>DeBoer Concrete — Cut Line</strong><br>Alternative concept by Local LVRG · not affiliated</p>
-    <p><a href="https://deboerconcreteandconstructionllc.com/" rel="nofollow noopener">Real business website</a> · <a href="#disclosure">Full disclosure</a></p>
+    <p><strong>DeBoer Concrete — Cut Line</strong><br>Direction 02 concept site by Local LVRG</p>
+    <p><a href="https://deboerconcreteandconstructionllc.com/" rel="nofollow noopener">Business domain</a> · <a href="#disclosure">Preview details</a></p>
   </div>
 </footer>
 
@@ -471,14 +467,6 @@ footer a{color:#fff;text-underline-offset:3px}
   var controls=document.getElementById("visit-controls");
   var restart=document.getElementById("restart");
   var state={};
-
-  var jobs=[
-    ["Garage or barn pad","Pad"],
-    ["Driveway or approach","Drive"],
-    ["Patio or walkway","Patio / walk"],
-    ["Foundation","Foundation"],
-    ["Something else","Other concrete"]
-  ];
 
   function node(tag,className,text){
     var el=document.createElement(tag);
@@ -519,7 +507,7 @@ footer a{color:#fff;text-underline-offset:3px}
     if(shouldFocus!==false)focusFirst();
   }
 
-  function askText(label,placeholder,callback){
+  function askText(label,placeholder,callback,shouldFocus){
     clearControls();
     var form=node("form","text-step");
     var submitted=false;
@@ -537,7 +525,7 @@ footer a{color:#fff;text-underline-offset:3px}
       if(submitted)return;
       var value=input.value.trim();
       if(!value){
-        error.textContent="Add a short answer to continue the demo.";
+        error.textContent="Add a short answer to continue the project brief.";
         input.setAttribute("aria-invalid","true");
         input.focus();
         return;
@@ -547,48 +535,54 @@ footer a{color:#fff;text-underline-offset:3px}
       user(value);callback(value);
     },{once:false});
     controls.appendChild(form);
-    focusFirst();
+    if(shouldFocus!==false)focusFirst();
   }
 
   function ticket(){
     clearControls();
-    message("Demo complete. No appointment was booked, and no information left this browser.","notice");
+    message("Your project brief is ready. Nothing was booked or sent.","notice");
     var card=node("div","ticket");
-    card.appendChild(node("p","ticket-label","Preview only · not booked or sent"));
+    card.appendChild(node("p","ticket-label","Project brief · preview only"));
     var dl=node("dl","ticket-grid");
-    [["Project",state.job],["Rough size",state.size],["Town",state.town],["Example window",state.time]].forEach(function(pair){
+    [["Project",state.project],["Rough size",state.size],["Town",state.town],["Timing",state.when],["Preferred time",state.time]].forEach(function(pair){
       var box=node("div");box.append(node("dt","",pair[0]),node("dd","",pair[1]));dl.appendChild(box);
     });
     card.appendChild(dl);log.appendChild(card);log.scrollTop=log.scrollHeight;
-    var call=node("a","choice","Call DeBoer instead · (248) 212-9577");call.href="tel:+12482129577";controls.appendChild(call);
+    message("Nothing left this page. Call DeBoer with the brief above to take the next real step.","notice");
+    var call=node("a","choice","Call DeBoer with this brief · (248) 212-9577");call.href="tel:+12482129577";controls.appendChild(call);
     focusFirst();
   }
 
   function timeStep(){
-    message("Choose an example preference. These are not live openings.");
+    message("Which time is usually easiest for a conversation? This is a preference, not live availability.");
     choose([["Weekday morning","Weekday morning"],["Weekday afternoon","Weekday afternoon"],["Another time","custom"]],function(value){
       if(value==="custom"){
-        message("What general window would suit you?");
-        askText("Example preferred time","For example: Saturday morning",function(custom){state.time=custom;ticket();});
+        message("What day or time is usually easiest?");
+        askText("Preferred conversation day or time","For example: Saturday morning",function(custom){state.time=custom;ticket();});
       }else{state.time=value;ticket();}
     });
   }
 
   function townStep(){
-    message("Which town or township is the project in?");
-    askText("Town or township","For example: Clio",function(value){state.town=value;timeStep();});
+    message("Where is the project?");
+    askText("Town or township","For example: Clio",function(value){state.town=value;timingStep();});
+  }
+
+  function timingStep(){
+    message("When are you hoping to begin?");
+    choose([["As soon as possible","As soon as possible"],["This season","This season"],["Just planning","Just planning"]],function(value){state.when=value;timeStep();});
   }
 
   function sizeStep(){
-    message("Roughly how large is it? A simple length by width is enough for this preview.");
+    message("About how big is it? A rough length by width is enough.");
     askText("Rough size","For example: 30 x 40",function(value){state.size=value;townStep();});
   }
 
   function start(shouldFocus){
     state={};log.replaceChildren();clearControls();
-    message("This is a non-sending visual demo. It cannot quote, check a calendar, reserve a time, or contact DeBoer.","notice");
-    message("What kind of concrete project are you considering?");
-    choose(jobs,function(value){state.job=value;sizeStep();},shouldFocus);
+    message("Preview only: your answers stay in this browser. Nothing is sent or booked.","notice");
+    message("What are you planning?");
+    askText("Project you are planning","For example: barn pad, driveway or something else",function(value){state.project=value;sizeStep();},shouldFocus);
   }
 
   restart.addEventListener("click",function(){start(true);});
