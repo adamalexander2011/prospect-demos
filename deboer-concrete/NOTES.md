@@ -1,6 +1,6 @@
 # DeBoer Concrete And Construction LLC — Clio, MI
 
-**Status:** **BUILT**, not yet sent. Strongest prospect on the board.
+**Status:** **SENT 27 August 2026. Live reply, priced, waiting on Nick.** See *The send* at the bottom.
 **Demo:** `deboer-concrete/index.html` (design score 5, preflight clear)
 **Their site:** deboerconcreteandconstructionllc.com
 **Score:** 84 plumbing + 12 design = **96** (highest recorded here, above Viper's 85)
@@ -201,3 +201,35 @@ is no profile at all. "Ranking" was also the only word in the line that sounded 
 marketing rather than like Adam. The clause *"the site they should have been on"* was
 kept exactly, because "they" reads as the photographs, which makes Nick's work the thing
 that deserved better instead of making Adam the hero.
+
+
+## The send — 27–28 August 2026
+
+Sent by Facebook Messenger, not email, because Messenger is where Nick actually is
+and the Facebook page is what is doing the work for him.
+
+**Thu 27 Aug, 10:57 PM.** Opening line as written above, then the link to
+`https://demos.locallvrg.co/deboer-concrete/`, then a second message immediately
+after: the concept lives on Adam's computer, he saw there was no site, started
+building, then noticed the Clio competition is weak and Nick could dominate fast.
+
+**Fri 28 Aug, 6:47 AM.** Nick: *"How much would something like that cost? It's
+badass."* Under eight hours, and the first words are a price question, which means
+the page did its job before any pitch did.
+
+**Fri 28 Aug, 9:27 AM.** Adam's answer, in this order: sites like this are normally
+2k, this one is free, because Nick helped him after the tornado. Then the actual
+offer — ongoing marketing, AI agents booking jobs overnight, the Google Business
+Profile built properly, automatic review requests after completed jobs, and one
+phone-based system for customer comms and payments. **$597 setup, $497/month.**
+The review-request pitch leans on the verified competitor number above: Patriot's
+21 reviews are beatable fast.
+
+**Fri 28 Aug, 10:32 AM.** *"My fee should be just a drop in the bucket if the
+system is making you thousands... I'm not here to pressure you, just informing you."*
+
+**Nick:** *"No forsure give me some time."* Adam: *"You got it, bro."*
+
+**Where it stands.** Not a no. A price-qualified maybe with the ball in Nick's court
+and no deadline attached, which is the right shape for a family friend. The page
+stays up and stays `noindex`. Nothing to chase yet.
